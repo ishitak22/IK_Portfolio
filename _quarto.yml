@@ -4,10 +4,8 @@ project:
 website:
   title: "Ishita Khanna"
   page-navigation: true
-  sidebar:
-    style: floating
-    collapse-level: 1
-    contents:
+  navbar:
+    left:
       - href: index.qmd
         text: Home
       - href: about.qmd
@@ -16,9 +14,10 @@ website:
         text: Projects
       - href: contact.qmd
         text: Contact Me
+    right:
       - icon: github
         href: https://github.com/ishitak22
-      - icon: Linkedin
+      - icon: linkedin
         href: https://www.linkedin.com/in/khannaishita/
       
 
