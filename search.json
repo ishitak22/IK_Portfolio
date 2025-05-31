@@ -2,9 +2,16 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About me",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hi, I’m Ishita Khanna, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.\nI approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it’s exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.\nThis portfolio highlights some of my recent work from the TidyTuesday community and will continue to grow with academic, personal, and applied projects.\nI’m always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference."
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About me",
+    "section": "Get in Touch",
+    "text": "Get in Touch\n\nGitHub\nLinkedIn\nEmail: ishitakhanna2208@gmail.com"
   },
   {
     "objectID": "index.html",
