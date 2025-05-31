@@ -2,12 +2,25 @@ project:
   type: website
 
 website:
-  title: "IK_Portfolio"
-  navbar:
-    left:
+  title: "Ishita Khanna"
+  page-navigation: true
+  sidebar:
+    style: floating
+    collapse-level: 1
+    contents:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: projects.qmd
+        text: Projects
+      - href: contact.qmd
+        text: Contact Me
+      - icon: github
+        href: https://github.com/ishitak22
+      - icon: Linkedin
+        href: https://www.linkedin.com/in/khannaishita/
+      
 
 format:
   html:
