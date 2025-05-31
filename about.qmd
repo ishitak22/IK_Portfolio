@@ -1,9 +1,20 @@
 ---
-title: "About"
+title: "About me"
+format: html
 ---
 
-About this site
+Hi, I'm **Ishita Khanna**, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.
 
-```{r}
-1 + 1
-```
+I approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it's exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.
+
+This portfolio highlights some of my recent work from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday) community and will continue to grow with academic, personal, and applied projects. 
+
+I'm always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference.
+
+---
+
+## Get in Touch
+
+ - [GitHub](https://github.com/ishitak22)
+ - [LinkedIn](https://www.linkedin.com/in/khannaishita/)
+ - Email: ishitakhanna2208@gmail.com
