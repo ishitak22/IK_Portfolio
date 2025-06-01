@@ -1,0 +1,8 @@
+---
+title: "Projects"
+listing: 
+  type: default
+  contents: projects
+---
+
+Here’s how I’ve applied my skills across different data projects. 
