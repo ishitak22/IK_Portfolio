@@ -16,15 +16,22 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Ishita Khanna - Data Portfolio",
+    "title": "Data Analytics Portfolio",
     "section": "",
     "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js\nMachine Learning: Supervised/Unsupervised learning, predictive modeling\nCloud & Web: Posit Cloud, RStudio Connect, Quarto, HTML/CSS\nProject Tools: GitHub, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
   },
   {
     "objectID": "index.html#what-you-will-find-here",
     "href": "index.html#what-you-will-find-here",
-    "title": "Ishita Khanna - Data Portfolio",
+    "title": "Data Analytics Portfolio",
     "section": "",
     "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
