@@ -3,6 +3,10 @@ title: "Projects"
 listing: 
   type: default
   contents: projects
+  fields: [date, title, description, categories, image]
+format:
+  html:
+    toc: false
 ---
 
 Here’s how I’ve applied my skills across different data projects. 
