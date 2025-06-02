@@ -3,9 +3,43 @@ title: "userR! 2025 Keywords Network"
 description: "Exploring how topics clustered at useR! 2025 conference using text mining and network analysis"
 date: 2025-04-29
 image: image.png
-categories: [tidutuesday, text analysis, shiny, visualisation, R]
+categories: [tidytuesday, text analysis, shiny, visualisation, R]
 format:
   html:
     page-layout: article
     toc: true
+    code-tools: false
+    code-fold: false
+    echo: false
+runtime: shiny
 ---
+
+# useR! 2025 Keyword Network
+
+This interactive project explores how keywords were used across sessions at the **useR! 2025** conference. The goal was to analyse and visualise how topics clustered together using text mining and network analysis techniques.
+
+## 🛠 Tools & Data Preparation
+
+This analysis used the following R libraries:
+
+- `tidyverse` for data manipulation
+- `tidytext` for splitting keywords and keyword processing
+- `widyr` for calculating pairwise keyword co-occurrence
+- `ggraph`, `igraph`, and `tidygraph` for network visualization
+- `shiny` for interactivity
+
+To prepare the data:
+
+- The dataset was cleaned by **separating comma-separated keywords** into individual rows
+- Extra whitespace and missing values were removed
+- Session-level keyword groupings were constructed using `unite()` and `pairwise_count()`
+- The final result was a **co-occurrence network**, where nodes are keywords and edges represent how often they appeared together in a session
+
+## Explore the Top Keywords
+
+<iframe src="https://ishitakhanna.shinyapps.io/tidytuesday_2025-04-29/"
+        width="100%" height="700px" style="border:none;"></iframe>
+        
+## Keyword Co-occurrence Visualisation
+
+![Keyword Network](image.png)
