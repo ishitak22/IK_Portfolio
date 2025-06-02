@@ -1,0 +1,16 @@
+---
+title: "Contact Me"
+page-layout: full
+---
+
+## Let's Connect!
+
+I'm always happy to connect over interesting data science work, collaborations, or just a friendly chat.
+
+Feel free to reach out via:
+
+- 📧 **Email:** [ishitakhanna2208@gmail.com](mailto:ishitakhanna2208@gmail.com)  
+- 💼 **LinkedIn:** [https://www.linkedin.com/in/khannaishita/](https://www.linkedin.com/in/khannaishita/)  
+- 🐙 **GitHub:** [https://github.com/ishitak22](https://github.com/ishitak22)
+
+
