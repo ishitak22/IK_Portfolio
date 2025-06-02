@@ -6,7 +6,7 @@ listing:
   fields: [date, title, description, categories, image]
 format:
   html:
-    toc: false
+    toc: true
 ---
 
 Here’s how I’ve applied my skills across different data projects. 
