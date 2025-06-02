@@ -1,1 +1,55 @@
 /* css styles */
+
+body {
+  background-color: #d3dbe9; /* soft blue-gray */
+  color: #212529; /* dark muted text */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: white !important;
+  border-bottom: 1px solid #ced4da;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #0056b3 !important;
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #003d80 !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #eaf0f8;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar a {
+  color: #34495e;
+}
+
+.sidebar a:hover {
+  background-color: #cfd8e6;
+  color: #0056b3;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #1f2e4d;
+}
+
+/* Cards or project tiles if used */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Buttons and badges */
+.badge {
+  background-color: #6c7eb3;
+  color: white;
+}
