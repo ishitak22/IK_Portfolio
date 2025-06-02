@@ -28,6 +28,27 @@
     "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
   },
   {
+    "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
+    "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
+    "title": "NSF Grant Terminations Analysis",
+    "section": "",
+    "text": "This interactive Shiny app explores patterns in early terminations of NSF-funded research projects. The analysis focuses on both individual project timelines and geographical trends across U.S. states.\nKey questions investigated:\n\nHow early do grants typically terminate?\nDo certain directorates have more early terminations?\nWhich states and organizations are affected the most?\n\n\n\n\n\n\nHow long do NSF projects typically run before termination, and how early are they ended relative to their planned duration?\n\n\n\n\nBuilt an interactive Gantt chart\nUsers select a directorate to view its projects\nStart = project start date\n\nEnd = actual termination date\n\nDotted line = expected end date\n\n\n\n\n\n\n\n\nWhich U.S. states had the highest number of terminated NSF grants?\n\n\n\n\nCreated a choropleth heatmap of terminations by state\nUsers can click on a state to see a bar chart of organizations with terminations"
+  },
+  {
+    "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#grant-termination-timeline",
+    "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#grant-termination-timeline",
+    "title": "NSF Grant Terminations Analysis",
+    "section": "",
+    "text": "How long do NSF projects typically run before termination, and how early are they ended relative to their planned duration?\n\n\n\n\nBuilt an interactive Gantt chart\nUsers select a directorate to view its projects\nStart = project start date\n\nEnd = actual termination date\n\nDotted line = expected end date"
+  },
+  {
+    "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#termination-hotspots-across-u.s.-states",
+    "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#termination-hotspots-across-u.s.-states",
+    "title": "NSF Grant Terminations Analysis",
+    "section": "",
+    "text": "Which U.S. states had the highest number of terminated NSF grants?\n\n\n\n\nCreated a choropleth heatmap of terminations by state\nUsers can click on a state to see a bar chart of organizations with terminations"
+  },
+  {
     "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html",
     "href": "projects/TidyTuesday_29.04.25-USER2025/index.html",
     "title": "userR! 2025 Keywords Network",
@@ -53,6 +74,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
