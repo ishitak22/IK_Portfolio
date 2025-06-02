@@ -132,7 +132,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#user-2025-keyword-network" id="toc-user-2025-keyword-network" class="nav-link active" data-scroll-target="#user-2025-keyword-network">useR! 2025 Keyword Network</a>
   <ul class="collapse">
   <li><a href="#tools-data-preparation" id="toc-tools-data-preparation" class="nav-link" data-scroll-target="#tools-data-preparation">🛠 Tools &amp; Data Preparation</a></li>
-  <li><a href="#keywords-co-occurence-network" id="toc-keywords-co-occurence-network" class="nav-link" data-scroll-target="#keywords-co-occurence-network">Keywords Co-occurence Network</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -195,12 +194,21 @@ ul.task-list li input[type="checkbox"] {
 <li>Session-level keyword groupings were constructed using <code>unite()</code> and <code>pairwise_count()</code></li>
 <li>The final result was a <strong>co-occurrence network</strong>, where nodes are keywords and edges represent how often they appeared together in a session</li>
 </ul>
-</section>
-<section id="keywords-co-occurence-network" class="level2">
-<h2 class="anchored" data-anchor-id="keywords-co-occurence-network">Keywords Co-occurence Network</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="shiny-plot-output html-fill-item" id="out7a5e4e4701e2aec9" style="width:100%;height:400px;"></div>
+<div class="shiny-input-panel">
+<div class="shiny-flow-layout">
+<div>
+<div class="form-group shiny-input-container">
+<label class="control-label" id="top_key-label" for="top_key">Number of top keywords to display:</label>
+<input class="js-range-slider" id="top_key" data-skin="shiny" data-min="5" data-max="30" data-from="10" data-step="1" data-grid="true" data-grid-num="8.33333333333333" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="out6ae71f1138196ae0" style="width:100%;height:400px;"></div>
 </div>
 </div>
 
