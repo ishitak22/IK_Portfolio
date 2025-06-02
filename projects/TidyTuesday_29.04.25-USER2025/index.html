@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2027-05-04">
+<meta name="dcterms.date" content="2025-04-29">
 <meta name="description" content="Exploring how topics clustered at useR! 2025 conference using text mining and network analysis">
 
 <title>Ishita Khanna - userR! 2025 Keywords Network</title>
@@ -60,12 +60,15 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../../site_libs/ionrangeslider-javascript-2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="../../site_libs/strftime-0.9.2/strftime-min.js"></script>
+<link href="../../site_libs/ionrangeslider-css-2.3.1/css/ion.rangeSlider.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -121,7 +124,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#user-2025-keyword-network" id="toc-user-2025-keyword-network" class="nav-link active" data-scroll-target="#user-2025-keyword-network">useR! 2025 Keyword Network</a>
+  <ul class="collapse">
+  <li><a href="#tools-data-preparation" id="toc-tools-data-preparation" class="nav-link" data-scroll-target="#tools-data-preparation">🛠 Tools &amp; Data Preparation</a></li>
+  <li><a href="#top-keywords" id="toc-top-keywords" class="nav-link" data-scroll-target="#top-keywords">Top Keywords</a></li>
+  <li><a href="#keywords-co-occurence-network" id="toc-keywords-co-occurence-network" class="nav-link" data-scroll-target="#keywords-co-occurence-network">Keywords Co-occurence Network</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -150,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 4, 2027</p>
+      <p class="date">April 29, 2025</p>
     </div>
   </div>
   
@@ -160,8 +176,58 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="user-2025-keyword-network" class="level1">
+<h1>useR! 2025 Keyword Network</h1>
+<p>This interactive project explores how keywords were used across sessions at the <strong>useR! 2025</strong> conference. The goal was to analyse and visualise how topics clustered together using text mining and network analysis techniques.</p>
+<section id="tools-data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="tools-data-preparation">🛠 Tools &amp; Data Preparation</h2>
+<p>This analysis used the following R libraries:</p>
+<ul>
+<li><code>tidyverse</code> for data manipulation</li>
+<li><code>tidytext</code> for splitting keywords and keyword processing</li>
+<li><code>widyr</code> for calculating pairwise keyword co-occurrence</li>
+<li><code>ggraph</code>, <code>igraph</code>, and <code>tidygraph</code> for network visualization</li>
+<li><code>shiny</code> for interactivity</li>
+</ul>
+<p>To prepare the data:</p>
+<ul>
+<li>The dataset was cleaned by <strong>separating comma-separated keywords</strong> into individual rows</li>
+<li>Extra whitespace and missing values were removed</li>
+<li>Session-level keyword groupings were constructed using <code>unite()</code> and <code>pairwise_count()</code></li>
+<li>The final result was a <strong>co-occurrence network</strong>, where nodes are keywords and edges represent how often they appeared together in a session</li>
+</ul>
+</section>
+<section id="top-keywords" class="level2">
+<h2 class="anchored" data-anchor-id="top-keywords">Top Keywords</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="shiny-input-panel">
+<div class="shiny-flow-layout">
+<div>
+<div class="form-group shiny-input-container">
+<label class="control-label" id="top_key-label" for="top_key">Number of top keywords to display:</label>
+<input class="js-range-slider" id="top_key" data-skin="shiny" data-min="5" data-max="30" data-from="10" data-step="1" data-grid="true" data-grid-num="8.33333333333333" data-grid-snap="false" data-prettify-separator="," data-prettify-enabled="true" data-keyboard="true" data-data-type="number">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="out477fb7ee81eb3172" style="width:100%;height:400px;"></div>
+</div>
+</div>
+</section>
+<section id="keywords-co-occurence-network" class="level2">
+<h2 class="anchored" data-anchor-id="keywords-co-occurence-network">Keywords Co-occurence Network</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="shiny-plot-output html-fill-item" id="out7476b39daed7671c" style="width:100%;height:400px;"></div>
+</div>
+</div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
