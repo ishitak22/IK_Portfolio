@@ -1,0 +1,10 @@
+---
+title: "userR! 2025 Keywords Network"
+description: "Exploring how topics clustered at useR! 2025 conference using text mining and network analysis"
+date: 29-04-2025
+image: image.png
+categories: [tidutuesday, text analysis, shiny, visualisation, R]
+format:
+  html:
+    page-layout: article
+    toc: false
