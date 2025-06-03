@@ -47,5 +47,5 @@ To prepare the data:
 
 ### GitHub and LinkedIn
 
--   [📂 View the GitHub repo](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-%2029)\
+-   [📂 View the GitHub repo](https://github.com/ishitak22/tidytuesday-projects/tree/fedd162bfb31fdf019463e2272885222d4312789/tidytuesday_2025-04-29)\
 -   [🔗 See my LinkedIn post](https://www.linkedin.com/posts/khannaishita_tidytuesday-dataanalytics-tidytuesday-activity-7327150472425889793-lAo7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
