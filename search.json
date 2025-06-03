@@ -46,7 +46,7 @@
     "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "title": "NSF Grant Terminations Analysis",
     "section": "",
-    "text": "This interactive Shiny app explores patterns in early terminations of NSF-funded research projects. The analysis focuses on both individual project timelines and geographical trends across U.S. states.\nKey questions investigated:\n\nHow early do grants typically terminate?\nDo certain directorates have more early terminations?\nWhich states and organizations are affected the most?\n\n\n\n\n\n\nHow long do NSF projects typically run before termination, and how early are they ended relative to their planned duration?\n\n\n\n\nBuilt an interactive Gantt chart\nUsers select a directorate to view its projects\nStart = project start date\n\nEnd = actual termination date\n\nDotted line = expected end date\n\n\n\n\n\n\n\n\nWhich U.S. states had the highest number of terminated NSF grants?\n\n\n\n\nCreated a choropleth heatmap of terminations by state\nUsers can click on a state to see a bar chart of organizations with terminations"
+    "text": "This interactive Shiny app explores patterns in early terminations of NSF-funded research projects. The analysis focuses on both individual project timelines and geographical trends across U.S. states.\nKey questions investigated:\n\nHow early do grants typically terminate?\nDo certain directorates have more early terminations?\nWhich states and organizations are affected the most?\n\n\n\n\n\n\nHow long do NSF projects typically run before termination, and how early are they ended relative to their planned duration?\n\n\n\n\nBuilt an interactive Gantt chart\nUsers select a directorate to view its projects\nStart = project start date\n\nEnd = actual termination date\n\nDotted line = expected end date\n\n\n\n\n\n\n\n\nWhich U.S. states had the highest number of terminated NSF grants?\n\n\n\n\nCreated a choropleth heatmap of terminations by state\nUsers can click on a state to see a bar chart of organizations with terminations\n\n\n\n\n\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
   },
   {
     "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#grant-termination-timeline",
@@ -63,11 +63,18 @@
     "text": "Which U.S. states had the highest number of terminated NSF grants?\n\n\n\n\nCreated a choropleth heatmap of terminations by state\nUsers can click on a state to see a bar chart of organizations with terminations"
   },
   {
+    "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#interactive-dashboard",
+    "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html#interactive-dashboard",
+    "title": "NSF Grant Terminations Analysis",
+    "section": "",
+    "text": "📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
+  },
+  {
     "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html",
     "href": "projects/TidyTuesday_29.04.25-USER2025/index.html",
     "title": "userR! 2025 Keywords Network",
     "section": "",
-    "text": "This interactive project explores how keywords were used across sessions at the useR! 2025 conference. The goal was to analyse and visualise how topics clustered together using text mining and network analysis techniques.\n\n\nThis analysis used the following R libraries:\n\ntidyverse for data manipulation\ntidytext for splitting keywords and keyword processing\nwidyr for calculating pairwise keyword co-occurrence\nggraph, igraph, and tidygraph for network visualization\nshiny for interactivity\n\nTo prepare the data:\n\nThe dataset was cleaned by separating comma-separated keywords into individual rows\nExtra whitespace and missing values were removed\nSession-level keyword groupings were constructed using unite() and pairwise_count()\nThe final result was a co-occurrence network, where nodes are keywords and edges represent how often they appeared together in a session\n\n\n\n\n\n\n\n\n\n\n\n\nKeyword Network"
+    "text": "This interactive project explores how keywords were used across sessions at the useR! 2025 conference. The goal was to analyse and visualise how topics clustered together using text mining and network analysis techniques.\n\n\nThis analysis used the following R libraries:\n\ntidyverse for data manipulation\ntidytext for splitting keywords and keyword processing\nwidyr for calculating pairwise keyword co-occurrence\nggraph, igraph, and tidygraph for network visualization\nshiny for interactivity\n\nTo prepare the data:\n\nThe dataset was cleaned by separating comma-separated keywords into individual rows\nExtra whitespace and missing values were removed\nSession-level keyword groupings were constructed using unite() and pairwise_count()\nThe final result was a co-occurrence network, where nodes are keywords and edges represent how often they appeared together in a session\n\n\n\n\n\n\n\n\n\n\n\n\nKeyword Network\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
   },
   {
     "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html#tools-data-preparation",
@@ -81,7 +88,7 @@
     "href": "projects/TidyTuesday_29.04.25-USER2025/index.html#keyword-co-occurrence-visualisation",
     "title": "userR! 2025 Keywords Network",
     "section": "",
-    "text": "Keyword Network"
+    "text": "Keyword Network\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
   },
   {
     "objectID": "projects.html",
