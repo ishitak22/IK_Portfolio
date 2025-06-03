@@ -4,9 +4,11 @@ listing:
   type: default
   contents: projects
   fields: [date, title, description, categories, image]
+  categories: true
+  filter-ui: true
 format:
   html:
     toc: true
 ---
 
-Here’s how I’ve applied my skills across different data projects. 
+Here's how I've applied my skills across different data projects.
