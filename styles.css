@@ -64,3 +64,15 @@ h1, h2, h3 {
   background-color: #d8e4f0;
   color: #1a1a1a;
 }
+
+.quarto-listing-category {
+  font-weight: 500;
+  font-size: 0.95em;
+  margin-bottom: 0.4em;
+}
+
+.sidebar-title {
+  font-size: 1.2em;
+  color: #003366;
+  font-weight: bold;
+}
