@@ -22,24 +22,30 @@ This interactive project explores how keywords were used across sessions at the 
 
 This analysis used the following R libraries:
 
-- `tidyverse` for data manipulation
-- `tidytext` for splitting keywords and keyword processing
-- `widyr` for calculating pairwise keyword co-occurrence
-- `ggraph`, `igraph`, and `tidygraph` for network visualization
-- `shiny` for interactivity
+-   `tidyverse` for data manipulation
+-   `tidytext` for splitting keywords and keyword processing
+-   `widyr` for calculating pairwise keyword co-occurrence
+-   `ggraph`, `igraph`, and `tidygraph` for network visualization
+-   `shiny` for interactivity
 
 To prepare the data:
 
-- The dataset was cleaned by **separating comma-separated keywords** into individual rows
-- Extra whitespace and missing values were removed
-- Session-level keyword groupings were constructed using `unite()` and `pairwise_count()`
-- The final result was a **co-occurrence network**, where nodes are keywords and edges represent how often they appeared together in a session
+-   The dataset was cleaned by **separating comma-separated keywords** into individual rows
+-   Extra whitespace and missing values were removed
+-   Session-level keyword groupings were constructed using `unite()` and `pairwise_count()`
+-   The final result was a **co-occurrence network**, where nodes are keywords and edges represent how often they appeared together in a session
 
 ## Explore the Top Keywords
 
-<iframe src="https://ishitakhanna.shinyapps.io/tidytuesday_2025-04-29/"
-        width="100%" height="700px" style="border:none;"></iframe>
-        
+<iframe src="https://ishitakhanna.shinyapps.io/tidytuesday_2025-04-29/" width="100%" height="700px" style="border:none;">
+
+</iframe>
+
 ## Keyword Co-occurrence Visualisation
 
 ![Keyword Network](image.png)
+
+### GitHub and LinkedIn
+
+-   [📂 View the GitHub repo](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-%2029)\
+-   [🔗 See my LinkedIn post](https://www.linkedin.com/posts/khannaishita_tidytuesday-dataanalytics-tidytuesday-activity-7327150472425889793-lAo7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
