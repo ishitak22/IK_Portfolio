@@ -13,46 +13,52 @@ format:
 
 # NSF Grant Terminations
 
-This interactive Shiny app explores patterns in **early terminations of NSF-funded research projects**. The analysis focuses on both individual project timelines and geographical trends across U.S. states. 
+This interactive Shiny app explores patterns in **early terminations of NSF-funded research projects**. The analysis focuses on both individual project timelines and geographical trends across U.S. states.
 
 Key questions investigated:
 
-- How early do grants typically terminate?
-- Do certain directorates have more early terminations?
-- Which states and organizations are affected the most?
+-   How early do grants typically terminate?
+-   Do certain directorates have more early terminations?
+-   Which states and organizations are affected the most?
 
----
+------------------------------------------------------------------------
 
 ## Grant Termination Timeline
 
-### Question  
+### Question
+
 *How long do NSF projects typically run before termination, and how early are they ended relative to their planned duration?*
 
 ### Approach
 
-- Built an interactive **Gantt chart**
-- Users select a directorate to view its projects
-- Start = project start date  
-- End = actual termination date  
-- Dotted line = expected end date
+-   Built an interactive **Gantt chart**
+-   Users select a directorate to view its projects
+-   Start = project start date\
+-   End = actual termination date\
+-   Dotted line = expected end date
 
----
+------------------------------------------------------------------------
 
 ## Termination Hotspots Across U.S. States
 
-### Question  
+### Question
+
 *Which U.S. states had the highest number of terminated NSF grants?*
 
 ### Approach
 
-- Created a choropleth **heatmap** of terminations by state
-- Users can click on a state to see a bar chart of organizations with terminations
+-   Created a choropleth **heatmap** of terminations by state
+-   Users can click on a state to see a bar chart of organizations with terminations
 
----
+------------------------------------------------------------------------
 
 ## Interactive Dashboard
 
-<iframe src="https://ishitakhanna.shinyapps.io/tidytuesday_2025-05-06/"
-        width="100%" height="700px" style="border:none;"></iframe>
-        
----
+<iframe src="https://ishitakhanna.shinyapps.io/tidytuesday_2025-05-06/" width="100%" height="700px" style="border:none;">
+
+</iframe>
+
+------------------------------------------------------------------------
+
+- [📂 View the GitHub repo](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-05-06)  
+- [🔗 See my LinkedIn post](https://www.linkedin.com/posts/khannaishita_tidytuesday-dataanalytics-tidytuesday-activity-7330026917565292544-qxtQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
