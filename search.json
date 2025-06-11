@@ -42,6 +42,13 @@
     "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
   },
   {
+    "objectID": "projects/RFDS_Network_Visualisation/index.html",
+    "href": "projects/RFDS_Network_Visualisation/index.html",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "Royal Flying Doctor Service (RFDS) Analysis\nThis project investigates the patterns in flight arrivals at RFDS bases across Australia using flight logs from July 2022.\nTwo core visual explorations are included:\n\nBar Chart of flight arrivals categorised by time of day (Day vs Night)\nInteractive Map of base activity and aircraft operations using Leaflet"
+  },
+  {
     "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "title": "NSF Grant Terminations Analysis",
@@ -95,6 +102,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
