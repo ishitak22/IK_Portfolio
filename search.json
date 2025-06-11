@@ -46,14 +46,28 @@
     "href": "projects/RFDS_Network_Visualisation/index.html",
     "title": "RFDS Network Visualisation",
     "section": "",
-    "text": "This project investigates the patterns in flight arrivals at RFDS bases across Australia using flight logs from July 2022.\nTwo core visual explorations are included:\n\nBar Chart of flight arrivals categorised by time of day (Day vs Night)\nInteractive Map of base activity and aircraft operations using Leaflet\n\n\n\n\nWe first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases"
+    "text": "This project investigates the patterns in flight arrivals at RFDS bases across Australia using flight logs from July 2022.\nTwo core visual explorations are included:\n\nBar Chart of flight arrivals categorised by time of day (Day vs Night)\nInteractive Map of base activity and aircraft operations using Leaflet\n\n\n\n\nWe first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM\n\n\n\n\n\nUse the dropdown to explore RFDS base locations and view flight details by aircraft type\n\n\n\n\n\n\n\nGitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
   },
   {
     "objectID": "projects/RFDS_Network_Visualisation/index.html#flight-arrivals-by-time-of-the-day",
     "href": "projects/RFDS_Network_Visualisation/index.html#flight-arrivals-by-time-of-the-day",
     "title": "RFDS Network Visualisation",
     "section": "",
-    "text": "We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases"
+    "text": "We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM"
+  },
+  {
+    "objectID": "projects/RFDS_Network_Visualisation/index.html#interactive-base-activity-map",
+    "href": "projects/RFDS_Network_Visualisation/index.html#interactive-base-activity-map",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "Use the dropdown to explore RFDS base locations and view flight details by aircraft type"
+  },
+  {
+    "objectID": "projects/RFDS_Network_Visualisation/index.html#resource",
+    "href": "projects/RFDS_Network_Visualisation/index.html#resource",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "GitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
   },
   {
     "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
