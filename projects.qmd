@@ -3,6 +3,7 @@ title: "Projects"
 listing: 
   type: default
   contents: projects
+  sort: "date desc"
   fields: [date, title, description, categories, image]
   categories: true
   filter-ui: true
