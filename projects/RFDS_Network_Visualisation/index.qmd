@@ -10,3 +10,14 @@ format:
     toc: true
     echo: false
 ---
+
+# Royal Flying Doctor Service (RFDS) Analysis
+
+This project investigates the patterns in flight arrivals at **RFDS bases across Australia** using flight logs from July 2022.
+
+Two core visual explorations are included:
+
+ - **Bar Chart** of flight arrivals categorised by time of day (Day vs Night)
+ - **Interactive Map** of base activity and aircraft operations using Leaflet
+ 
+---
