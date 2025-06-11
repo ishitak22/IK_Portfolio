@@ -1,0 +1,12 @@
+---
+title: "RFDS Network Visualisation"
+description: "Exploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools"
+date: 2025-06-05
+image: image.png
+categories: [rfds, spatial analysis, leaflet, shiny, flight data, eda, R]
+format:
+  html:
+    page-layout: article
+    toc: true
+    echo: false
+---
