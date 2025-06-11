@@ -21,3 +21,12 @@ Two core visual explorations are included:
  - **Interactive Map** of base activity and aircraft operations using Leaflet
  
 ---
+
+## Flight Arrivals by Time of the Day
+
+We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.
+
+<figure>
+  <img src="image.png" alt ="Flight arrivals by time of the day" width="100%">
+  <figcaption style="text-align:center;">Day vs Night Arrivals at selected RFDS Bases</figcaption>
+</figure>
