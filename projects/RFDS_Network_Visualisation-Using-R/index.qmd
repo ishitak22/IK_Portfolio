@@ -17,36 +17,45 @@ This project investigates the patterns in flight arrivals at **RFDS bases across
 
 Two core visual explorations are included:
 
- - **Bar Chart** of flight arrivals categorised by time of day (Day vs Night)
- - **Interactive Map** of base activity and aircraft operations using Leaflet
- 
----
+-   **Bar Chart** of flight arrivals categorised by time of day (Day vs Night)
+-   **Interactive Map** of base activity and aircraft operations using Leaflet
+
+------------------------------------------------------------------------
 
 ## Flight Arrivals by Time of the Day
 
 We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.
 
 <figure>
-  <img src="image.png" alt ="Flight arrivals by time of the day" width="100%">
-  <figcaption style="text-align:center;">Day vs Night Arrivals at selected RFDS Bases</figcaption>
+
+<img src="image.png" alt="Flight arrivals by time of the day" width="100%"/>
+
+<figcaption style="text-align:center;">
+
+Day vs Night Arrivals at selected RFDS Bases
+
+</figcaption>
+
 </figure>
 
 > Day: 6 AM - 6 PM, Night: 6 PM - 6 AM
 
----
+------------------------------------------------------------------------
 
 ## Interactive Base Activity Map
 
 Use the dropdown to explore RFDS base locations and view flight details by aircraft type
 
-<iframe src="https://ishitakhanna.shinyapps.io/rfds_network_visualisation/" width="100%" height="700px" style="border:none;"></iframe>
+<iframe src="https://ishitakhanna.shinyapps.io/rfds_network_visualisation/" width="100%" height="700px" style="border:none;">
 
----
+</iframe>
+
+------------------------------------------------------------------------
 
 ## Resource
 
- - [GitHub Repository](https://github.com/ishitak22/rfds_network_visualisation)
- 
----
+-   [GitHub Repository](https://github.com/ishitak22/rfds_network_visualisation)
+
+------------------------------------------------------------------------
 
 *Analysis performed using R packages: `dplyr`, `ggplot2`, `leaflet`, `shiny`, `lubridate`, `readr`.*
