@@ -2,7 +2,8 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/RFDS_Network_Visualisation/index.html",
+      "/projects/RFDS_Queensland_Network-Using-D3/index.html",
+      "/projects/RFDS_Network_Visualisation-Using-R/index.html",
       "/projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
       "/projects/TidyTuesday_29.04.25-USER2025/index.html"
     ]

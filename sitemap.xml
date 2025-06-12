@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ishitak22.github.io/IK_Portfolio/about.html</loc>
-    <lastmod>2025-06-11T16:14:34.994Z</lastmod>
+    <lastmod>2025-06-12T15:06:22.772Z</lastmod>
   </url>
   <url>
     <loc>https://ishitak22.github.io/IK_Portfolio/contact.html</loc>
-    <lastmod>2025-06-11T16:14:35.253Z</lastmod>
+    <lastmod>2025-06-12T15:06:23.147Z</lastmod>
   </url>
   <url>
     <loc>https://ishitak22.github.io/IK_Portfolio/index.html</loc>
-    <lastmod>2025-06-11T16:14:35.556Z</lastmod>
+    <lastmod>2025-06-12T15:06:23.584Z</lastmod>
   </url>
   <url>
-    <loc>https://ishitak22.github.io/IK_Portfolio/projects/RFDS_Network_Visualisation/index.html</loc>
-    <lastmod>2025-06-11T16:14:35.865Z</lastmod>
+    <loc>https://ishitak22.github.io/IK_Portfolio/projects/RFDS_Network_Visualisation-Using-R/index.html</loc>
+    <lastmod>2025-06-12T15:06:24.072Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ishitak22.github.io/IK_Portfolio/projects/RFDS_Queensland_Network-Using-D3/index.html</loc>
+    <lastmod>2025-06-12T15:06:24.467Z</lastmod>
   </url>
   <url>
     <loc>https://ishitak22.github.io/IK_Portfolio/projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html</loc>
-    <lastmod>2025-06-11T16:14:36.167Z</lastmod>
+    <lastmod>2025-06-12T15:06:24.874Z</lastmod>
   </url>
   <url>
     <loc>https://ishitak22.github.io/IK_Portfolio/projects/TidyTuesday_29.04.25-USER2025/index.html</loc>
-    <lastmod>2025-06-11T16:14:36.469Z</lastmod>
+    <lastmod>2025-06-12T15:06:25.226Z</lastmod>
   </url>
   <url>
     <loc>https://ishitak22.github.io/IK_Portfolio/projects.html</loc>
-    <lastmod>2025-06-11T16:14:36.950Z</lastmod>
+    <lastmod>2025-06-12T15:06:25.893Z</lastmod>
   </url>
 </urlset>

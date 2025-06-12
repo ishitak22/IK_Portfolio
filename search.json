@@ -42,32 +42,46 @@
     "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation/index.html",
-    "href": "projects/RFDS_Network_Visualisation/index.html",
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html",
     "title": "RFDS Network Visualisation",
     "section": "",
     "text": "This project investigates the patterns in flight arrivals at RFDS bases across Australia using flight logs from July 2022.\nTwo core visual explorations are included:\n\nBar Chart of flight arrivals categorised by time of day (Day vs Night)\nInteractive Map of base activity and aircraft operations using Leaflet\n\n\n\n\nWe first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM\n\n\n\n\n\nUse the dropdown to explore RFDS base locations and view flight details by aircraft type\n\n\n\n\n\n\n\nGitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation/index.html#flight-arrivals-by-time-of-the-day",
-    "href": "projects/RFDS_Network_Visualisation/index.html#flight-arrivals-by-time-of-the-day",
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#flight-arrivals-by-time-of-the-day",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#flight-arrivals-by-time-of-the-day",
     "title": "RFDS Network Visualisation",
     "section": "",
     "text": "We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM"
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation/index.html#interactive-base-activity-map",
-    "href": "projects/RFDS_Network_Visualisation/index.html#interactive-base-activity-map",
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#interactive-base-activity-map",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#interactive-base-activity-map",
     "title": "RFDS Network Visualisation",
     "section": "",
     "text": "Use the dropdown to explore RFDS base locations and view flight details by aircraft type"
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation/index.html#resource",
-    "href": "projects/RFDS_Network_Visualisation/index.html#resource",
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#resource",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#resource",
     "title": "RFDS Network Visualisation",
     "section": "",
     "text": "GitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
+  },
+  {
+    "objectID": "projects/RFDS_Queensland_Network-Using-D3/index.html",
+    "href": "projects/RFDS_Queensland_Network-Using-D3/index.html",
+    "title": "RFDS Queensland Flight Network using D3.js",
+    "section": "",
+    "text": "This D3.js project explores Royal Flying Doctor Service (RFDS) flight routes and base activity within Queensland, using flight logs from July 2022.\nThe map highlights:\n\nRed nodes: RFDS bases\nBlue node: Brisbane - no incoming or outgoing of flights from this base\nLines: Flight paths\nTooltip: It shows detailed info i.e. no. of arrivals, departures, distances, flight count\nPath thickness: Representing amount of trips on that path\nNode thickness: Based on traffic at that location/base\n\n\n\n\n\n\nGitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
+  },
+  {
+    "objectID": "projects/RFDS_Queensland_Network-Using-D3/index.html#resource",
+    "href": "projects/RFDS_Queensland_Network-Using-D3/index.html#resource",
+    "title": "RFDS Queensland Flight Network using D3.js",
+    "section": "",
+    "text": "GitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
   },
   {
     "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
@@ -123,6 +137,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\n\n\n\n\nrfds\n\n\nd3\n\n\nspatial analysis\n\n\njavascript\n\n\nflight data\n\n\nhtml\n\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
