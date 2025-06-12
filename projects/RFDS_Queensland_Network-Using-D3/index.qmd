@@ -14,3 +14,11 @@ format:
 
 This D3.js project explores **Royal Flying Doctor Service (RFDS)** flight routes and base activity **within Queensland**, using flight logs from July 2022.
 
+The map highlights:
+
+ - **Red nodes**: RFDS bases
+ - **Blue node**: Brisbane - no incoming or outgoing of flights from this base
+ - **Lines**: Flight paths
+ - **Tooltip**: It shows detailed info i.e. no. of arrivals, departures, distances, flight count
+ - **Path thickness**: Representing amount of trips on that path
+ - **Node thickness**: Based on traffic at that location/base
