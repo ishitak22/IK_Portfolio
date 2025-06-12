@@ -24,3 +24,9 @@ The map highlights:
  - **Node thickness**: Based on traffic at that location/base
  
 <iframe src="https://ishitak22.github.io/rfds_network_visualisation/rfds-d3/" width="100%" height="720px" style="border:none;"></iframe>
+
+## Resource
+
+ - [GitHub Repository](https://github.com/ishitak22/rfds_network_visualisation)
+ 
+*Analysis performed using D3.js and Javascript and visualisation was built sing SVG elements.*
