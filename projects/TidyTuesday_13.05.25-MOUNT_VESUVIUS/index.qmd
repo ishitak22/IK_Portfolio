@@ -1,7 +1,7 @@
 ---
 title: "Seismic Activity Dashboard"
 description: "An interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data"
-date: 2025-06-27
+date: 2025-06-17
 image: image.png
 categories: [tidytuesday, shiny, dashboard, eda, volcano, seismic, rstats]
 format:
