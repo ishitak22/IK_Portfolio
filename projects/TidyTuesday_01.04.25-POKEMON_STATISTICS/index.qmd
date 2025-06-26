@@ -11,43 +11,45 @@ format:
     echo: false
 ---
 
-## Pokemon Stat Dashboard – TidyTuesday 2025-04-01
+## Pokemon Stat Dashboard -- TidyTuesday 2025-04-01
 
 This interactive dashboard visualises **Pokemon base stats** across generations using the [2025-04-01 TidyTuesday dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01). The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles.
 
----
+------------------------------------------------------------------------
 
 ## Key Features
 
-- 📊 **Boxplot View** of stat outliers 
-- ⚙️ **Interactive Power Grid** for individual Pokemon
-- 🧬 **Stat Distribution Histograms** across all Pokemon
-- 🌱 **Average Stat Trends** across Generations
+-   📊 **Boxplot View** of stat outliers
+-   ⚙️ **Interactive Power Grid** for individual Pokemon
+-   🧬 **Stat Distribution Histograms** across all Pokemon
+-   🌱 **Average Stat Trends** across Generations
 
----
+------------------------------------------------------------------------
 
-## 📽️ Demo Video
+## 🎬 Demo Video
 
-<video width="100%" height="500" controls>
-  <source src="videos/Demo.mp4" type="video/mp4">
-</video>
+::: {style="text-align: center; font-style: italic;"}
+Click the image below to watch the full dashboard demo video.
+:::
 
----
+[![Watch the demo](videos/dashboard_bg.png)](videos/demo.mp4)
+
+------------------------------------------------------------------------
 
 ## Insights
 
-- **Special Attack and Speed** exhibit wide variation across Pokemon species
-- **Defense** is more tightly clustered
-- **Generation 7** shows the highest average stats, reflecting game evolution
-- **Outlier Pokémon** like Deoxys and Blissey showcase unique stat extremes
+-   **Special Attack and Speed** exhibit wide variation across Pokemon species
+-   **Defense** is more tightly clustered
+-   **Generation 7** shows the highest average stats, reflecting game evolution
+-   **Outlier Pokémon** like Deoxys and Blissey showcase unique stat extremes
 
----
+------------------------------------------------------------------------
 
 ## Resources
 
-- [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01)  
-- [📊 TidyTuesday Dataset (2025-04-01)](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01)
+-   [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01)\
+-   [📊 TidyTuesday Dataset (2025-04-01)](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01)
 
----
+------------------------------------------------------------------------
 
 *Built using `R`, `Shiny`, `ggtext`, `ggplot2` and `httr` for styling.*
