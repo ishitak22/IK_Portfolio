@@ -1,6 +1,6 @@
 ---
-title: "Pokémon Stat Dashboard"
-description: "An interactive Shiny dashboard exploring stat distribution and outliers across Pokémon generations using the 2025-04-01 TidyTuesday dataset."
+title: "Pokemon Stat Dashboard"
+description: "An interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset."
 date: 2025-06-26
 image: image.png
 categories: [tidytuesday, pokemon, shiny, dashboard, data visualization, EDA]
@@ -11,3 +11,8 @@ format:
     echo: false
 ---
 
+# Pokémon Stat Dashboard – TidyTuesday 2025-04-01
+
+This interactive dashboard visualises **Pokemon base stats** across generations using the [2025-04-01 TidyTuesday dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01). The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles.
+
+---
