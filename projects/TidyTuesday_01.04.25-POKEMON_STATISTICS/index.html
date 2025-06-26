@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-06-05">
-<meta name="description" content="Exploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools">
+<meta name="dcterms.date" content="2025-06-26">
+<meta name="description" content="An interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.">
 
-<title>Ishita Khanna - RFDS Network Visualisation</title>
+<title>Ishita Khanna - Pokemon Stat Dashboard</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,12 +126,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#royal-flying-doctor-service-rfds-analysis" id="toc-royal-flying-doctor-service-rfds-analysis" class="nav-link active" data-scroll-target="#royal-flying-doctor-service-rfds-analysis">Royal Flying Doctor Service (RFDS) Analysis</a>
-  <ul class="collapse">
-  <li><a href="#flight-arrivals-by-time-of-the-day" id="toc-flight-arrivals-by-time-of-the-day" class="nav-link" data-scroll-target="#flight-arrivals-by-time-of-the-day">Flight Arrivals by Time of the Day</a></li>
-  <li><a href="#interactive-base-activity-map" id="toc-interactive-base-activity-map" class="nav-link" data-scroll-target="#interactive-base-activity-map">Interactive Base Activity Map</a></li>
-  <li><a href="#resource" id="toc-resource" class="nav-link" data-scroll-target="#resource">Resource</a></li>
-  </ul></li>
+  <li><a href="#pokemon-stat-dashboard-tidytuesday-2025-04-01" id="toc-pokemon-stat-dashboard-tidytuesday-2025-04-01" class="nav-link active" data-scroll-target="#pokemon-stat-dashboard-tidytuesday-2025-04-01">Pokemon Stat Dashboard – TidyTuesday 2025-04-01</a></li>
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">🎬 Demo Video</a></li>
+  <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -140,21 +139,20 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RFDS Network Visualisation</h1>
+<h1 class="title">Pokemon Stat Dashboard</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">rfds</div>
-    <div class="quarto-category">spatial analysis</div>
-    <div class="quarto-category">leaflet</div>
+    <div class="quarto-category">tidytuesday</div>
+    <div class="quarto-category">pokemon</div>
     <div class="quarto-category">shiny</div>
-    <div class="quarto-category">flight data</div>
-    <div class="quarto-category">eda</div>
-    <div class="quarto-category">R</div>
+    <div class="quarto-category">dashboard</div>
+    <div class="quarto-category">data visualization</div>
+    <div class="quarto-category">EDA</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Exploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools
+    An interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.
   </div>
 </div>
 
@@ -165,7 +163,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 5, 2025</p>
+      <p class="date">June 26, 2025</p>
     </div>
   </div>
   
@@ -175,46 +173,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="royal-flying-doctor-service-rfds-analysis" class="level1">
-<h1>Royal Flying Doctor Service (RFDS) Analysis</h1>
-<p>This project investigates the patterns in flight arrivals at <strong>RFDS bases across Australia</strong> using flight logs from July 2022.</p>
-<p>Two core visual explorations are included:</p>
+<section id="pokemon-stat-dashboard-tidytuesday-2025-04-01" class="level2">
+<h2 class="anchored" data-anchor-id="pokemon-stat-dashboard-tidytuesday-2025-04-01">Pokemon Stat Dashboard – TidyTuesday 2025-04-01</h2>
+<p>This interactive dashboard visualises <strong>Pokemon base stats</strong> across generations using the <a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01">2025-04-01 TidyTuesday dataset</a>. The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles.</p>
+<hr>
+</section>
+<section id="key-features" class="level2">
+<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
 <ul>
-<li><strong>Bar Chart</strong> of flight arrivals categorised by time of day (Day vs Night)</li>
-<li><strong>Interactive Map</strong> of base activity and aircraft operations using Leaflet</li>
+<li>📊 <strong>Boxplot View</strong> of stat outliers</li>
+<li>⚙️ <strong>Interactive Power Grid</strong> for individual Pokemon</li>
+<li>🧬 <strong>Stat Distribution Histograms</strong> across all Pokemon</li>
+<li>🌱 <strong>Average Stat Trends</strong> across Generations</li>
 </ul>
 <hr>
-<section id="flight-arrivals-by-time-of-the-day" class="level2">
-<h2 class="anchored" data-anchor-id="flight-arrivals-by-time-of-the-day">Flight Arrivals by Time of the Day</h2>
-<p>We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.</p>
+</section>
+<section id="demo-video" class="level2">
+<h2 class="anchored" data-anchor-id="demo-video">🎬 Demo Video</h2>
+<div style="text-align: center; font-style: italic;">
+<p>Click the image below to watch the full dashboard demo video.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<img src="image.png" alt="Flight arrivals by time of the day" width="100%" class="figure-img">
-<figcaption style="text-align:center;" class="figure-caption">
-Day vs Night Arrivals at selected RFDS Bases
-</figcaption>
+<p><a href="videos/demo.mp4"><img src="videos/dashboard_bg.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Watch the demo</figcaption>
 </figure>
-<blockquote class="blockquote">
-<p>Day: 6 AM - 6 PM, Night: 6 PM - 6 AM</p>
-</blockquote>
+</div>
 <hr>
 </section>
-<section id="interactive-base-activity-map" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-base-activity-map">Interactive Base Activity Map</h2>
-<p>Use the dropdown to explore RFDS base locations and view flight details by aircraft type</p>
-<iframe src="https://ishitakhanna.shinyapps.io/rfds_network_visualisation/" width="100%" height="700px" style="border:none;">
-</iframe>
-<hr>
-</section>
-<section id="resource" class="level2">
-<h2 class="anchored" data-anchor-id="resource">Resource</h2>
+<section id="insights" class="level2">
+<h2 class="anchored" data-anchor-id="insights">Insights</h2>
 <ul>
-<li><a href="https://github.com/ishitak22/rfds_network_visualisation">GitHub Repository</a></li>
+<li><strong>Special Attack and Speed</strong> exhibit wide variation across Pokemon species</li>
+<li><strong>Defense</strong> is more tightly clustered</li>
+<li><strong>Generation 7</strong> shows the highest average stats, reflecting game evolution</li>
+<li><strong>Outlier Pokémon</strong> like Deoxys and Blissey showcase unique stat extremes</li>
 </ul>
 <hr>
-<p><em>Analysis performed using R packages: <code>dplyr</code>, <code>ggplot2</code>, <code>leaflet</code>, <code>shiny</code>, <code>lubridate</code>, <code>readr</code>.</em></p>
-
-
 </section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><a href="https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01">GitHub Repository</a><br>
+</li>
+<li><a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01">📊 TidyTuesday Dataset (2025-04-01)</a></li>
+</ul>
+<hr>
+<p><em>Built using <code>R</code>, <code>Shiny</code>, <code>ggtext</code>, <code>ggplot2</code> and <code>httr</code> for styling.</em></p>
+
+
 </section>
 
 </main> <!-- /main -->

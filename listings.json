@@ -2,6 +2,8 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html",
+      "/projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
       "/projects/RFDS_Queensland_Network-Using-D3/index.html",
       "/projects/RFDS_Network_Visualisation-Using-R/index.html",
       "/projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",

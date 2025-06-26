@@ -84,6 +84,48 @@
     "text": "GitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
   },
   {
+    "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html",
+    "href": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html",
+    "title": "Pokemon Stat Dashboard",
+    "section": "",
+    "text": "This interactive dashboard visualises Pokemon base stats across generations using the 2025-04-01 TidyTuesday dataset. The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles."
+  },
+  {
+    "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#pokemon-stat-dashboard-tidytuesday-2025-04-01",
+    "href": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#pokemon-stat-dashboard-tidytuesday-2025-04-01",
+    "title": "Pokemon Stat Dashboard",
+    "section": "",
+    "text": "This interactive dashboard visualises Pokemon base stats across generations using the 2025-04-01 TidyTuesday dataset. The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles."
+  },
+  {
+    "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#key-features",
+    "href": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#key-features",
+    "title": "Pokemon Stat Dashboard",
+    "section": "Key Features",
+    "text": "Key Features\n\n📊 Boxplot View of stat outliers\n⚙️ Interactive Power Grid for individual Pokemon\n🧬 Stat Distribution Histograms across all Pokemon\n🌱 Average Stat Trends across Generations"
+  },
+  {
+    "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#demo-video",
+    "href": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#demo-video",
+    "title": "Pokemon Stat Dashboard",
+    "section": "🎬 Demo Video",
+    "text": "🎬 Demo Video\n\nClick the image below to watch the full dashboard demo video.\n\n\n\n\nWatch the demo"
+  },
+  {
+    "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#insights",
+    "href": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#insights",
+    "title": "Pokemon Stat Dashboard",
+    "section": "Insights",
+    "text": "Insights\n\nSpecial Attack and Speed exhibit wide variation across Pokemon species\nDefense is more tightly clustered\nGeneration 7 shows the highest average stats, reflecting game evolution\nOutlier Pokémon like Deoxys and Blissey showcase unique stat extremes"
+  },
+  {
+    "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#resources",
+    "href": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html#resources",
+    "title": "Pokemon Stat Dashboard",
+    "section": "Resources",
+    "text": "Resources\n\nGitHub Repository\n\n📊 TidyTuesday Dataset (2025-04-01)\n\n\nBuilt using R, Shiny, ggtext, ggplot2 and httr for styling."
+  },
+  {
     "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "title": "NSF Grant Terminations Analysis",
@@ -112,6 +154,41 @@
     "text": "📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
   },
   {
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
+    "title": "Seismic Activity Dashboard",
+    "section": "",
+    "text": "This interactive dashboard explores trends in seismic activity near Mount Vesuvius using data from the 2025-05-13 TidyTuesday dataset.\nThe dataset records volcanic tremors from 2011 to 2025 and is used here to answer:\n\n📈 Has seismic activity changed in frequency or strength over time?\n🌋 Are events occurring deeper underground?\n🔥 How do depth and magnitude correlate?"
+  },
+  {
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#mount-vesuvius-seismic-analysis",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#mount-vesuvius-seismic-analysis",
+    "title": "Seismic Activity Dashboard",
+    "section": "",
+    "text": "This interactive dashboard explores trends in seismic activity near Mount Vesuvius using data from the 2025-05-13 TidyTuesday dataset.\nThe dataset records volcanic tremors from 2011 to 2025 and is used here to answer:\n\n📈 Has seismic activity changed in frequency or strength over time?\n🌋 Are events occurring deeper underground?\n🔥 How do depth and magnitude correlate?"
+  },
+  {
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#dashboard-features",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#dashboard-features",
+    "title": "Seismic Activity Dashboard",
+    "section": "Dashboard Features",
+    "text": "Dashboard Features\nThe app allows dynamic filtering by:\n\nYear Range\nReview Status (revised, preliminary, or all)\n\nIt includes the following charts:\n\n📊 Seismic Event Timeline — Count vs Average Magnitude over time\n\n🎯 Depth Scatterplot — How deep earthquakes occur by year\n\n🟨 Heatmap by Depth Band — Activity concentration across depth zones"
+  },
+  {
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#interactive-dashboard",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#interactive-dashboard",
+    "title": "Seismic Activity Dashboard",
+    "section": "🌋 Interactive Dashboard",
+    "text": "🌋 Interactive Dashboard\nUse the dropdown and slider to explore seismic activity:"
+  },
+  {
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#resources",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#resources",
+    "title": "Seismic Activity Dashboard",
+    "section": "📁 Resources",
+    "text": "📁 Resources\n\nGitHub Repository\nTidyTuesday Dataset\n🔗 LinkedIn Post\n\n\nBuilt using R packages: shiny, dplyr, ggplot2, viridis, readr."
+  },
+  {
     "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html",
     "href": "projects/TidyTuesday_29.04.25-USER2025/index.html",
     "title": "userR! 2025 Keywords Network",
@@ -137,6 +214,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\n\n\n\n\nrfds\n\n\nd3\n\n\nspatial analysis\n\n\njavascript\n\n\nflight data\n\n\nhtml\n\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPokemon Stat Dashboard\n\n\n\n\n\n\n\ntidytuesday\n\n\npokemon\n\n\nshiny\n\n\ndashboard\n\n\ndata visualization\n\n\nEDA\n\n\n\n\nAn interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.\n\n\n\n\n\n\nJun 26, 2025\n\n\n\n\n\n\n  \n\n\n\n\nSeismic Activity Dashboard\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\ndashboard\n\n\nMountVesuvius\n\n\neda\n\n\nvolcano\n\n\nseismic\n\n\nrstats\n\n\n\n\nAn interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data\n\n\n\n\n\n\nJun 17, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\n\n\n\n\nrfds\n\n\nd3\n\n\nspatial analysis\n\n\njavascript\n\n\nflight data\n\n\nhtml\n\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
   }
 ]
