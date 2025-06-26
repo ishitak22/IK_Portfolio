@@ -37,3 +37,11 @@ It includes the following charts:
 - 🟨 *Heatmap by Depth Band* — Activity concentration across depth zones
 
 ---
+
+## 🌋 Interactive Dashboard
+
+Use the dropdown and slider to explore seismic activity:
+
+<iframe src="https://ishitakhanna.shinyapps.io/Mount_Vesuvius/" width="100%" height="700px" style="border:none;"></iframe>
+
+---
