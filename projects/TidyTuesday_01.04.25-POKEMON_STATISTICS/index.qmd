@@ -16,3 +16,12 @@ format:
 This interactive dashboard visualises **Pokemon base stats** across generations using the [2025-04-01 TidyTuesday dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01). The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles.
 
 ---
+
+## Key Features
+
+- 📊 **Boxplot View** of stat outliers 
+- ⚙️ **Interactive Power Grid** for individual Pokemon
+- 🧬 **Stat Distribution Histograms** across all Pokemon
+- 🌱 **Average Stat Trends** across Generations
+
+---
