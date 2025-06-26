@@ -11,7 +11,7 @@ format:
     echo: false
 ---
 
-# Mount Vesuvius Seismic Analysis
+## Mount Vesuvius Seismic Analysis
 
 This interactive dashboard explores trends in **seismic activity near Mount Vesuvius** using data from the **2025-05-13 TidyTuesday** dataset.
 
@@ -20,5 +20,20 @@ The dataset records volcanic tremors from 2011 to 2025 and is used here to answe
 - 📈 Has seismic activity changed in frequency or strength over time?
 - 🌋 Are events occurring deeper underground?
 - 🔥 How do depth and magnitude correlate?
+
+---
+
+## Dashboard Features
+
+The app allows dynamic filtering by:
+
+- **Year Range**
+- **Review Status** (`revised`, `preliminary`, or all)
+
+It includes the following charts:
+
+- 📊 *Seismic Event Timeline* — Count vs Average Magnitude over time  
+- 🎯 *Depth Scatterplot* — How deep earthquakes occur by year  
+- 🟨 *Heatmap by Depth Band* — Activity concentration across depth zones
 
 ---
