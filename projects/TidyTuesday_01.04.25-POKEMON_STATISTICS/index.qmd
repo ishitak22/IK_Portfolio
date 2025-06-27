@@ -47,8 +47,9 @@ Click the image below to watch the full dashboard demo video.
 
 ## Resources
 
--   [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01)\
--   [📊 TidyTuesday Dataset (2025-04-01)](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01)
+- [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01)\
+- [TidyTuesday Dataset (2025-04-01)](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01)
+- [LinkedIn Post](https://www.linkedin.com/posts/khannaishita_tidytuesday-pokemon-tidytuesday-activity-7344152496967139328-1IQB?utm_source=share&utm_medium=member_desktop&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
 
 ------------------------------------------------------------------------
 
