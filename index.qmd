@@ -12,7 +12,7 @@ My toolbox includes:
 -   **Languages & Analytics**: R, Python, SQL, Excel
 -   **Visualisation**: ggplot2, Tableau, Power BI, R Shiny, d3.js
 -   **Machine Learning**: Supervised/Unsupervised learning, predictive modeling
--   **Cloud & Web**: Posit Cloud, RStudio Connect, Quarto, HTML/CSS
+-   **Cloud & Web**: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS
 -   **Project Tools**: GitHub, Trello, Notion
 
 ------------------------------------------------------------------------
