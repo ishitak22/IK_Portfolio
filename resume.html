@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-06-26">
-<meta name="description" content="An interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.">
 
-<title>Ishita Khanna - Pokemon Stat Dashboard</title>
+<title>Ishita Khanna - Resume</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +60,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -72,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ishita Khanna</span>
     </a>
   </div>
@@ -83,23 +81,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html" rel="" target="">
+    <a class="nav-link" href="./projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html" rel="" target="">
+    <a class="nav-link active" href="./resume.html" rel="" target="" aria-current="page">
  <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html" rel="" target="">
+    <a class="nav-link" href="./contact.html" rel="" target="">
  <span class="menu-text">Contact Me</span></a>
   </li>  
 </ul>
@@ -130,11 +128,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#pokemon-stat-dashboard-tidytuesday-2025-04-01" id="toc-pokemon-stat-dashboard-tidytuesday-2025-04-01" class="nav-link active" data-scroll-target="#pokemon-stat-dashboard-tidytuesday-2025-04-01">Pokemon Stat Dashboard – TidyTuesday 2025-04-01</a></li>
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
-  <li><a href="#demo-video" id="toc-demo-video" class="nav-link" data-scroll-target="#demo-video">🎬 Demo Video</a></li>
-  <li><a href="#insights" id="toc-insights" class="nav-link" data-scroll-target="#insights">Insights</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#my-resume" id="toc-my-resume" class="nav-link active" data-scroll-target="#my-resume">📄 My Resume</a></li>
   </ul>
 </nav>
     </div>
@@ -143,33 +137,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Pokemon Stat Dashboard</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">tidytuesday</div>
-    <div class="quarto-category">pokemon</div>
-    <div class="quarto-category">shiny</div>
-    <div class="quarto-category">dashboard</div>
-    <div class="quarto-category">data visualization</div>
-    <div class="quarto-category">EDA</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    An interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.
-  </div>
+<h1 class="title">Resume</h1>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 26, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -177,54 +152,13 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="pokemon-stat-dashboard-tidytuesday-2025-04-01" class="level2">
-<h2 class="anchored" data-anchor-id="pokemon-stat-dashboard-tidytuesday-2025-04-01">Pokemon Stat Dashboard – TidyTuesday 2025-04-01</h2>
-<p>This interactive dashboard visualises <strong>Pokemon base stats</strong> across generations using the <a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01">2025-04-01 TidyTuesday dataset</a>. The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles.</p>
-<hr>
-</section>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
-<ul>
-<li>📊 <strong>Boxplot View</strong> of stat outliers</li>
-<li>⚙️ <strong>Interactive Power Grid</strong> for individual Pokemon</li>
-<li>🧬 <strong>Stat Distribution Histograms</strong> across all Pokemon</li>
-<li>🌱 <strong>Average Stat Trends</strong> across Generations</li>
-</ul>
-<hr>
-</section>
-<section id="demo-video" class="level2">
-<h2 class="anchored" data-anchor-id="demo-video">🎬 Demo Video</h2>
-<div style="text-align: center; font-style: italic;">
-<p>Click the image below to watch the full dashboard demo video.</p>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="videos/demo.mp4"><img src="videos/dashboard_bg.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">Watch the demo</figcaption>
-</figure>
-</div>
-<hr>
-</section>
-<section id="insights" class="level2">
-<h2 class="anchored" data-anchor-id="insights">Insights</h2>
-<ul>
-<li><strong>Special Attack and Speed</strong> exhibit wide variation across Pokemon species</li>
-<li><strong>Defense</strong> is more tightly clustered</li>
-<li><strong>Generation 7</strong> shows the highest average stats, reflecting game evolution</li>
-<li><strong>Outlier Pokémon</strong> like Deoxys and Blissey showcase unique stat extremes</li>
-</ul>
-<hr>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li><a href="https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01">GitHub Repository</a><br>
-</li>
-<li><a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01">TidyTuesday Dataset (2025-04-01)</a></li>
-<li><a href="https://www.linkedin.com/posts/khannaishita_tidytuesday-pokemon-tidytuesday-activity-7344152496967139328-1IQB?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM">LinkedIn Post</a></li>
-</ul>
-<hr>
-<p><em>Built using <code>R</code>, <code>Shiny</code>, <code>ggtext</code>, <code>ggplot2</code> and <code>httr</code> for styling.</em></p>
+<section id="my-resume" class="level2">
+<h2 class="anchored" data-anchor-id="my-resume">📄 My Resume</h2>
+<p>You can preview my resume below.<br>
+To download the full PDF, use the button underneath.</p>
+<p><a href="files/ishita_khanna_resume.pdf" class="btn btn-primary" target="_blank"><strong>👉 Download Resume (PDF)</strong></a></p>
+<iframe src="files/Ishita_Khanna.pdf" width="100%" height="800px" style="border: 1px solid #ccc;">
+</iframe>
 
 
 </section>

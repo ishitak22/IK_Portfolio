@@ -215,5 +215,19 @@
     "title": "Projects",
     "section": "",
     "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nPokemon Stat Dashboard\n\n\n\n\n\n\n\ntidytuesday\n\n\npokemon\n\n\nshiny\n\n\ndashboard\n\n\ndata visualization\n\n\nEDA\n\n\n\n\nAn interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.\n\n\n\n\n\n\nJun 26, 2025\n\n\n\n\n\n\n  \n\n\n\n\nSeismic Activity Dashboard\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\ndashboard\n\n\nMountVesuvius\n\n\neda\n\n\nvolcano\n\n\nseismic\n\n\nrstats\n\n\n\n\nAn interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data\n\n\n\n\n\n\nJun 17, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\n\n\n\n\nrfds\n\n\nd3\n\n\nspatial analysis\n\n\njavascript\n\n\nflight data\n\n\nhtml\n\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "You can preview my resume below.\nTo download the full PDF, use the button underneath.\n👉 Download Resume (PDF)"
+  },
+  {
+    "objectID": "resume.html#my-resume",
+    "href": "resume.html#my-resume",
+    "title": "Resume",
+    "section": "",
+    "text": "You can preview my resume below.\nTo download the full PDF, use the button underneath.\n👉 Download Resume (PDF)"
   }
 ]
