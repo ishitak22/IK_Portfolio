@@ -12,9 +12,9 @@ website:
         text: About
       - href: projects.qmd
         text: Projects
-      - href: contact.qmd
       - href: resume.qmd
         text: Resume
+      - href: contact.qmd
         text: Contact Me
     right:
       - icon: github
