@@ -10,7 +10,7 @@ format:
 You can preview my resume below.  
 To download the full PDF, use the button underneath.
 
-[**👉 Download Resume (PDF)**](files/ishita_khanna_resume.pdf){.btn .btn-primary target="_blank"}
+[**👉 Download Resume (PDF)**](files/Ishita_Khanna.pdf){.btn .btn-primary target="_blank"}
 
 <iframe src="files/Ishita_Khanna.pdf" width="100%" height="800px" style="border: 1px solid #ccc;">
 </iframe>
