@@ -13,6 +13,8 @@ website:
       - href: projects.qmd
         text: Projects
       - href: contact.qmd
+      - href: resume.qmd
+        text: Resume
         text: Contact Me
     right:
       - icon: github
