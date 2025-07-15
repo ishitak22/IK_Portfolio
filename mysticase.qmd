@@ -16,10 +16,22 @@ As a side project, Mysticase allowed me to use the analytical skills I gained du
 
 ---
 
-# What I did as part of Mysticase:
+## What I did as part of Mysticase:
 
 - Created all product imagery with design tools and automated mockup generation.  
 - Used **Etsy SEO** strategies including keyword testing, titles, and tags.  
 - Regularly reviewed analytics to improve conversion and discover trends.  
 - Used **Google Trends** and **Etsy search data** to target low-competition niches.
 - Built lightweight workflows to automate Etsy listing creation and dynamic pricing updates.
+
+## 📈 Performance Overview
+
+<figure>
+  <img src="files/mysticase_kpi_overview.png" alt="Mysticase Key Metrics" width="70%">
+  <figcaption style="text-align:center;">
+    Mysticase Store Metrics — 2,000+ visits and $1,500+ in revenue
+  </figcaption>
+</figure>
+
+---
+
