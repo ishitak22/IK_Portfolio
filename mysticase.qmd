@@ -4,8 +4,6 @@ description: "Exploring marketing analytics, product design and ecommerce experi
 format:
   html:
     page-layout: article
-    toc: true
-    toc-depth: 2
 ---
 
 ## Where Data Meets Design
