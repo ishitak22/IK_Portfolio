@@ -1,0 +1,25 @@
+---
+title: "Mysticase: Side Project"
+description: "Exploring marketing analytics, product design and ecommerce experimentation through a side business on Etsy."
+format:
+  html:
+    page-layout: article
+    toc: true
+    toc-depth: 2
+---
+
+## Mysticase: Where Data Meets Design
+
+Mysticase is a small creative side business I co-launched on Etsy to explore how analytics and design come together in real-world ecommerce.
+
+As a side project, Mysticase allowed me to use the analytical skills I gained during my Master's to explore the intersection of design, data, and online retail.
+
+---
+
+# What I did as part of Mysticase:
+
+- Created all product imagery with design tools and automated mockup generation.  
+- Used **Etsy SEO** strategies including keyword testing, titles, and tags.  
+- Regularly reviewed analytics to improve conversion and discover trends.  
+- Used **Google Trends** and **Etsy search data** to target low-competition niches.
+- Built lightweight workflows to automate Etsy listing creation and dynamic pricing updates.
