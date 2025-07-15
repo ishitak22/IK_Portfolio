@@ -8,7 +8,7 @@ format:
     toc-depth: 2
 ---
 
-## Mysticase: Where Data Meets Design
+## Where Data Meets Design
 
 Mysticase is a small creative side business I co-launched on Etsy to explore how analytics and design come together in real-world ecommerce.
 
@@ -29,7 +29,7 @@ As a side project, Mysticase allowed me to use the analytical skills I gained du
 <figure>
   <img src="files/mysticase_kpi_overview.png" alt="Mysticase Key Metrics" width="70%">
   <figcaption style="text-align:center;">
-    Mysticase Store Metrics — 2,000+ visits and $1,500+ in revenue
+    Mysticase Store Metrics: 2,000+ visits and $1,500+ in revenue
   </figcaption>
 </figure>
 
