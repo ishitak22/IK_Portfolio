@@ -12,6 +12,8 @@ website:
         text: About
       - href: projects.qmd
         text: Projects
+      - href: mysticase.qmd
+        text: Side Project
       - href: resume.qmd
         text: Resume
       - href: contact.qmd
