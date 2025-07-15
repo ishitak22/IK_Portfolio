@@ -35,3 +35,13 @@ As a side project, Mysticase allowed me to use the analytical skills I gained du
 
 ---
 
+This isn’t a large-scale commercial business, but rather an agile, side project to:
+
+- Apply **marketing data analytics** in a practical setting  
+- Understand **customer behavior** and analyse through real-time data  
+- Develop **SEO and product strategy** based on insights showcasing insights analysis skills 
+- Communicating through both **data and design**
+
+[Mysticase on Etsy](https://www.etsy.com/shop/Mysticase)
+
+*This initiative was a fun, self-directed application of the skills I developed during my data analytics Master's — and a way to keep learning creatively outside work.*
