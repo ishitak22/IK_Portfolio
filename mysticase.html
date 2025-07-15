@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-06-17">
-<meta name="description" content="An interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data">
+<meta name="description" content="Exploring marketing analytics, product design and ecommerce experimentation through a side business on Etsy.">
 
-<title>Ishita Khanna - Seismic Activity Dashboard</title>
+<title>Ishita Khanna - Mysticase: Side Project</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -62,7 +61,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -72,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Ishita Khanna</span>
     </a>
   </div>
@@ -83,27 +82,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html" rel="" target="">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html" rel="" target="">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html" rel="" target="">
+    <a class="nav-link" href="./projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../mysticase.html" rel="" target="">
+    <a class="nav-link active" href="./mysticase.html" rel="" target="" aria-current="page">
  <span class="menu-text">Side Project</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../resume.html" rel="" target="">
+    <a class="nav-link" href="./resume.html" rel="" target="">
  <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html" rel="" target="">
+    <a class="nav-link" href="./contact.html" rel="" target="">
  <span class="menu-text">Contact Me</span></a>
   </li>  
 </ul>
@@ -133,11 +132,10 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#mount-vesuvius-seismic-analysis" id="toc-mount-vesuvius-seismic-analysis" class="nav-link active" data-scroll-target="#mount-vesuvius-seismic-analysis">Mount Vesuvius Seismic Analysis</a></li>
-  <li><a href="#dashboard-features" id="toc-dashboard-features" class="nav-link" data-scroll-target="#dashboard-features">Dashboard Features</a></li>
-  <li><a href="#interactive-dashboard" id="toc-interactive-dashboard" class="nav-link" data-scroll-target="#interactive-dashboard">🌋 Interactive Dashboard</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">📁 Resources</a></li>
+  <ul class="collapse">
+  <li><a href="#where-data-meets-design" id="toc-where-data-meets-design" class="nav-link active" data-scroll-target="#where-data-meets-design">Where Data Meets Design</a></li>
+  <li><a href="#what-i-did-as-part-of-mysticase" id="toc-what-i-did-as-part-of-mysticase" class="nav-link" data-scroll-target="#what-i-did-as-part-of-mysticase">What I did as part of Mysticase:</a></li>
+  <li><a href="#performance-overview" id="toc-performance-overview" class="nav-link" data-scroll-target="#performance-overview">📈 Performance Overview</a></li>
   </ul>
 </nav>
     </div>
@@ -146,22 +144,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Seismic Activity Dashboard</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">tidytuesday</div>
-    <div class="quarto-category">shiny</div>
-    <div class="quarto-category">dashboard</div>
-    <div class="quarto-category">MountVesuvius</div>
-    <div class="quarto-category">eda</div>
-    <div class="quarto-category">volcano</div>
-    <div class="quarto-category">seismic</div>
-    <div class="quarto-category">rstats</div>
-  </div>
-  </div>
+<h1 class="title">Mysticase: Side Project</h1>
+</div>
 
 <div>
   <div class="description">
-    An interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data
+    Exploring marketing analytics, product design and ecommerce experimentation through a side business on Etsy.
   </div>
 </div>
 
@@ -169,12 +157,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">June 17, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -182,50 +164,45 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="mount-vesuvius-seismic-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="mount-vesuvius-seismic-analysis">Mount Vesuvius Seismic Analysis</h2>
-<p>This interactive dashboard explores trends in <strong>seismic activity near Mount Vesuvius</strong> using data from the <strong>2025-05-13 TidyTuesday</strong> dataset.</p>
-<p>The dataset records volcanic tremors from 2011 to 2025 and is used here to answer:</p>
-<ul>
-<li>📈 Has seismic activity changed in frequency or strength over time?</li>
-<li>🌋 Are events occurring deeper underground?</li>
-<li>🔥 How do depth and magnitude correlate?</li>
-</ul>
+<section id="where-data-meets-design" class="level2">
+<h2 class="anchored" data-anchor-id="where-data-meets-design">Where Data Meets Design</h2>
+<p>Mysticase is a small creative side business I co-launched on Etsy to explore how analytics and design come together in real-world ecommerce.</p>
+<p>As a side project, Mysticase allowed me to use the analytical skills I gained during my Master’s to explore the intersection of design, data, and online retail.</p>
 <hr>
 </section>
-<section id="dashboard-features" class="level2">
-<h2 class="anchored" data-anchor-id="dashboard-features">Dashboard Features</h2>
-<p>The app allows dynamic filtering by:</p>
+<section id="what-i-did-as-part-of-mysticase" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-did-as-part-of-mysticase">What I did as part of Mysticase:</h2>
 <ul>
-<li><strong>Year Range</strong></li>
-<li><strong>Review Status</strong> (<code>revised</code>, <code>preliminary</code>, or all)</li>
-</ul>
-<p>It includes the following charts:</p>
-<ul>
-<li>📊 <em>Seismic Event Timeline</em> — Count vs Average Magnitude over time<br>
+<li>Created all product imagery with design tools and automated mockup generation.<br>
 </li>
-<li>🎯 <em>Depth Scatterplot</em> — How deep earthquakes occur by year<br>
+<li>Used <strong>Etsy SEO</strong> strategies including keyword testing, titles, and tags.<br>
 </li>
-<li>🟨 <em>Heatmap by Depth Band</em> — Activity concentration across depth zones</li>
+<li>Regularly reviewed analytics to improve conversion and discover trends.<br>
+</li>
+<li>Used <strong>Google Trends</strong> and <strong>Etsy search data</strong> to target low-competition niches.</li>
+<li>Built lightweight workflows to automate Etsy listing creation and dynamic pricing updates.</li>
 </ul>
-<hr>
 </section>
-<section id="interactive-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-dashboard">🌋 Interactive Dashboard</h2>
-<p>Use the dropdown and slider to explore seismic activity:</p>
-<iframe src="https://ishitakhanna.shinyapps.io/Mount_Vesuvius/" width="100%" height="700px" style="border:none;">
-</iframe>
+<section id="performance-overview" class="level2">
+<h2 class="anchored" data-anchor-id="performance-overview">📈 Performance Overview</h2>
+<figure class="figure">
+<img src="files/mysticase_kpi_overview.png" alt="Mysticase Key Metrics" width="70%" class="figure-img">
+<figcaption style="text-align:center;" class="figure-caption">
+Mysticase Store Metrics: 2,000+ visits and $1,500+ in revenue
+</figcaption>
+</figure>
 <hr>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">📁 Resources</h2>
+<p>This isn’t a large-scale commercial business, but rather an agile, side project to:</p>
 <ul>
-<li><a href="https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-05-13">GitHub Repository</a></li>
-<li><a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-05-13">TidyTuesday Dataset</a></li>
-<li><a href="https://www.linkedin.com/posts/khannaishita_tidytuesday-tidytuesday-datavisualisation-activity-7343087984876933120-iuue?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM">🔗 LinkedIn Post</a></li>
+<li>Apply <strong>marketing data analytics</strong> in a practical setting<br>
+</li>
+<li>Understand <strong>customer behavior</strong> and analyse through real-time data<br>
+</li>
+<li>Develop <strong>SEO and product strategy</strong> based on insights showcasing insights analysis skills</li>
+<li>Communicating through both <strong>data and design</strong></li>
 </ul>
-<hr>
-<p><em>Built using R packages: <code>shiny</code>, <code>dplyr</code>, <code>ggplot2</code>, <code>viridis</code>, <code>readr</code>.</em></p>
+<p><a href="https://www.etsy.com/shop/Mysticase">Mysticase on Etsy</a></p>
+<p><em>This initiative was a fun, self-directed application of the skills I developed during my data analytics Master’s — and a way to keep learning creatively outside work.</em></p>
 
 
 </section>
