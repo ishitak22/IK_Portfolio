@@ -13,7 +13,7 @@ website:
       - href: projects.qmd
         text: Projects
       - href: mysticase.qmd
-        text: Side Project
+        text: Real-World Application
       - href: resume.qmd
         text: Resume
       - href: contact.qmd
