@@ -11,3 +11,10 @@ format:
     echo: false
 ---
 
+## 🌍 Global Measles Analysis — TidyTuesday 25-06-2025
+
+This project investigates global measles outbreak data using the [TidyTuesday 2025-06-24 dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-06-24). Using WHO provisional reports from 2015–2025, the analysis highlights vulnerable countries, under-reported outbreaks, and population-level immunisation challenges.
+
+You can also view the full report here: [🧪 Interactive Report](https://measles-outbreak.netlify.app/)
+
+---
