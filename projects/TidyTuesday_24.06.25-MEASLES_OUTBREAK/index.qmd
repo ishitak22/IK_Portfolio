@@ -2,8 +2,8 @@
 title: "Measles Outbreak Insights"
 description: "Exploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps – TidyTuesday 2025-06-24"
 date: 2025-07-30
-image: images/measles_map.png
-categories: [tidytuesday, measles, public health, EDA, data visualization, R]
+image: image.png
+categories: [tidytuesday, measles, public health, rmarkdown, data visualisation, R]
 format:
   html:
     page-layout: article
@@ -48,3 +48,10 @@ Hover over the bubbles in Bubble chart to learn more:
 ## Resources
 
 You can also view the full report here: [🧪 Interactive Report](https://measles-outbreak.netlify.app/)
+
+- [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-06-24)
+- [LinkedIn Post](https://www.linkedin.com/posts/khannaishita_tidytuesday-who-measlesoutbreak-activity-7356126428028944385-NMfa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
+
+---
+
+*Built using `R`, `ggplot2`, `plotly`, `dplyr`, and `css`.*
