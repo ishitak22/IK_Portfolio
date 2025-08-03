@@ -18,3 +18,11 @@ This project investigates global measles outbreak data using the [TidyTuesday 20
 You can also view the full report here: [🧪 Interactive Report](https://measles-outbreak.netlify.app/)
 
 ---
+
+## Visualisations
+
+-   🔥 **Seasonal Heatmap** of monthly outbreak patterns for top countries.
+-   🫧 **Bubble Chart** showing vaccine coverage gaps for large populations
+-   🕸️**Scatter Plot** to detect under-reporting by comparing incidence and totals
+
+---
