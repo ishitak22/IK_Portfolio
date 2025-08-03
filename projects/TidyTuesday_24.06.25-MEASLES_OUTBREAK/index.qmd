@@ -19,9 +19,9 @@ This project investigates global measles outbreak data using the [TidyTuesday 20
 
 ## Key Features
 
--   🔥 **Seasonal Heatmap** of monthly outbreak patterns for top countries.
--   🫧 **Bubble Chart** showing vaccine coverage gaps for large populations
--   🕸️**Scatter Plot** to detect under-reporting by comparing incidence and totals
+ - 🔥 **Seasonal Heatmap** of monthly outbreak patterns for top countries.
+ - 🫧 **Bubble Chart** showing vaccine coverage gaps for large populations
+ - 🕸️**Scatter Plot** to detect under-reporting by comparing incidence and totals
 
 ------------------------------------------------------------------------
 
@@ -32,6 +32,18 @@ Hover over the bubbles in Bubble chart to learn more:
 <iframe src="https://measles-outbreak.netlify.app/" width="100%" height="700px" style="border:none;">
 
 </iframe>
+
+## Key Insights
+
+ - Seasonal patterns show distinct outbreak peaks across regions, supporting the need for region-specific vaccination timing.
+
+ - High-incidence countries like Madagascar, Mongolia, and Kyrgyzstan had relatively low total case counts, suggesting possible under-reporting.
+
+ - The scatter plot revealed several countries with inconsistent surveillance, highlighting a gap in global health reporting systems.
+
+ - Countries with low vaccine coverage and large populations — such as Nigeria and Pakistan — are critical priorities for public health interventions.
+
+ - The bubble chart enabled identification of outlier regions where vaccine programs may not be translating into coverage or protection, warranting further investigation.
 
 ## Resources
 
