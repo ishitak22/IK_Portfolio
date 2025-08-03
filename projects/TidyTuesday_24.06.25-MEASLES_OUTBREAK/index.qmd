@@ -1,7 +1,7 @@
 ---
 title: "Measles Outbreak Insights"
-description: "Exploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps – TidyTuesday 2025-06-24"
-date: 2025-07-30
+description: "Exploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps – TidyTuesday 24-06-2025"
+date: 24-06-2025
 image: image.png
 categories: [tidytuesday, measles, public health, rmarkdown, data visualisation, R]
 format:
@@ -13,7 +13,7 @@ format:
 
 ## 🌍 Global Measles Analysis --- TidyTuesday 25-06-2025
 
-This project investigates global measles outbreak data using the [TidyTuesday 2025-06-24 dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-06-24). Using WHO provisional reports from 2015--2025, the analysis highlights vulnerable countries, under-reported outbreaks, and population-level immunisation challenges.
+This project investigates global measles outbreak data using the [TidyTuesday 20-06-2025 dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-06-24). Using WHO provisional reports from 2015--2025, the analysis highlights vulnerable countries, under-reported outbreaks, and population-level immunisation challenges.
 
 ------------------------------------------------------------------------
 
