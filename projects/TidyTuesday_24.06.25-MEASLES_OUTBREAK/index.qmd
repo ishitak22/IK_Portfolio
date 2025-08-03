@@ -1,0 +1,13 @@
+---
+title: "Measles Outbreak Insights"
+description: "Exploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps – TidyTuesday 2025-06-24"
+date: 2025-07-30
+image: images/measles_map.png
+categories: [tidytuesday, measles, public health, EDA, data visualization, R]
+format:
+  html:
+    page-layout: article
+    toc: true
+    echo: false
+---
+
