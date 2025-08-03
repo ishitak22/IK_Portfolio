@@ -1,6 +1,6 @@
 ---
 title: "Measles Outbreak Insights"
-description: "Exploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps – TidyTuesday 24-06-2025"
+description: "Exploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps from TidyTuesday 24-06-2025"
 date: 24-06-2025
 image: image.png
 categories: [tidytuesday, measles, public health, rmarkdown, data visualisation, R]
@@ -41,13 +41,13 @@ Hover over the bubbles in Bubble chart to learn more:
 
  - The scatter plot revealed several countries with inconsistent surveillance, highlighting a gap in global health reporting systems.
 
- - Countries with low vaccine coverage and large populations — such as Nigeria and Pakistan — are critical priorities for public health interventions.
+ - Countries with low vaccine coverage and large populations such as Nigeria and Pakistan are critical priorities for public health interventions.
 
  - The bubble chart enabled identification of outlier regions where vaccine programs may not be translating into coverage or protection, warranting further investigation.
 
 ## Resources
 
-You can also view the full report here: [🧪 Interactive Report](https://measles-outbreak.netlify.app/)
+You can also view the full report here: [Interactive Report](https://measles-outbreak.netlify.app/)
 
 - [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-06-24)
 - [LinkedIn Post](https://www.linkedin.com/posts/khannaishita_tidytuesday-who-measlesoutbreak-activity-7356126428028944385-NMfa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
