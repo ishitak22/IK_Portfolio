@@ -1,108 +1,73 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
     "section": "",
-    "text": "Hi, I’m Ishita Khanna, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.\nI approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it’s exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.\nThis portfolio highlights some of my recent work from the TidyTuesday community and will continue to grow with academic, personal, and applied projects.\nI’m always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference."
+    "text": "You can preview my resume below.\nTo download the full PDF, use the button underneath.\n👉 Download Resume (PDF)"
   },
   {
-    "objectID": "about.html#get-in-touch",
-    "href": "about.html#get-in-touch",
-    "title": "About me",
-    "section": "Get in Touch",
-    "text": "Get in Touch\n\nGitHub\nLinkedIn\nEmail: ishitakhanna2208@gmail.com"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact Me",
+    "objectID": "resume.html#my-resume",
+    "href": "resume.html#my-resume",
+    "title": "Resume",
     "section": "",
-    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
+    "text": "You can preview my resume below.\nTo download the full PDF, use the button underneath.\n👉 Download Resume (PDF)"
   },
   {
-    "objectID": "contact.html#lets-connect",
-    "href": "contact.html#lets-connect",
-    "title": "Contact Me",
+    "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html",
+    "href": "projects/TidyTuesday_29.04.25-USER2025/index.html",
+    "title": "userR! 2025 Keywords Network",
     "section": "",
-    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
+    "text": "This interactive project explores how keywords were used across sessions at the useR! 2025 conference. The goal was to analyse and visualise how topics clustered together using text mining and network analysis techniques.\n\n\nThis analysis used the following R libraries:\n\ntidyverse for data manipulation\ntidytext for splitting keywords and keyword processing\nwidyr for calculating pairwise keyword co-occurrence\nggraph, igraph, and tidygraph for network visualization\nshiny for interactivity\n\nTo prepare the data:\n\nThe dataset was cleaned by separating comma-separated keywords into individual rows\nExtra whitespace and missing values were removed\nSession-level keyword groupings were constructed using unite() and pairwise_count()\nThe final result was a co-occurrence network, where nodes are keywords and edges represent how often they appeared together in a session\n\n\n\n\n\n\n\n\n\n\n\n\nKeyword Network\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Analytics Portfolio",
+    "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html#tools-data-preparation",
+    "href": "projects/TidyTuesday_29.04.25-USER2025/index.html#tools-data-preparation",
+    "title": "userR! 2025 Keywords Network",
     "section": "",
-    "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js\nMachine Learning: Supervised/Unsupervised learning, predictive modeling\nCloud & Web: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS\nProject Tools: GitHub, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+    "text": "This analysis used the following R libraries:\n\ntidyverse for data manipulation\ntidytext for splitting keywords and keyword processing\nwidyr for calculating pairwise keyword co-occurrence\nggraph, igraph, and tidygraph for network visualization\nshiny for interactivity\n\nTo prepare the data:\n\nThe dataset was cleaned by separating comma-separated keywords into individual rows\nExtra whitespace and missing values were removed\nSession-level keyword groupings were constructed using unite() and pairwise_count()\nThe final result was a co-occurrence network, where nodes are keywords and edges represent how often they appeared together in a session"
   },
   {
-    "objectID": "index.html#what-you-will-find-here",
-    "href": "index.html#what-you-will-find-here",
-    "title": "Data Analytics Portfolio",
+    "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html#keyword-co-occurrence-visualisation",
+    "href": "projects/TidyTuesday_29.04.25-USER2025/index.html#keyword-co-occurrence-visualisation",
+    "title": "userR! 2025 Keywords Network",
     "section": "",
-    "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+    "text": "Keyword Network\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
   },
   {
-    "objectID": "mysticase.html#where-data-meets-design",
-    "href": "mysticase.html#where-data-meets-design",
-    "title": "Mysticase: Side Business",
-    "section": "Where Data Meets Design",
-    "text": "Where Data Meets Design\nMysticase is a small creative side business I co-launched on Etsy to explore how analytics and design come together in real-world ecommerce.\nAs a side project, Mysticase allowed me to use the analytical skills I gained during my Master’s to explore the intersection of design, data, and online retail."
-  },
-  {
-    "objectID": "mysticase.html#what-i-did-as-part-of-mysticase",
-    "href": "mysticase.html#what-i-did-as-part-of-mysticase",
-    "title": "Mysticase: Side Business",
-    "section": "What I did as part of Mysticase:",
-    "text": "What I did as part of Mysticase:\n\nCreated all product imagery with design tools and automated mockup generation.\n\nUsed Etsy SEO strategies including keyword testing, titles, and tags.\n\nRegularly reviewed analytics to improve conversion and discover trends.\n\nUsed Google Trends and Etsy search data to target low-competition niches.\nBuilt lightweight workflows to automate Etsy listing creation and dynamic pricing updates."
-  },
-  {
-    "objectID": "mysticase.html#performance-overview",
-    "href": "mysticase.html#performance-overview",
-    "title": "Mysticase: Side Business",
-    "section": "📈 Performance Overview",
-    "text": "📈 Performance Overview\n\n\n\n\nMysticase Store Metrics: 2,000+ visits and $1,500+ in revenue\n\n\n\n\n\nMysticase Reach Metrics: 200+ favourites and 32 cities reached\n\n\n\n\nThis isn’t a large-scale commercial business, but rather an agile, side project to:\n\nApply marketing data analytics in a practical setting\n\nUnderstand customer behavior and analyse through real-time data\n\nDevelop SEO and product strategy based on insights showcasing insights analysis skills\nCommunicating through both data and design\n\n\n Visit Mysticase on Etsy \n\nThis initiative was a fun, self-directed application of the skills I developed during my data analytics Master’s — and a way to keep learning creatively outside work."
-  },
-  {
-    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html",
-    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html",
-    "title": "RFDS Network Visualisation",
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
+    "title": "Seismic Activity Dashboard",
     "section": "",
-    "text": "This project investigates the patterns in flight arrivals at RFDS bases across Australia using flight logs from July 2022.\nTwo core visual explorations are included:\n\nBar Chart of flight arrivals categorised by time of day (Day vs Night)\nInteractive Map of base activity and aircraft operations using Leaflet\n\n\n\n\nWe first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM\n\n\n\n\n\nUse the dropdown to explore RFDS base locations and view flight details by aircraft type\n\n\n\n\n\n\n\nGitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
+    "text": "This interactive dashboard explores trends in seismic activity near Mount Vesuvius using data from the 2025-05-13 TidyTuesday dataset.\nThe dataset records volcanic tremors from 2011 to 2025 and is used here to answer:\n\n📈 Has seismic activity changed in frequency or strength over time?\n🌋 Are events occurring deeper underground?\n🔥 How do depth and magnitude correlate?"
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#flight-arrivals-by-time-of-the-day",
-    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#flight-arrivals-by-time-of-the-day",
-    "title": "RFDS Network Visualisation",
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#mount-vesuvius-seismic-analysis",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#mount-vesuvius-seismic-analysis",
+    "title": "Seismic Activity Dashboard",
     "section": "",
-    "text": "We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM"
+    "text": "This interactive dashboard explores trends in seismic activity near Mount Vesuvius using data from the 2025-05-13 TidyTuesday dataset.\nThe dataset records volcanic tremors from 2011 to 2025 and is used here to answer:\n\n📈 Has seismic activity changed in frequency or strength over time?\n🌋 Are events occurring deeper underground?\n🔥 How do depth and magnitude correlate?"
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#interactive-base-activity-map",
-    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#interactive-base-activity-map",
-    "title": "RFDS Network Visualisation",
-    "section": "",
-    "text": "Use the dropdown to explore RFDS base locations and view flight details by aircraft type"
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#dashboard-features",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#dashboard-features",
+    "title": "Seismic Activity Dashboard",
+    "section": "Dashboard Features",
+    "text": "Dashboard Features\nThe app allows dynamic filtering by:\n\nYear Range\nReview Status (revised, preliminary, or all)\n\nIt includes the following charts:\n\n📊 Seismic Event Timeline — Count vs Average Magnitude over time\n\n🎯 Depth Scatterplot — How deep earthquakes occur by year\n\n🟨 Heatmap by Depth Band — Activity concentration across depth zones"
   },
   {
-    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#resource",
-    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#resource",
-    "title": "RFDS Network Visualisation",
-    "section": "",
-    "text": "GitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#interactive-dashboard",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#interactive-dashboard",
+    "title": "Seismic Activity Dashboard",
+    "section": "🌋 Interactive Dashboard",
+    "text": "🌋 Interactive Dashboard\nUse the dropdown and slider to explore seismic activity:"
   },
   {
-    "objectID": "projects/RFDS_Queensland_Network-Using-D3/index.html",
-    "href": "projects/RFDS_Queensland_Network-Using-D3/index.html",
-    "title": "RFDS Queensland Flight Network using D3.js",
-    "section": "",
-    "text": "This D3.js project explores Royal Flying Doctor Service (RFDS) flight routes and base activity within Queensland, using flight logs from July 2022.\nThe map highlights:\n\nRed nodes: RFDS bases\nBlue node: Brisbane - no incoming or outgoing of flights from this base\nLines: Flight paths\nTooltip: It shows detailed info i.e. no. of arrivals, departures, distances, flight count\nPath thickness: Representing amount of trips on that path\nNode thickness: Based on traffic at that location/base\n\n\n\n\n\n\nGitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
-  },
-  {
-    "objectID": "projects/RFDS_Queensland_Network-Using-D3/index.html#resource",
-    "href": "projects/RFDS_Queensland_Network-Using-D3/index.html#resource",
-    "title": "RFDS Queensland Flight Network using D3.js",
-    "section": "",
-    "text": "GitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
+    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#resources",
+    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#resources",
+    "title": "Seismic Activity Dashboard",
+    "section": "📁 Resources",
+    "text": "📁 Resources\n\nGitHub Repository\nTidyTuesday Dataset\n🔗 LinkedIn Post\n\nBuilt using R packages: shiny, dplyr, ggplot2, viridis, readr."
   },
   {
     "objectID": "projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html",
@@ -147,6 +112,160 @@
     "text": "Resources\n\nGitHub Repository\n\nTidyTuesday Dataset (2025-04-01)\nLinkedIn Post\n\n\nBuilt using R, Shiny, ggtext, ggplot2 and httr for styling."
   },
   {
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "This project investigates the patterns in flight arrivals at RFDS bases across Australia using flight logs from July 2022.\nTwo core visual explorations are included:\n\nBar Chart of flight arrivals categorised by time of day (Day vs Night)\nInteractive Map of base activity and aircraft operations using Leaflet\n\n\n\n\nWe first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM\n\n\n\n\n\nUse the dropdown to explore RFDS base locations and view flight details by aircraft type\n\n\n\n\n\n\n\nGitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
+  },
+  {
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#flight-arrivals-by-time-of-the-day",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#flight-arrivals-by-time-of-the-day",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "We first examine RFDS flights landing at bases in Queensland, grouped by aircraft and arrival timestamps.\n\n\n\nDay vs Night Arrivals at selected RFDS Bases\n\n\n\nDay: 6 AM - 6 PM, Night: 6 PM - 6 AM"
+  },
+  {
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#interactive-base-activity-map",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#interactive-base-activity-map",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "Use the dropdown to explore RFDS base locations and view flight details by aircraft type"
+  },
+  {
+    "objectID": "projects/RFDS_Network_Visualisation-Using-R/index.html#resource",
+    "href": "projects/RFDS_Network_Visualisation-Using-R/index.html#resource",
+    "title": "RFDS Network Visualisation",
+    "section": "",
+    "text": "GitHub Repository\n\n\nAnalysis performed using R packages: dplyr, ggplot2, leaflet, shiny, lubridate, readr."
+  },
+  {
+    "objectID": "mysticase.html#where-data-meets-design",
+    "href": "mysticase.html#where-data-meets-design",
+    "title": "Mysticase: Side Business",
+    "section": "Where Data Meets Design",
+    "text": "Where Data Meets Design\nMysticase is a small creative side business I co-launched on Etsy to explore how analytics and design come together in real-world ecommerce.\nAs a side project, Mysticase allowed me to use the analytical skills I gained during my Master’s to explore the intersection of design, data, and online retail."
+  },
+  {
+    "objectID": "mysticase.html#what-i-did-as-part-of-mysticase",
+    "href": "mysticase.html#what-i-did-as-part-of-mysticase",
+    "title": "Mysticase: Side Business",
+    "section": "What I did as part of Mysticase:",
+    "text": "What I did as part of Mysticase:\n\nCreated all product imagery with design tools and automated mockup generation.\n\nUsed Etsy SEO strategies including keyword testing, titles, and tags.\n\nRegularly reviewed analytics to improve conversion and discover trends.\n\nUsed Google Trends and Etsy search data to target low-competition niches.\nBuilt lightweight workflows to automate Etsy listing creation and dynamic pricing updates."
+  },
+  {
+    "objectID": "mysticase.html#performance-overview",
+    "href": "mysticase.html#performance-overview",
+    "title": "Mysticase: Side Business",
+    "section": "📈 Performance Overview",
+    "text": "📈 Performance Overview\n\n\n\n\nMysticase Store Metrics: 2,000+ visits and $1,500+ in revenue\n\n\n\n\n\nMysticase Reach Metrics: 200+ favourites and 32 cities reached\n\n\n\n\nThis isn’t a large-scale commercial business, but rather an agile, side project to:\n\nApply marketing data analytics in a practical setting\n\nUnderstand customer behavior and analyse through real-time data\n\nDevelop SEO and product strategy based on insights showcasing insights analysis skills\nCommunicating through both data and design\n\n\n Visit Mysticase on Etsy \n\nThis initiative was a fun, self-directed application of the skills I developed during my data analytics Master’s — and a way to keep learning creatively outside work."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
+  },
+  {
+    "objectID": "contact.html#lets-connect",
+    "href": "contact.html#lets-connect",
+    "title": "Contact Me",
+    "section": "",
+    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hi, I’m Ishita Khanna, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.\nI approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it’s exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.\nThis portfolio highlights some of my recent work from the TidyTuesday community and will continue to grow with academic, personal, and applied projects.\nI’m always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference."
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About me",
+    "section": "Get in Touch",
+    "text": "Get in Touch\n\nGitHub\nLinkedIn\nEmail: ishitakhanna2208@gmail.com"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analytics Portfolio",
+    "section": "",
+    "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js\nMachine Learning: Supervised/Unsupervised learning, predictive modeling\nCloud & Web: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS\nProject Tools: GitHub, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+  },
+  {
+    "objectID": "index.html#what-you-will-find-here",
+    "href": "index.html#what-you-will-find-here",
+    "title": "Data Analytics Portfolio",
+    "section": "",
+    "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html",
+    "href": "projects/Retail_Business_Dashboard/index.html",
+    "title": "Retail Executive Dashboard",
+    "section": "",
+    "text": "This project explores retail sales performance through an interactive business dashboard. The dashboard focuses on revenue trends, category performance, customer segments, and action-focused recommendations for retail decision-making.\nThe analysis summarises overall business performance, identifies top commercial drivers, and translates findings into practical actions."
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html#retail-executive-dashboard",
+    "href": "projects/Retail_Business_Dashboard/index.html#retail-executive-dashboard",
+    "title": "Retail Executive Dashboard",
+    "section": "",
+    "text": "This project explores retail sales performance through an interactive business dashboard. The dashboard focuses on revenue trends, category performance, customer segments, and action-focused recommendations for retail decision-making.\nThe analysis summarises overall business performance, identifies top commercial drivers, and translates findings into practical actions."
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html#key-features",
+    "href": "projects/Retail_Business_Dashboard/index.html#key-features",
+    "title": "Retail Executive Dashboard",
+    "section": "Key Features",
+    "text": "Key Features\n\n📊 Executive Overview showing total revenue, transactions, units sold, average order value, and top category\n📈 Sales Trends tracking monthly revenue, transactions, units sold, and average order value\n🛒 Category Performance comparing revenue, volume, and premium basket value across categories\n👥 Customer Segments analysing revenue and transaction behaviour by gender and age group\n💡 Insights & Recommendations turning analysis into clear business actions"
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html#interactive-dashboard",
+    "href": "projects/Retail_Business_Dashboard/index.html#interactive-dashboard",
+    "title": "Retail Executive Dashboard",
+    "section": "Interactive Dashboard",
+    "text": "Interactive Dashboard\nUse the embedded dashboard below to explore the retail analysis:"
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html#key-insights",
+    "href": "projects/Retail_Business_Dashboard/index.html#key-insights",
+    "title": "Retail Executive Dashboard",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nElectronics is the leading revenue category, generating the highest share of total revenue and acting as the main commercial revenue driver.\nCategory roles differ clearly: Electronics leads revenue, Clothing leads purchase volume, and Beauty has the highest average order value.\nSales performance appears more volume-driven than basket-size driven, suggesting that growth efforts should focus on traffic, conversion, and units per order.\nMay 2023 was the strongest sales month, making it a useful benchmark for planning future promotions, stock availability, and campaign timing.\nFemale customers contributed slightly more revenue than male customers, while the 45–54 age group emerged as the strongest age-based revenue segment."
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html#business-recommendations",
+    "href": "projects/Retail_Business_Dashboard/index.html#business-recommendations",
+    "title": "Retail Executive Dashboard",
+    "section": "Business Recommendations",
+    "text": "Business Recommendations\n\nPrioritise Electronics in revenue-focused campaigns, homepage placements, and stock availability planning.\nUse category-specific strategies: protect Electronics revenue, use Clothing for volume-led promotions, and position Beauty as a premium basket-value opportunity.\nFocus sales initiatives on increasing traffic, conversion, and units per order, rather than relying only on higher prices.\nReview the strongest month, May 2023, to understand what drove the performance and apply those learnings to future campaign planning."
+  },
+  {
+    "objectID": "projects/Retail_Business_Dashboard/index.html#resources",
+    "href": "projects/Retail_Business_Dashboard/index.html#resources",
+    "title": "Retail Executive Dashboard",
+    "section": "Resources",
+    "text": "Resources\n\nLive Dashboard\nGitHub Repository\n\n\nBuilt using R, Quarto, ggplot2, plotly, DT, and business analytics techniques."
+  },
+  {
+    "objectID": "projects/RFDS_Queensland_Network-Using-D3/index.html",
+    "href": "projects/RFDS_Queensland_Network-Using-D3/index.html",
+    "title": "RFDS Queensland Flight Network using D3.js",
+    "section": "",
+    "text": "This D3.js project explores Royal Flying Doctor Service (RFDS) flight routes and base activity within Queensland, using flight logs from July 2022.\nThe map highlights:\n\nRed nodes: RFDS bases\nBlue node: Brisbane - no incoming or outgoing of flights from this base\nLines: Flight paths\nTooltip: It shows detailed info i.e. no. of arrivals, departures, distances, flight count\nPath thickness: Representing amount of trips on that path\nNode thickness: Based on traffic at that location/base\n\n\n\n\n\n\nGitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
+  },
+  {
+    "objectID": "projects/RFDS_Queensland_Network-Using-D3/index.html#resource",
+    "href": "projects/RFDS_Queensland_Network-Using-D3/index.html#resource",
+    "title": "RFDS Queensland Flight Network using D3.js",
+    "section": "",
+    "text": "GitHub Repository\n\nAnalysis performed using D3.js and Javascript and visualisation was built sing SVG elements."
+  },
+  {
     "objectID": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "href": "projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
     "title": "NSF Grant Terminations Analysis",
@@ -173,41 +292,6 @@
     "title": "NSF Grant Terminations Analysis",
     "section": "",
     "text": "📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
-  },
-  {
-    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
-    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html",
-    "title": "Seismic Activity Dashboard",
-    "section": "",
-    "text": "This interactive dashboard explores trends in seismic activity near Mount Vesuvius using data from the 2025-05-13 TidyTuesday dataset.\nThe dataset records volcanic tremors from 2011 to 2025 and is used here to answer:\n\n📈 Has seismic activity changed in frequency or strength over time?\n🌋 Are events occurring deeper underground?\n🔥 How do depth and magnitude correlate?"
-  },
-  {
-    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#mount-vesuvius-seismic-analysis",
-    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#mount-vesuvius-seismic-analysis",
-    "title": "Seismic Activity Dashboard",
-    "section": "",
-    "text": "This interactive dashboard explores trends in seismic activity near Mount Vesuvius using data from the 2025-05-13 TidyTuesday dataset.\nThe dataset records volcanic tremors from 2011 to 2025 and is used here to answer:\n\n📈 Has seismic activity changed in frequency or strength over time?\n🌋 Are events occurring deeper underground?\n🔥 How do depth and magnitude correlate?"
-  },
-  {
-    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#dashboard-features",
-    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#dashboard-features",
-    "title": "Seismic Activity Dashboard",
-    "section": "Dashboard Features",
-    "text": "Dashboard Features\nThe app allows dynamic filtering by:\n\nYear Range\nReview Status (revised, preliminary, or all)\n\nIt includes the following charts:\n\n📊 Seismic Event Timeline — Count vs Average Magnitude over time\n\n🎯 Depth Scatterplot — How deep earthquakes occur by year\n\n🟨 Heatmap by Depth Band — Activity concentration across depth zones"
-  },
-  {
-    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#interactive-dashboard",
-    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#interactive-dashboard",
-    "title": "Seismic Activity Dashboard",
-    "section": "🌋 Interactive Dashboard",
-    "text": "🌋 Interactive Dashboard\nUse the dropdown and slider to explore seismic activity:"
-  },
-  {
-    "objectID": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#resources",
-    "href": "projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/index.html#resources",
-    "title": "Seismic Activity Dashboard",
-    "section": "📁 Resources",
-    "text": "📁 Resources\n\nGitHub Repository\nTidyTuesday Dataset\n🔗 LinkedIn Post\n\n\nBuilt using R packages: shiny, dplyr, ggplot2, viridis, readr."
   },
   {
     "objectID": "projects/TidyTuesday_24.06.25-MEASLES_OUTBREAK/index.html",
@@ -252,45 +336,10 @@
     "text": "Resources\nYou can also view the full report here: Interactive Report\n\nGitHub Repository\nLinkedIn Post\n\n\nBuilt using R, ggplot2, plotly, dplyr, and css."
   },
   {
-    "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html",
-    "href": "projects/TidyTuesday_29.04.25-USER2025/index.html",
-    "title": "userR! 2025 Keywords Network",
-    "section": "",
-    "text": "This interactive project explores how keywords were used across sessions at the useR! 2025 conference. The goal was to analyse and visualise how topics clustered together using text mining and network analysis techniques.\n\n\nThis analysis used the following R libraries:\n\ntidyverse for data manipulation\ntidytext for splitting keywords and keyword processing\nwidyr for calculating pairwise keyword co-occurrence\nggraph, igraph, and tidygraph for network visualization\nshiny for interactivity\n\nTo prepare the data:\n\nThe dataset was cleaned by separating comma-separated keywords into individual rows\nExtra whitespace and missing values were removed\nSession-level keyword groupings were constructed using unite() and pairwise_count()\nThe final result was a co-occurrence network, where nodes are keywords and edges represent how often they appeared together in a session\n\n\n\n\n\n\n\n\n\n\n\n\nKeyword Network\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
-  },
-  {
-    "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html#tools-data-preparation",
-    "href": "projects/TidyTuesday_29.04.25-USER2025/index.html#tools-data-preparation",
-    "title": "userR! 2025 Keywords Network",
-    "section": "",
-    "text": "This analysis used the following R libraries:\n\ntidyverse for data manipulation\ntidytext for splitting keywords and keyword processing\nwidyr for calculating pairwise keyword co-occurrence\nggraph, igraph, and tidygraph for network visualization\nshiny for interactivity\n\nTo prepare the data:\n\nThe dataset was cleaned by separating comma-separated keywords into individual rows\nExtra whitespace and missing values were removed\nSession-level keyword groupings were constructed using unite() and pairwise_count()\nThe final result was a co-occurrence network, where nodes are keywords and edges represent how often they appeared together in a session"
-  },
-  {
-    "objectID": "projects/TidyTuesday_29.04.25-USER2025/index.html#keyword-co-occurrence-visualisation",
-    "href": "projects/TidyTuesday_29.04.25-USER2025/index.html#keyword-co-occurrence-visualisation",
-    "title": "userR! 2025 Keywords Network",
-    "section": "",
-    "text": "Keyword Network\n\n\n\n\n\n📂 View the GitHub repo\n\n🔗 See my LinkedIn post"
-  },
-  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nMeasles Outbreak Insights\n\n\n\n\n\n\n\ntidytuesday\n\n\nmeasles\n\n\npublic health\n\n\nrmarkdown\n\n\ndata visualisation\n\n\nR\n\n\n\n\nExploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps from TidyTuesday 24-06-2025\n\n\n\n\n\n\nDec 6, 2026\n\n\n\n\n\n\n  \n\n\n\n\nPokemon Stat Dashboard\n\n\n\n\n\n\n\ntidytuesday\n\n\npokemon\n\n\nshiny\n\n\ndashboard\n\n\ndata visualization\n\n\nEDA\n\n\n\n\nAn interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.\n\n\n\n\n\n\nJun 26, 2025\n\n\n\n\n\n\n  \n\n\n\n\nSeismic Activity Dashboard\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\ndashboard\n\n\nMountVesuvius\n\n\neda\n\n\nvolcano\n\n\nseismic\n\n\nrstats\n\n\n\n\nAn interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data\n\n\n\n\n\n\nJun 17, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\n\n\n\n\nrfds\n\n\nd3\n\n\nspatial analysis\n\n\njavascript\n\n\nflight data\n\n\nhtml\n\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n  \n\n\n\n\nRFDS Network Visualisation\n\n\n\n\n\n\n\nrfds\n\n\nspatial analysis\n\n\nleaflet\n\n\nshiny\n\n\nflight data\n\n\neda\n\n\nR\n\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n  \n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\n\n\n\n\ntidytuesday\n\n\nshiny\n\n\nusmap\n\n\nplotly\n\n\ngrants\n\n\ndata analysis\n\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n  \n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\n\n\n\n\ntidytuesday\n\n\ntext analysis\n\n\nshiny\n\n\nvisualisation\n\n\nR\n\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Resume",
-    "section": "",
-    "text": "You can preview my resume below.\nTo download the full PDF, use the button underneath.\n👉 Download Resume (PDF)"
-  },
-  {
-    "objectID": "resume.html#my-resume",
-    "href": "resume.html#my-resume",
-    "title": "Resume",
-    "section": "",
-    "text": "You can preview my resume below.\nTo download the full PDF, use the button underneath.\n👉 Download Resume (PDF)"
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRetail Executive Dashboard\n\n\n\nretail\n\nanalytics\n\ndashboard\n\nbusiness intelligence\n\nquarto\n\nR\n\n\n\nAn interactive retail analytics dashboard exploring sales performance, category drivers, customer segments, and business recommendations.\n\n\n\n\n\nJun 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPokemon Stat Dashboard\n\n\n\ntidytuesday\n\npokemon\n\nshiny\n\ndashboard\n\ndata visualization\n\nEDA\n\n\n\nAn interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.\n\n\n\n\n\nJun 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMeasles Outbreak Insights\n\n\n\ntidytuesday\n\nmeasles\n\npublic health\n\nrmarkdown\n\ndata visualisation\n\nR\n\n\n\nExploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps from TidyTuesday 24-06-2025\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSeismic Activity Dashboard\n\n\n\ntidytuesday\n\nshiny\n\ndashboard\n\nMountVesuvius\n\neda\n\nvolcano\n\nseismic\n\nrstats\n\n\n\nAn interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data\n\n\n\n\n\nJun 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\nrfds\n\nd3\n\nspatial analysis\n\njavascript\n\nflight data\n\nhtml\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRFDS Network Visualisation\n\n\n\nrfds\n\nspatial analysis\n\nleaflet\n\nshiny\n\nflight data\n\neda\n\nR\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\ntidytuesday\n\nshiny\n\nusmap\n\nplotly\n\ngrants\n\ndata analysis\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\ntidytuesday\n\ntext analysis\n\nshiny\n\nvisualisation\n\nR\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
