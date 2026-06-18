@@ -1,0 +1,68 @@
+---
+title: "Retail Executive Dashboard"
+description: "An interactive retail analytics dashboard exploring sales performance, category drivers, customer segments, and business recommendations."
+date: 03-08-2025
+image: Retail_dashboard_metrics.png
+categories: [retail, analytics, dashboard, business intelligence, quarto, R]
+format:
+  html:
+    page-layout: article
+    toc: true
+    echo: false
+---
+
+## 🛍️ Retail Executive Dashboard
+
+This project explores retail sales performance through an interactive business dashboard. The dashboard focuses on revenue trends, category performance, customer segments, and action-focused recommendations for retail decision-making.
+
+The analysis summarises overall business performance, identifies top commercial drivers, and translates findings into practical actions.
+
+------------------------------------------------------------------------
+
+## Key Features
+
+- 📊 **Executive Overview** showing total revenue, transactions, units sold, average order value, and top category
+- 📈 **Sales Trends** tracking monthly revenue, transactions, units sold, and average order value
+- 🛒 **Category Performance** comparing revenue, volume, and premium basket value across categories
+- 👥 **Customer Segments** analysing revenue and transaction behaviour by gender and age group
+- 💡 **Insights & Recommendations** turning analysis into clear business actions
+
+------------------------------------------------------------------------
+
+## Interactive Dashboard
+
+Use the embedded dashboard below to explore the retail analysis:
+
+<iframe src="https://retail-business-dashboard.netlify.app/" width="100%" height="700px" style="border:none;">
+
+</iframe>
+
+------------------------------------------------------------------------
+
+## Key Insights
+
+- **Electronics is the leading revenue category**, generating the highest share of total revenue and acting as the main commercial revenue driver.
+- **Category roles differ clearly**: Electronics leads revenue, Clothing leads purchase volume, and Beauty has the highest average order value.
+- **Sales performance appears more volume-driven than basket-size driven**, suggesting that growth efforts should focus on traffic, conversion, and units per order.
+- **May 2023 was the strongest sales month**, making it a useful benchmark for planning future promotions, stock availability, and campaign timing.
+- **Female customers contributed slightly more revenue than male customers**, while the **45–54 age group** emerged as the strongest age-based revenue segment.
+
+------------------------------------------------------------------------
+
+## Business Recommendations
+
+- Prioritise **Electronics** in revenue-focused campaigns, homepage placements, and stock availability planning.
+- Use **category-specific strategies**: protect Electronics revenue, use Clothing for volume-led promotions, and position Beauty as a premium basket-value opportunity.
+- Focus sales initiatives on increasing **traffic, conversion, and units per order**, rather than relying only on higher prices.
+- Review the strongest month, **May 2023**, to understand what drove the performance and apply those learnings to future campaign planning.
+
+------------------------------------------------------------------------
+
+## Resources
+
+- [Live Dashboard](https://retail-business-dashboard.netlify.app/)
+- [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/01_retail)
+
+------------------------------------------------------------------------
+
+*Built using `R`, `Quarto`, `ggplot2`, `plotly`, `DT`, and business analytics techniques.*
