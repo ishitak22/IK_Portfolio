@@ -1,0 +1,48 @@
+---
+title: "Healthcare Australia Dashboard"
+description: "An interactive Shiny dashboard exploring healthcare access, demographic patterns, and health service insights across Australia."
+date: 03-08-2025
+image: image.png
+categories: [healthcare, australia, shiny, dashboard, data visualisation, R]
+format:
+  html:
+    page-layout: article
+    toc: true
+    echo: false
+---
+
+## Healthcare Australia Dashboard
+
+This project explores healthcare-related patterns across Australia using an interactive Shiny dashboard.
+
+The dashboard allows users to examine trends, compare regions, and interact with visualisations designed to support data-driven healthcare insights.
+
+------------------------------------------------------------------------
+
+## Key Features
+
+- 🏥 **Healthcare-focused dashboard** for exploring Australian health data
+- 📊 **Interactive visualisations** for comparing trends and patterns
+- 🌏 **Regional analysis** to understand variation across locations
+- 🔍 **User-driven exploration** through filters and dashboard components
+
+------------------------------------------------------------------------
+
+## Interactive Dashboard
+
+Use the embedded dashboard below to explore the analysis:
+
+<iframe src="https://ishitak.shinyapps.io/Healthcare_Australia/" width="100%" height="750px" style="border:none;">
+
+</iframe>
+
+------------------------------------------------------------------------
+
+## Resources
+
+- [Live Dashboard](https://ishitak.shinyapps.io/Healthcare_Australia/)
+- [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/01_retail)
+
+------------------------------------------------------------------------
+
+*Built using `R`, `Shiny`, and data visualisation techniques for healthcare analytics.*
