@@ -1,13 +1,13 @@
 ---
 title: "Healthcare Australia Dashboard"
 description: "An interactive Shiny dashboard exploring healthcare access, demographic patterns, and health service insights across Australia."
-date: 03-08-2025
+date: 06-23-2026
 image: image.png
 categories: [healthcare, australia, shiny, dashboard, data visualisation, R]
 format:
   html:
-    page-layout: article
-    toc: true
+    page-layout: full
+    toc: false
     echo: false
 ---
 
@@ -21,10 +21,10 @@ The dashboard allows users to examine trends, compare regions, and interact with
 
 ## Key Features
 
-- 🏥 **Healthcare-focused dashboard** for exploring Australian health data
-- 📊 **Interactive visualisations** for comparing trends and patterns
-- 🌏 **Regional analysis** to understand variation across locations
-- 🔍 **User-driven exploration** through filters and dashboard components
+-   🏥 **Healthcare-focused dashboard** for exploring Australian health data
+-   📊 **Interactive visualisations** for comparing trends and patterns
+-   🌏 **Regional analysis** to understand variation across locations
+-   🔍 **User-driven exploration** through filters and dashboard components
 
 ------------------------------------------------------------------------
 
@@ -32,16 +32,19 @@ The dashboard allows users to examine trends, compare regions, and interact with
 
 Use the embedded dashboard below to explore the analysis:
 
-<iframe src="https://ishitak.shinyapps.io/Healthcare_Australia/" width="100%" height="750px" style="border:none;">
-
+<iframe
+src="https://ishitak.shinyapps.io/Healthcare_Australia/"
+width="100%"
+height="1400px"
+style="border:none;">
 </iframe>
 
 ------------------------------------------------------------------------
 
 ## Resources
 
-- [Live Dashboard](https://ishitak.shinyapps.io/Healthcare_Australia/)
-- [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/01_retail)
+-   [Live Dashboard](https://ishitak.shinyapps.io/Healthcare_Australia/)
+-   [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/01_retail)
 
 ------------------------------------------------------------------------
 
