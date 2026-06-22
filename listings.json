@@ -2,6 +2,7 @@
   {
     "listing": "/projects.html",
     "items": [
+      "/projects/Healthcare_Australia_Dashboard/index.html",
       "/projects/Retail_Business_Dashboard/index.html",
       "/projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html",
       "/projects/TidyTuesday_24.06.25-MEASLES_OUTBREAK/index.html",
@@ -9,8 +10,7 @@
       "/projects/RFDS_Queensland_Network-Using-D3/index.html",
       "/projects/RFDS_Network_Visualisation-Using-R/index.html",
       "/projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html",
-      "/projects/TidyTuesday_29.04.25-USER2025/index.html",
-      "/projects/Healthcare_Australia_Dashboard/index.html"
+      "/projects/TidyTuesday_29.04.25-USER2025/index.html"
     ]
   }
 ]
