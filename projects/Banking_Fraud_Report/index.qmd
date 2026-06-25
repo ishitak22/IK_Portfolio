@@ -7,7 +7,7 @@ categories: [fraud detection, banking, analytics, dashboard, machine learning, R
 format:
   html:
     page-layout: article
-    toc: true
+    toc: false
     echo: false
 ---
 
