@@ -9,9 +9,8 @@ format:
   html:
     theme: cosmo
     css: ../../styles.css
-    page-layout: full
+    page-layout: article
     toc: false
-    toc-location: none
     echo: false
 ---
 
