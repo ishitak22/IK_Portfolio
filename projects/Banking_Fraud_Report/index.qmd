@@ -1,13 +1,17 @@
 ---
 title: "Banking Fraud Detection Analysis"
 description: "Exploring fraud patterns, transaction behaviour, and risk indicators through an interactive banking fraud dashboard."
-date: 06-26-26
+date: 2026-06-26
 image: image.png
 categories: [fraud detection, banking, analytics, dashboard, machine learning, R]
+
 format:
   html:
-    page-layout: article
+    theme: cosmo
+    css: ../../styles.css
+    page-layout: full
     toc: false
+    toc-location: none
     echo: false
 ---
 
