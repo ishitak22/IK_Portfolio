@@ -175,48 +175,6 @@
     "text": "Resources\n\nLive Dashboard\nGitHub Repository\n\n\nBuilt using R, Shiny, and data visualisation techniques for healthcare analytics."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Data Analytics Portfolio",
-    "section": "",
-    "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js\nMachine Learning: Supervised/Unsupervised learning, predictive modeling\nCloud & Web: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS\nProject Tools: GitHub, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
-  },
-  {
-    "objectID": "index.html#what-you-will-find-here",
-    "href": "index.html#what-you-will-find-here",
-    "title": "Data Analytics Portfolio",
-    "section": "",
-    "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
-    "section": "",
-    "text": "Hi, I’m Ishita Khanna, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.\nI approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it’s exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.\nThis portfolio highlights some of my recent work from the TidyTuesday community and will continue to grow with academic, personal, and applied projects.\nI’m always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference."
-  },
-  {
-    "objectID": "about.html#get-in-touch",
-    "href": "about.html#get-in-touch",
-    "title": "About me",
-    "section": "Get in Touch",
-    "text": "Get in Touch\n\nGitHub\nLinkedIn\nEmail: ishitakhanna2208@gmail.com"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact Me",
-    "section": "",
-    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
-  },
-  {
-    "objectID": "contact.html#lets-connect",
-    "href": "contact.html#lets-connect",
-    "title": "Contact Me",
-    "section": "",
-    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
-  },
-  {
     "objectID": "mysticase.html#where-data-meets-design",
     "href": "mysticase.html#where-data-meets-design",
     "title": "Mysticase: Side Business",
@@ -236,6 +194,90 @@
     "title": "Mysticase: Side Business",
     "section": "📈 Performance Overview",
     "text": "📈 Performance Overview\n\n\n\n\nMysticase Store Metrics: 2,000+ visits and $1,500+ in revenue\n\n\n\n\n\nMysticase Reach Metrics: 200+ favourites and 32 cities reached\n\n\n\n\nThis isn’t a large-scale commercial business, but rather an agile, side project to:\n\nApply marketing data analytics in a practical setting\n\nUnderstand customer behavior and analyse through real-time data\n\nDevelop SEO and product strategy based on insights showcasing insights analysis skills\nCommunicating through both data and design\n\n\n Visit Mysticase on Etsy \n\nThis initiative was a fun, self-directed application of the skills I developed during my data analytics Master’s — and a way to keep learning creatively outside work."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
+  },
+  {
+    "objectID": "contact.html#lets-connect",
+    "href": "contact.html#lets-connect",
+    "title": "Contact Me",
+    "section": "",
+    "text": "I’m always happy to connect over interesting data science work, collaborations, or just a friendly chat.\nFeel free to reach out via:\n\n📧 Email: ishitakhanna2208@gmail.com\n\n💼 LinkedIn: https://www.linkedin.com/in/khannaishita/\n\n🐙 GitHub: https://github.com/ishitak22"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hi, I’m Ishita Khanna, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.\nI approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it’s exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.\nThis portfolio highlights some of my recent work from the TidyTuesday community and will continue to grow with academic, personal, and applied projects.\nI’m always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference."
+  },
+  {
+    "objectID": "about.html#get-in-touch",
+    "href": "about.html#get-in-touch",
+    "title": "About me",
+    "section": "Get in Touch",
+    "text": "Get in Touch\n\nGitHub\nLinkedIn\nEmail: ishitakhanna2208@gmail.com"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Data Analytics Portfolio",
+    "section": "",
+    "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js\nMachine Learning: Supervised/Unsupervised learning, predictive modeling\nCloud & Web: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS\nProject Tools: GitHub, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+  },
+  {
+    "objectID": "index.html#what-you-will-find-here",
+    "href": "index.html#what-you-will-find-here",
+    "title": "Data Analytics Portfolio",
+    "section": "",
+    "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+  },
+  {
+    "objectID": "projects/Banking_Fraud_Report/index.html",
+    "href": "projects/Banking_Fraud_Report/index.html",
+    "title": "Banking Fraud Detection Analysis",
+    "section": "",
+    "text": "This project investigates banking transaction data to identify fraud patterns, suspicious behaviours, and key risk indicators. The dashboard provides an interactive environment for exploring transaction characteristics and understanding factors associated with fraudulent activity."
+  },
+  {
+    "objectID": "projects/Banking_Fraud_Report/index.html#banking-fraud-detection-dashboard",
+    "href": "projects/Banking_Fraud_Report/index.html#banking-fraud-detection-dashboard",
+    "title": "Banking Fraud Detection Analysis",
+    "section": "",
+    "text": "This project investigates banking transaction data to identify fraud patterns, suspicious behaviours, and key risk indicators. The dashboard provides an interactive environment for exploring transaction characteristics and understanding factors associated with fraudulent activity."
+  },
+  {
+    "objectID": "projects/Banking_Fraud_Report/index.html#key-features",
+    "href": "projects/Banking_Fraud_Report/index.html#key-features",
+    "title": "Banking Fraud Detection Analysis",
+    "section": "Key Features",
+    "text": "Key Features\n\n🚨 Fraud vs Non-Fraud Analysis comparing transaction behaviour\n📊 Interactive Visualisations for exploring fraud patterns\n🔍 Risk Factor Investigation across transaction attributes\n📈 Transaction Monitoring Insights to support fraud detection strategies"
+  },
+  {
+    "objectID": "projects/Banking_Fraud_Report/index.html#interactive-dashboard",
+    "href": "projects/Banking_Fraud_Report/index.html#interactive-dashboard",
+    "title": "Banking Fraud Detection Analysis",
+    "section": "Interactive Dashboard",
+    "text": "Interactive Dashboard\nUse the embedded dashboard below to explore the analysis:"
+  },
+  {
+    "objectID": "projects/Banking_Fraud_Report/index.html#key-insights",
+    "href": "projects/Banking_Fraud_Report/index.html#key-insights",
+    "title": "Banking Fraud Detection Analysis",
+    "section": "Key Insights",
+    "text": "Key Insights\n\nFraudulent transactions represent a small proportion of total activity but can have a disproportionate financial impact.\nTransaction characteristics show clear differences between fraudulent and legitimate activity.\nCertain transaction patterns appear more frequently in fraudulent cases, making them useful indicators for monitoring systems.\nInteractive exploration helps identify high-risk behaviours and potential fraud hotspots."
+  },
+  {
+    "objectID": "projects/Banking_Fraud_Report/index.html#resources",
+    "href": "projects/Banking_Fraud_Report/index.html#resources",
+    "title": "Banking Fraud Detection Analysis",
+    "section": "Resources",
+    "text": "Resources\n\nLive Dashboard\nGitHub Repository\n\n\nBuilt using R, Quarto, ggplot2, plotly, and insights analysis techniques."
   },
   {
     "objectID": "projects/Retail_Business_Dashboard/index.html",
@@ -375,6 +417,6 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHealthcare Australia Dashboard\n\n\n\nhealthcare\n\naustralia\n\nshiny\n\ndashboard\n\ndata visualisation\n\nR\n\n\n\nAn interactive Shiny dashboard exploring healthcare access, demographic patterns, and health service insights across Australia.\n\n\n\n\n\nJun 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nRetail Executive Dashboard\n\n\n\nretail\n\nanalytics\n\ndashboard\n\nbusiness intelligence\n\nquarto\n\nR\n\n\n\nAn interactive retail analytics dashboard exploring sales performance, category drivers, customer segments, and business recommendations.\n\n\n\n\n\nJun 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPokemon Stat Dashboard\n\n\n\ntidytuesday\n\npokemon\n\nshiny\n\ndashboard\n\ndata visualization\n\nEDA\n\n\n\nAn interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.\n\n\n\n\n\nJun 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMeasles Outbreak Insights\n\n\n\ntidytuesday\n\nmeasles\n\npublic health\n\nrmarkdown\n\ndata visualisation\n\nR\n\n\n\nExploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps from TidyTuesday 24-06-2025\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSeismic Activity Dashboard\n\n\n\ntidytuesday\n\nshiny\n\ndashboard\n\nMountVesuvius\n\neda\n\nvolcano\n\nseismic\n\nrstats\n\n\n\nAn interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data\n\n\n\n\n\nJun 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\nrfds\n\nd3\n\nspatial analysis\n\njavascript\n\nflight data\n\nhtml\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRFDS Network Visualisation\n\n\n\nrfds\n\nspatial analysis\n\nleaflet\n\nshiny\n\nflight data\n\neda\n\nR\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\ntidytuesday\n\nshiny\n\nusmap\n\nplotly\n\ngrants\n\ndata analysis\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\ntidytuesday\n\ntext analysis\n\nshiny\n\nvisualisation\n\nR\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Here’s how I’ve applied my skills across different data projects.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nBanking Fraud Detection Analysis\n\n\n\nfraud detection\n\nbanking\n\nanalytics\n\ndashboard\n\nmachine learning\n\nR\n\n\n\nExploring fraud patterns, transaction behaviour, and risk indicators through an interactive banking fraud dashboard.\n\n\n\n\n\nJun 26, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nHealthcare Australia Dashboard\n\n\n\nhealthcare\n\naustralia\n\nshiny\n\ndashboard\n\ndata visualisation\n\nR\n\n\n\nAn interactive Shiny dashboard exploring healthcare access, demographic patterns, and health service insights across Australia.\n\n\n\n\n\nJun 23, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nRetail Executive Dashboard\n\n\n\nretail\n\nanalytics\n\ndashboard\n\nbusiness intelligence\n\nquarto\n\nR\n\n\n\nAn interactive retail analytics dashboard exploring sales performance, category drivers, customer segments, and business recommendations.\n\n\n\n\n\nJun 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPokemon Stat Dashboard\n\n\n\ntidytuesday\n\npokemon\n\nshiny\n\ndashboard\n\ndata visualization\n\nEDA\n\n\n\nAn interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.\n\n\n\n\n\nJun 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMeasles Outbreak Insights\n\n\n\ntidytuesday\n\nmeasles\n\npublic health\n\nrmarkdown\n\ndata visualisation\n\nR\n\n\n\nExploring WHO-reported measles data across countries to uncover trends, reporting anomalies, and vaccine gaps from TidyTuesday 24-06-2025\n\n\n\n\n\nJun 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nSeismic Activity Dashboard\n\n\n\ntidytuesday\n\nshiny\n\ndashboard\n\nMountVesuvius\n\neda\n\nvolcano\n\nseismic\n\nrstats\n\n\n\nAn interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data\n\n\n\n\n\nJun 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRFDS Queensland Flight Network using D3.js\n\n\n\nrfds\n\nd3\n\nspatial analysis\n\njavascript\n\nflight data\n\nhtml\n\n\n\nInteractive D3.js visualisation of Queensland RFDS flight activity in July 2022\n\n\n\n\n\nJun 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRFDS Network Visualisation\n\n\n\nrfds\n\nspatial analysis\n\nleaflet\n\nshiny\n\nflight data\n\neda\n\nR\n\n\n\nExploring RFDS flight arrivals and air base activity across Australia with spatial visualisation tools\n\n\n\n\n\nJun 5, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nNSF Grant Terminations Analysis\n\n\n\ntidytuesday\n\nshiny\n\nusmap\n\nplotly\n\ngrants\n\ndata analysis\n\n\n\nAn interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.\n\n\n\n\n\nMay 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nuserR! 2025 Keywords Network\n\n\n\ntidytuesday\n\ntext analysis\n\nshiny\n\nvisualisation\n\nR\n\n\n\nExploring how topics clustered at useR! 2025 conference using text mining and network analysis\n\n\n\n\n\nApr 29, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
