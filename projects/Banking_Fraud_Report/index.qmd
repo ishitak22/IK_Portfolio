@@ -30,9 +30,16 @@ This project investigates banking transaction data to identify fraud patterns, s
 
 Use the embedded dashboard below to explore the analysis:
 
-<iframe src="https://bankingfraudreport.netlify.app/" width="100%" height="800px" style="border:none;">
+<div style="width:100vw; margin-left:calc(50% - 50vw);">
 
+<iframe
+src="https://bankingfraudreport.netlify.app/"
+width="100%"
+height="1300px"
+style="border:none;">
 </iframe>
+
+</div>
 
 ------------------------------------------------------------------------
 
