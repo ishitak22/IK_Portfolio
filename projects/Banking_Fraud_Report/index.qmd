@@ -14,8 +14,6 @@ format:
     echo: false
 ---
 
-## 💳 Banking Fraud Detection Dashboard
-
 This project investigates banking transaction data to identify fraud patterns, suspicious behaviours, and key risk indicators. The dashboard provides an interactive environment for exploring transaction characteristics and understanding factors associated with fraudulent activity.
 
 ------------------------------------------------------------------------
@@ -29,16 +27,16 @@ This project investigates banking transaction data to identify fraud patterns, s
 
 ------------------------------------------------------------------------
 
-## Interactive Dashboard
+## Data Exploration
 
-Use the embedded dashboard below to explore the analysis:
+Use the embedded report below to explore the analysis:
 
 <div style="width:100vw; margin-left:calc(50% - 50vw);">
 
 <iframe
 src="https://bankingfraudreport.netlify.app/"
 width="100%"
-height="1300px"
+height="1000px"
 style="border:none;">
 </iframe>
 
