@@ -7,14 +7,16 @@ Hi, I'm **Ishita Khanna**, a data analyst with a focus on creating clear, insigh
 
 I approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it's exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.
 
-This portfolio highlights some of my recent work from the [TidyTuesday](https://github.com/rfordatascience/tidytuesday) community and will continue to grow with academic, personal, and applied projects. 
+My portfolio brings together applied projects across public health, retail, banking fraud, healthcare, ecommerce, and open-data storytelling. Through these projects, I focus on asking practical business questions, building visual explanations, and communicating insights in a way that is useful for decision-making.
+
+I’m especially interested in roles where I can combine **data analysis, customer behaviour analysis, process improvement, dashboarding, and stakeholder communication** to create measurable business impact.
 
 I'm always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference.
 
----
+------------------------------------------------------------------------
 
 ## Get in Touch
 
- - [GitHub](https://github.com/ishitak22)
- - [LinkedIn](https://www.linkedin.com/in/khannaishita/)
- - Email: ishitakhanna2208@gmail.com
+-   [GitHub](https://github.com/ishitak22)
+-   [LinkedIn](https://www.linkedin.com/in/khannaishita/)
+-   Email: ishitakhanna2208\@gmail.com
