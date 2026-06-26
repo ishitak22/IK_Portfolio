@@ -245,13 +245,6 @@
     "text": "This project investigates banking transaction data to identify fraud patterns, suspicious behaviours, and key risk indicators. The dashboard provides an interactive environment for exploring transaction characteristics and understanding factors associated with fraudulent activity."
   },
   {
-    "objectID": "projects/Banking_Fraud_Report/index.html#banking-fraud-detection-dashboard",
-    "href": "projects/Banking_Fraud_Report/index.html#banking-fraud-detection-dashboard",
-    "title": "Banking Fraud Detection Analysis",
-    "section": "",
-    "text": "This project investigates banking transaction data to identify fraud patterns, suspicious behaviours, and key risk indicators. The dashboard provides an interactive environment for exploring transaction characteristics and understanding factors associated with fraudulent activity."
-  },
-  {
     "objectID": "projects/Banking_Fraud_Report/index.html#key-features",
     "href": "projects/Banking_Fraud_Report/index.html#key-features",
     "title": "Banking Fraud Detection Analysis",
@@ -259,11 +252,11 @@
     "text": "Key Features\n\n🚨 Fraud vs Non-Fraud Analysis comparing transaction behaviour\n📊 Interactive Visualisations for exploring fraud patterns\n🔍 Risk Factor Investigation across transaction attributes\n📈 Transaction Monitoring Insights to support fraud detection strategies"
   },
   {
-    "objectID": "projects/Banking_Fraud_Report/index.html#interactive-dashboard",
-    "href": "projects/Banking_Fraud_Report/index.html#interactive-dashboard",
+    "objectID": "projects/Banking_Fraud_Report/index.html#data-exploration",
+    "href": "projects/Banking_Fraud_Report/index.html#data-exploration",
     "title": "Banking Fraud Detection Analysis",
-    "section": "Interactive Dashboard",
-    "text": "Interactive Dashboard\nUse the embedded dashboard below to explore the analysis:"
+    "section": "Data Exploration",
+    "text": "Data Exploration\nUse the embedded report below to explore the analysis:"
   },
   {
     "objectID": "projects/Banking_Fraud_Report/index.html#key-insights",
