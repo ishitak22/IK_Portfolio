@@ -9,17 +9,17 @@ I'm a data analyst with a strong experience in **data visualisation**, **predict
 
 My toolbox includes:
 
--   **Languages & Analytics**: R, Python, SQL, Excel
--   **Visualisation**: ggplot2, Tableau, Power BI, R Shiny, d3.js
--   **Machine Learning**: Supervised/Unsupervised learning, predictive modeling
--   **Cloud & Web**: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS
--   **Project Tools**: GitHub, Trello, Notion
+-   **Languages & Analytics**: R, Python, SQL, Excel, KNIME
+-   **Visualisation**: ggplot2, Tableau, Power BI, R Shiny, d3.js, Data Storytelling
+-   **Machine Learning**: Supervised/Unsupervised learning, Predictive Modeling, Exploratory Data Analysis (EDA), Statistical Analysis
+-   **Cloud & Web**: Posit Cloud, RStudio Connect, Shinyapps.io, Quarto, HTML/CSS, Workflow Automation (Zapier), Keap CRM, React
+-   **Project Tools**: GitHub, Git, Trello, Notion
 
 ------------------------------------------------------------------------
 
 ## What you will find here
 
-This portfolio currently showcases a growing collection of my **Tidy Tuesday projects**, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.
+This portfolio currently showcases a growing collection of my **30 days 30 industry challenge**, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.
 
 I'll continue to expand it over time with additional projects, including academic work and case studies from various domains.
 
