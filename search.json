@@ -228,14 +228,14 @@
     "href": "index.html",
     "title": "Data Analytics Portfolio",
     "section": "",
-    "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js\nMachine Learning: Supervised/Unsupervised learning, predictive modeling\nCloud & Web: Posit Cloud, Shinyapps.io, Quarto, HTML/CSS\nProject Tools: GitHub, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+    "text": "I’m a data analyst with a strong experience in data visualisation, predictive modelling, and interactive dashboards using raw data to drive meaningful decisions across multiple domains.\nMy toolbox includes:\n\nLanguages & Analytics: R, Python, SQL, Excel, KNIME\nVisualisation: ggplot2, Tableau, Power BI, R Shiny, d3.js, Data Storytelling\nMachine Learning: Supervised/Unsupervised learning, Predictive Modeling, Exploratory Data Analysis (EDA), Statistical Analysis\nCloud & Web: Posit Cloud, RStudio Connect, Shinyapps.io, Quarto, HTML/CSS, Workflow Automation (Zapier), Keap CRM, React\nProject Tools: GitHub, Git, Trello, Notion\n\n\n\n\nThis portfolio currently showcases a growing collection of my 30 days 30 industry challenge, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
   },
   {
     "objectID": "index.html#what-you-will-find-here",
     "href": "index.html#what-you-will-find-here",
     "title": "Data Analytics Portfolio",
     "section": "",
-    "text": "This portfolio currently showcases a growing collection of my Tidy Tuesday projects, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
+    "text": "This portfolio currently showcases a growing collection of my 30 days 30 industry challenge, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.\nI’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.\nExplore Projects →\nThanks for stopping by!"
   },
   {
     "objectID": "projects/Banking_Fraud_Report/index.html",
