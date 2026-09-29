@@ -5,6 +5,7 @@ website:
   title: "Ishita Khanna"
   page-navigation: true
   navbar:
+    pinned: true
     left:
       - href: index.qmd
         text: Home
@@ -31,6 +32,7 @@ format:
       light: [cosmo, theme.scss]
       dark: [cosmo, theme.scss, theme-dark.scss]
     respect-user-color-scheme: true
+    include-in-header: animations.html
     toc: true
 
 editor: visual
