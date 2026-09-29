@@ -44,7 +44,7 @@ style="border:none;">
 ## Resources
 
 -   [Live Dashboard](https://ishitak.shinyapps.io/Healthcare_Australia/)
--   [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/01_retail)
+-   [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/02_healthcare)
 
 ------------------------------------------------------------------------
 

@@ -13,7 +13,7 @@ format:
 
 ## 🌍 Global Measles Analysis --- TidyTuesday 25-06-2025
 
-This project investigates global measles outbreak data using the [TidyTuesday 20-06-2025 dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-06-24). Using WHO provisional reports from 2015--2025, the analysis highlights vulnerable countries, under-reported outbreaks, and population-level immunisation challenges.
+This project investigates global measles outbreak data using the [TidyTuesday 24-06-2025 dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-06-24). Using WHO provisional reports from 2015--2025, the analysis highlights vulnerable countries, under-reported outbreaks, and population-level immunisation challenges.
 
 ------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ Hover over the bubbles in Bubble chart to learn more:
 You can also view the full report here: [Interactive Report](https://measles-outbreak.netlify.app/)
 
 -   [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-06-24)
--   [LinkedIn Post](https://www.linkedin.com/posts/khannaishita_tidytuesday-who-measlesoutbreak-activity-7356126428028944385-NMfa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM)
+-   [LinkedIn Post](https://www.linkedin.com/posts/khannaishita_tidytuesday-who-measlesoutbreak-activity-7356126428028944385-NMfa)
 
 ------------------------------------------------------------------------
 

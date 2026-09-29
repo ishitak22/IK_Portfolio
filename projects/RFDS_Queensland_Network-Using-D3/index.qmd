@@ -22,7 +22,7 @@ The map highlights:
  - **Lines**: Flight paths
  - **Tooltip**: It shows detailed info i.e. no. of arrivals, departures, distances, flight count
  - **Path thickness**: Representing amount of trips on that path
- - **Node thickness**: Based on traffic at that location/base
+ - **Node size**: Based on traffic at that location/base
  
 <iframe src="https://ishitak22.github.io/rfds_network_visualisation/rfds-d3/" width="100%" height="720px" style="border:none;"></iframe>
 
@@ -30,4 +30,4 @@ The map highlights:
 
  - [GitHub Repository](https://github.com/ishitak22/rfds_network_visualisation)
  
-*Analysis performed using D3.js and Javascript and visualisation was built sing SVG elements.*
+*Analysis performed using D3.js and JavaScript, and the visualisation was built using SVG elements.*
