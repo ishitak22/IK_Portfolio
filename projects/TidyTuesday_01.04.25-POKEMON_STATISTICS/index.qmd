@@ -11,22 +11,20 @@ format:
     echo: false
 ---
 
-## Pokemon Stat Dashboard -- TidyTuesday 2025-04-01
-
 This interactive dashboard visualises **Pokemon base stats** across generations using the [2025-04-01 TidyTuesday dataset](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01). The dashboard provides insights into stat distribution patterns, standout Pokemon outliers, average stats in generations and allows users to explore individual Pokemon stat profiles.
 
 ------------------------------------------------------------------------
 
-## Key Features
+## <i class="bi bi-grid-1x2"></i>Key Features
 
--   📊 **Boxplot View** of stat outliers
--   ⚙️ **Interactive Power Grid** for individual Pokemon
--   🧬 **Stat Distribution Histograms** across all Pokemon
--   🌱 **Average Stat Trends** across Generations
+-   <i class="bi bi-bar-chart"></i> **Boxplot View** of stat outliers
+-   <i class="bi bi-sliders"></i> **Interactive Power Grid** for individual Pokemon
+-   <i class="bi bi-distribute-vertical"></i> **Stat Distribution Histograms** across all Pokemon
+-   <i class="bi bi-graph-up-arrow"></i> **Average Stat Trends** across Generations
 
 ------------------------------------------------------------------------
 
-## 🎬 Demo Video
+## <i class="bi bi-play-circle"></i>Demo Video
 
 ::: {style="text-align: center; font-style: italic;"}
 Click the image below to watch the full dashboard demo video.
@@ -36,7 +34,7 @@ Click the image below to watch the full dashboard demo video.
 
 ------------------------------------------------------------------------
 
-## Insights
+## <i class="bi bi-lightbulb"></i>Insights
 
 -   **Special Attack and Speed** exhibit wide variation across Pokemon species
 -   **Defense** is more tightly clustered
@@ -45,7 +43,7 @@ Click the image below to watch the full dashboard demo video.
 
 ------------------------------------------------------------------------
 
-## Resources
+## <i class="bi bi-link-45deg"></i>Resources
 
 -   [GitHub Repository](https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-04-01)\
 -   [TidyTuesday Dataset (2025-04-01)](https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-04-01)
@@ -54,3 +52,9 @@ Click the image below to watch the full dashboard demo video.
 ------------------------------------------------------------------------
 
 *Built using `R`, `Shiny`, `ggtext`, `ggplot2` and `httr` for styling.*
+
+```{r}
+#| output: asis
+source("../../R/home.R")
+cat(related_projects_html())
+```

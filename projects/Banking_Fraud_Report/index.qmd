@@ -16,20 +16,20 @@ This project investigates banking transaction data to identify fraud patterns, s
 
 ------------------------------------------------------------------------
 
-## Key Features
+## <i class="bi bi-grid-1x2"></i>Key Features
 
-- 🚨 **Fraud vs Non-Fraud Analysis** comparing transaction behaviour
-- 📊 **Interactive Visualisations** for exploring fraud patterns
-- 🔍 **Risk Factor Investigation** across transaction attributes
-- 📈 **Transaction Monitoring Insights** to support fraud detection strategies
+- <i class="bi bi-shield-exclamation"></i> **Fraud vs Non-Fraud Analysis** comparing transaction behaviour
+- <i class="bi bi-bar-chart"></i> **Interactive Visualisations** for exploring fraud patterns
+- <i class="bi bi-search"></i> **Risk Factor Investigation** across transaction attributes
+- <i class="bi bi-graph-up-arrow"></i> **Transaction Monitoring Insights** to support fraud detection strategies
 
 ------------------------------------------------------------------------
 
-## Data Exploration
+## <i class="bi bi-bar-chart-line"></i>Data Exploration
 
 Use the embedded report below to explore the analysis:
 
-<div style="width:100vw; margin-left:calc(50% - 50vw);">
+::: {.column-page}
 
 <iframe
 src="https://bankingfraudreport.netlify.app/"
@@ -38,11 +38,11 @@ height="1000px"
 style="border:none;">
 </iframe>
 
-</div>
+:::
 
 ------------------------------------------------------------------------
 
-## Key Insights
+## <i class="bi bi-lightbulb"></i>Key Insights
 
 - Fraudulent transactions represent a small proportion of total activity but can have a disproportionate financial impact.
 - Transaction characteristics show clear differences between fraudulent and legitimate activity.
@@ -51,7 +51,7 @@ style="border:none;">
 
 ------------------------------------------------------------------------
 
-## Resources
+## <i class="bi bi-link-45deg"></i>Resources
 
 - [Live Dashboard](https://bankingfraudreport.netlify.app/)
 - [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/03_banking)
@@ -59,3 +59,9 @@ style="border:none;">
 ------------------------------------------------------------------------
 
 *Built using `R`, `Quarto`, `ggplot2`, `plotly`, and insights analysis techniques.*
+
+```{r}
+#| output: asis
+source("../../R/home.R")
+cat(related_projects_html())
+```

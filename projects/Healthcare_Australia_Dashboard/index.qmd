@@ -11,37 +11,37 @@ format:
     echo: false
 ---
 
-## Healthcare Australia Dashboard
-
 This project explores healthcare-related patterns across Australia using an interactive Shiny dashboard.
 
 The dashboard allows users to examine trends, compare regions, and interact with visualisations designed to support data-driven healthcare insights.
 
 ------------------------------------------------------------------------
 
-## Key Features
+## <i class="bi bi-grid-1x2"></i>Key Features
 
--   🏥 **Healthcare-focused dashboard** for exploring Australian health data
--   📊 **Interactive visualisations** for comparing trends and patterns
--   🌏 **Regional analysis** to understand variation across locations
--   🔍 **User-driven exploration** through filters and dashboard components
+-   <i class="bi bi-hospital"></i> **Healthcare-focused dashboard** for exploring Australian health data
+-   <i class="bi bi-bar-chart"></i> **Interactive visualisations** for comparing trends and patterns
+-   <i class="bi bi-geo-alt"></i> **Regional analysis** to understand variation across locations
+-   <i class="bi bi-search"></i> **User-driven exploration** through filters and dashboard components
 
 ------------------------------------------------------------------------
 
-## Interactive Dashboard
+## <i class="bi bi-bar-chart-line"></i>Interactive Dashboard
 
 Use the embedded dashboard below to explore the analysis:
 
+::: {.column-screen-inset .embed-wide}
 <iframe
 src="https://ishitak.shinyapps.io/Healthcare_Australia/"
 width="100%"
 height="1400px"
 style="border:none;">
 </iframe>
+:::
 
 ------------------------------------------------------------------------
 
-## Resources
+## <i class="bi bi-link-45deg"></i>Resources
 
 -   [Live Dashboard](https://ishitak.shinyapps.io/Healthcare_Australia/)
 -   [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/02_healthcare)
@@ -49,3 +49,19 @@ style="border:none;">
 ------------------------------------------------------------------------
 
 *Built using `R`, `Shiny`, and data visualisation techniques for healthcare analytics.*
+
+------------------------------------------------------------------------
+
+## <i class="bi bi-lightbulb"></i>What I noticed
+
+On the surface the numbers look reassuring: 93.7% of elective surgery patients were treated within the recommended time. But the average hides some very long waits. Excision of exostosis stood out at 455 days, well over a year.
+
+Where you live makes a difference too. The ACT had the highest wait pressure of any state, about 55 days longer than the state with the shortest waits.
+
+And the trend isn't going the right way. Wait-time performance is getting worse over time, so this is something to keep an eye on rather than a one-off.
+
+```{r}
+#| output: asis
+source("../../R/home.R")
+cat(related_projects_html())
+```

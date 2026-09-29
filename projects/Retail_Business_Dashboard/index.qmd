@@ -11,35 +11,35 @@ format:
     echo: false
 ---
 
-## 🛍️ Retail Executive Dashboard
-
 This project explores retail sales performance through an interactive business dashboard. The dashboard focuses on revenue trends, category performance, customer segments, and action-focused recommendations for retail decision-making.
 
 The analysis summarises overall business performance, identifies top commercial drivers, and translates findings into practical actions.
 
 ------------------------------------------------------------------------
 
-## Key Features
+## <i class="bi bi-grid-1x2"></i>Key Features
 
-- 📊 **Executive Overview** showing total revenue, transactions, units sold, average order value, and top category
-- 📈 **Sales Trends** tracking monthly revenue, transactions, units sold, and average order value
-- 🛒 **Category Performance** comparing revenue, volume, and premium basket value across categories
-- 👥 **Customer Segments** analysing revenue and transaction behaviour by gender and age group
-- 💡 **Insights & Recommendations** turning analysis into clear business actions
+- <i class="bi bi-speedometer2"></i> **Executive Overview** showing total revenue, transactions, units sold, average order value, and top category
+- <i class="bi bi-graph-up-arrow"></i> **Sales Trends** tracking monthly revenue, transactions, units sold, and average order value
+- <i class="bi bi-cart3"></i> **Category Performance** comparing revenue, volume, and premium basket value across categories
+- <i class="bi bi-people"></i> **Customer Segments** analysing revenue and transaction behaviour by gender and age group
+- <i class="bi bi-lightbulb"></i> **Insights & Recommendations** turning analysis into clear business actions
 
 ------------------------------------------------------------------------
 
-## Interactive Dashboard
+## <i class="bi bi-bar-chart-line"></i>Interactive Dashboard
 
 Use the embedded dashboard below to explore the retail analysis:
 
+::: {.column-screen-inset .embed-wide .embed-fit}
 <iframe src="https://retail-business-dashboard.netlify.app/" width="100%" height="700px" style="border:none;">
 
 </iframe>
+:::
 
 ------------------------------------------------------------------------
 
-## Key Insights
+## <i class="bi bi-lightbulb"></i>Key Insights
 
 - **Electronics is the leading revenue category**, generating the highest share of total revenue and acting as the main commercial revenue driver.
 - **Category roles differ clearly**: Electronics leads revenue, Clothing leads purchase volume, and Beauty has the highest average order value.
@@ -49,7 +49,7 @@ Use the embedded dashboard below to explore the retail analysis:
 
 ------------------------------------------------------------------------
 
-## Business Recommendations
+## <i class="bi bi-check2-circle"></i>Business Recommendations
 
 - Prioritise **Electronics** in revenue-focused campaigns, homepage placements, and stock availability planning.
 - Use **category-specific strategies**: protect Electronics revenue, use Clothing for volume-led promotions, and position Beauty as a premium basket-value opportunity.
@@ -58,7 +58,7 @@ Use the embedded dashboard below to explore the retail analysis:
 
 ------------------------------------------------------------------------
 
-## Resources
+## <i class="bi bi-link-45deg"></i>Resources
 
 - [Live Dashboard](https://retail-business-dashboard.netlify.app/)
 - [GitHub Repository](https://github.com/ishitak22/30-days-industry-analytics/tree/main/01_retail)
@@ -66,3 +66,9 @@ Use the embedded dashboard below to explore the retail analysis:
 ------------------------------------------------------------------------
 
 *Built using `R`, `Quarto`, `ggplot2`, `plotly`, `DT`, and business analytics techniques.*
+
+```{r}
+#| output: asis
+source("../../R/home.R")
+cat(related_projects_html())
+```

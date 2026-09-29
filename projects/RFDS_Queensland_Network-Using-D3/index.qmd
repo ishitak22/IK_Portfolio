@@ -11,8 +11,6 @@ format:
     echo: false
 ---
 
-# RFDS Flight Network in Queensland
-
 This D3.js project explores **Royal Flying Doctor Service (RFDS)** flight routes and base activity **within Queensland**, using flight logs from July 2022.
 
 The map highlights:
@@ -23,11 +21,29 @@ The map highlights:
  - **Tooltip**: It shows detailed info i.e. no. of arrivals, departures, distances, flight count
  - **Path thickness**: Representing amount of trips on that path
  - **Node size**: Based on traffic at that location/base
- 
-<iframe src="https://ishitak22.github.io/rfds_network_visualisation/rfds-d3/" width="100%" height="720px" style="border:none;"></iframe>
 
-## Resource
+::: {.column-screen-inset .embed-wide .embed-scale data-design-width="2000" data-content-width="1400" data-design-height="1100"}
+<iframe src="https://ishitak22.github.io/rfds_network_visualisation/rfds-d3/" width="100%" height="720px" style="border:none;"></iframe>
+:::
+
+## <i class="bi bi-link-45deg"></i>Resource
 
  - [GitHub Repository](https://github.com/ishitak22/rfds_network_visualisation)
- 
+
 *Analysis performed using D3.js and JavaScript, and the visualisation was built using SVG elements.*
+
+------------------------------------------------------------------------
+
+## <i class="bi bi-lightbulb"></i>What I noticed
+
+Once Brisbane is taken out of the picture, Townsville is clearly the centre of the regional network. It had 98 arrivals and departures in the month, more than any other base, and three of the four busiest routes run into it: from Cairns, Mount Isa and Mackay.
+
+Mount Isa to Townsville is the route that surprised me. It was flown 26 times, and each trip is close to 780 km.
+
+The longest route on the map is Townsville to Horn Island in the Torres Strait, around 1,080 km. And most of the dots aren't bases at all: 36 of the 45 airports are smaller regional and remote airstrips the aircraft fly in and out of.
+
+```{r}
+#| output: asis
+source("../../R/home.R")
+cat(related_projects_html())
+```
