@@ -1,34 +1,151 @@
 ---
 title: "About me"
-format: html
+subtitle: "Data Analyst · Insights & Reporting · Melbourne, VIC"
+aliases:
+  - contact.html
+toc: false
+body-classes: about-page
+about:
+  id: about-header
+  template: trestles
+  image: files/monogram.svg
+  image-shape: round
+  image-width: 9em
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/khannaishita/
+    - icon: github
+      text: GitHub
+      href: https://github.com/ishitak22
+    - icon: envelope
+      text: Email
+      href: mailto:ishitakhanna2208@gmail.com
+    - icon: file-earmark-person
+      text: Resume
+      href: resume.qmd
 ---
 
-Hi, I'm **Ishita Khanna**, a data analyst with a focus on creating clear, insightful and impactful data-driven solutions.
+::: {#about-header}
 
-I approach data projects with a blend of analytical thinking, attention to detail, and a user focused mindset, Whether it's exploring open datasets, designing dashboards, or building end-to-end workflows, I enjoy finding meaningful patterns and communicating results effectively.
+I'm a data analyst in Melbourne, and I think in patterns. Give me a spreadsheet, a dashboard or a half-finished dataset and I'll go looking for the story that's actually worth acting on.
 
-My portfolio brings together applied projects across public health, retail, banking fraud, healthcare, ecommerce, and open-data storytelling. Through these projects, I focus on asking practical business questions, building visual explanations, and communicating insights in a way that is useful for decision-making.
+I did my Master of Business Analytics at Monash, and most recently worked as a Customer Data Analyst at Comprara. There I was the sole analyst on a CRM clean-up: I brought 17,554 company records down to 11,749, linked 38,171 contacts to the right company and built the industry and job-role segments the team used for campaigns. Before that I co-founded Mysticase, a small Etsy business, and looked after the data side of it, from Google Trends research to listing and pricing decisions.
 
-I’m especially interested in roles where I can combine **data analysis, customer behaviour analysis, process improvement, dashboarding, and stakeholder communication** to create measurable business impact.
+Outside of work I keep practising across industries through my **30 Days, 30 Industries** challenge and TidyTuesday, building dashboards in R Shiny, Tableau and Power BI and writing up what I find in Quarto.
 
-I'm always open to learning new techniques, tools and domains and excited to contribute wherever data can make a difference.
+I'm looking for roles where I can bring together **data analysis, customer insight, reporting and stakeholder communication** to make a measurable difference.
 
-------------------------------------------------------------------------
+:::
 
-## My Toolkit
+## <i class="bi bi-briefcase"></i>Experience & education
 
--   **Data Analysis & Visualisation**: R, R Shiny, SQL, Tableau, Power BI, Python, Excel
--   **Machine Learning & GenAI**: Big data analysis, Generative AI, Predictive Modelling, Data Wrangling, Claude, Cursor
--   **Database**: MySQL, SQL Server, Supabase
--   **Programming & Automation**: HTML, CSS, KNIME, Zapier, Keap, Workflow Automation
--   **Cloud Computing & Version Control**: Databricks, Posit Cloud, Data Warehousing, Vercel, Git, GitHub
--   **Productivity & Collaboration**: Google Workspace, CRM Management, Process Documentation, Trello, Notion, Microsoft Office, Quarto
--   **Domain Knowledge & Professional Skills**: Business Analysis, Financial Modelling, Customer Data Analytics, Insights and Reporting, Segmentation Analysis, Supply Chain, Campaign Analysis, Statistical Analysis, Stakeholder Engagement, Data Storytelling, Cross-industry Adaptability
+::: {.timeline .reveal}
 
-------------------------------------------------------------------------
+::: {.tl-item}
+[Aug 2025 – May 2026]{.tl-date}
 
-## Get in Touch
+### Customer Data Analyst · Comprara
 
--   [GitHub](https://github.com/ishitak22)
--   [LinkedIn](https://www.linkedin.com/in/khannaishita/)
--   Email: ishitakhanna2208\@gmail.com
+Sole analyst on a CRM data quality and segmentation project: consolidated company records, linked contacts across four data sources and automated classification in KNIME, Keap and Zapier.
+:::
+
+::: {.tl-item}
+[Mar 2024 – Oct 2025]{.tl-date}
+
+### Co-founder, Marketing & Data Analyst · Mysticase
+
+Ran the data side of an Etsy phone case brand: trend and pricing analysis in Tableau, Etsy SEO and listing experiments. Listing views grew by 43%. [Read more →](mysticase.qmd)
+:::
+
+::: {.tl-item}
+[Feb 2022 – Dec 2023]{.tl-date}
+
+### Master of Business Analytics · Monash University
+
+Clayton, VIC.
+:::
+
+::: {.tl-item}
+[Aug 2018 – Jun 2021]{.tl-date}
+
+### Bachelor of Business Administration · Manav Rachna University
+
+Specialised in Finance and Accounting.
+:::
+
+:::
+
+## <i class="bi bi-tools"></i>My toolkit
+
+::: {.toolkit}
+
+::: {.tk-group}
+[Data Analysis & Visualisation]{.tk-title}
+
+[R]{.chip} [R Shiny]{.chip} [SQL]{.chip} [Tableau]{.chip} [Power BI]{.chip} [Python]{.chip} [Excel]{.chip}
+:::
+
+::: {.tk-group}
+[Machine Learning & GenAI]{.tk-title}
+
+[Big data analysis]{.chip} [Generative AI]{.chip} [Predictive Modelling]{.chip} [Data Wrangling]{.chip} [Claude]{.chip} [Cursor]{.chip}
+:::
+
+::: {.tk-group}
+[Database]{.tk-title}
+
+[MySQL]{.chip} [SQL Server]{.chip} [Supabase]{.chip}
+:::
+
+::: {.tk-group}
+[Programming & Automation]{.tk-title}
+
+[HTML]{.chip} [CSS]{.chip} [KNIME]{.chip} [Zapier]{.chip} [Keap]{.chip} [Workflow Automation]{.chip}
+:::
+
+::: {.tk-group}
+[Cloud Computing & Version Control]{.tk-title}
+
+[Databricks]{.chip} [Posit Cloud]{.chip} [Data Warehousing]{.chip} [Vercel]{.chip} [Git]{.chip} [GitHub]{.chip}
+:::
+
+::: {.tk-group}
+[Productivity & Collaboration]{.tk-title}
+
+[Google Workspace]{.chip} [CRM Management]{.chip} [Process Documentation]{.chip} [Trello]{.chip} [Notion]{.chip} [Microsoft Office]{.chip} [Quarto]{.chip}
+:::
+
+::: {.tk-group}
+[Domain Knowledge & Professional Skills]{.tk-title}
+
+[Business Analysis]{.chip} [Financial Modelling]{.chip} [Customer Data Analytics]{.chip} [Insights and Reporting]{.chip} [Segmentation Analysis]{.chip} [Supply Chain]{.chip} [Campaign Analysis]{.chip} [Statistical Analysis]{.chip} [Stakeholder Engagement]{.chip} [Data Storytelling]{.chip} [Cross-industry Adaptability]{.chip}
+:::
+
+:::
+
+## <i class="bi bi-patch-check"></i>Certifications
+
+::: {.certs}
+[Databricks · Accredited AI Agent Fundamentals]{.cert}
+[Databricks · Accredited Generative AI Fundamentals]{.cert}
+[Databricks · AI/BI for Data Analysis]{.cert}
+[Databricks · Accredited Databricks Fundamentals]{.cert}
+[NVIDIA · Agentic AI]{.cert}
+[Coursera · AI Agents and Agentic AI with Python & Generative AI]{.cert}
+[Microsoft · Harnessing the Power of Data with Power BI]{.cert}
+:::
+
+## <i class="bi bi-chat-dots"></i>Get in touch {#contact}
+
+I'm always happy to talk about data work, collaborations, or just have a friendly chat.
+
+::: {.contact-cards}
+[<i class="bi bi-envelope"></i> [Email]{.cc-label} [ishitakhanna2208@gmail.com]{.cc-value}](mailto:ishitakhanna2208@gmail.com){.contact-card}
+[<i class="bi bi-linkedin"></i> [LinkedIn]{.cc-label} [in/khannaishita]{.cc-value}](https://www.linkedin.com/in/khannaishita/){.contact-card}
+[<i class="bi bi-github"></i> [GitHub]{.cc-label} [ishitak22]{.cc-value}](https://github.com/ishitak22){.contact-card}
+:::
+
+::: {.copy-email-row}
+<button type="button" class="btn btn-outline-primary btn-sm copy-email" data-email="ishitakhanna2208@gmail.com"><i class="bi bi-clipboard"></i> <span aria-live="polite">Copy email address</span></button>
+:::
