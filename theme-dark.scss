@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+// Dark mode only overrides colours; everything else comes from theme.scss
+$primary: #8b93ff;
+$body-bg: #121418;
+$body-color: #e7e7ea;
+$headings-color: #f4f4f6;
+$text-muted: #9a9fad;
+$border-color: #2a2e36;
+$surface: #1a1d23;
+$link-color: $primary;
+
+$hero-art-opacity: .32;
+$tooltip-bg: #f4f4f6;
+$tooltip-fg: #14171f;
+$amber-text: #fbbf24;
+$hm-strong-text: #0f1115;
+$thumb-bg: #1f232a;
+
+$navbar-bg: $body-bg;
+$navbar-fg: $body-color;
+$navbar-hl: $primary;

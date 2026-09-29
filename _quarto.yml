@@ -27,8 +27,10 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme.scss, theme-dark.scss]
+    respect-user-color-scheme: true
     toc: true
 
 editor: visual

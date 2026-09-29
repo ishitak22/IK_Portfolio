@@ -7,8 +7,6 @@ categories: [fraud detection, banking, analytics, dashboard, machine learning, R
 
 format:
   html:
-    theme: cosmo
-    css: ../../styles.css
     page-layout: article
     toc: false
     echo: false

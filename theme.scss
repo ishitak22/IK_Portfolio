@@ -1,0 +1,852 @@
+/*-- scss:defaults --*/
+
+// Fonts: Inter for body text, Fraunces for headings
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif !default;
+$headings-font-family: "Fraunces", Georgia, serif !default;
+$headings-font-weight: 600 !default;
+$font-size-base: 1.0625rem !default;
+$line-height-base: 1.7 !default;
+
+// Colours (light mode). `!default` lets theme-dark.scss override them.
+$primary: #4f46e5 !default;
+$body-bg: #fbfaf7 !default;
+$body-color: #1f2430 !default;
+$headings-color: #14171f !default;
+$text-muted: #6b7080 !default;
+$border-color: #e6e3dc !default;
+$surface: #ffffff !default;          // cards, framed images
+$link-color: $primary !default;
+$hero-art-opacity: .22 !default;
+$tooltip-bg: #14171f !default;
+$tooltip-fg: #ffffff !default;
+$amber-text: #b45309 !default;
+$hm-strong-text: #ffffff !default;
+$thumb-bg: #f3f1ec !default;
+
+// Menu bar blends into the page
+$navbar-bg: $body-bg !default;
+$navbar-fg: $body-color !default;
+$navbar-hl: $primary !default;
+
+// Shape (Cosmo turns rounded corners off; switch them back on)
+$enable-rounded: true !default;
+$border-radius: 0.75rem !default;
+$border-radius-sm: 0.5rem !default;
+$border-radius-lg: 1rem !default;
+$btn-border-radius: 999px !default;
+$btn-border-radius-lg: 999px !default;
+$btn-border-radius-sm: 999px !default;
+$btn-font-weight: 500 !default;
+
+/*-- scss:rules --*/
+
+// Smooth fade when switching light/dark
+body, .navbar, #quarto-header, #quarto-margin-sidebar, .card, .quarto-category,
+h1, h2, h3, h4, a {
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}
+
+// Headings
+h1, h2, h3, h4, .title {
+  font-family: $headings-font-family;
+  color: $headings-color;
+  letter-spacing: -0.015em;
+}
+h2 { margin-top: 2.5rem; }
+
+// Menu bar
+.navbar {
+  border-bottom: 1px solid $border-color;
+  box-shadow: none;
+}
+.navbar-brand .navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.navbar-nav .nav-link { font-weight: 500; }
+.navbar-nav .nav-link.active { color: $primary !important; }
+
+// Links: underline on hover only
+main a:not(.btn):not(.nav-link):not(.related-card) {
+  text-decoration: none;
+  &:hover { text-decoration: underline; text-underline-offset: 3px; }
+}
+
+// Buttons
+.btn { padding: .6rem 1.4rem; transition: transform .15s ease, box-shadow .15s ease, background-color .2s ease; }
+.btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba($primary, .25); }
+
+// Category tags as tinted chips
+.quarto-category, .quarto-listing-category .category, .listing-categories .listing-category {
+  text-transform: none !important;
+  background-color: rgba($primary, .08) !important;
+  color: $primary !important;
+  border: 1px solid rgba($primary, .18) !important;
+  border-radius: 999px !important;
+  padding: .15rem .7rem !important;
+  font-size: .8rem;
+  font-weight: 500;
+  opacity: 1 !important;
+}
+
+// Cards (used by listings)
+.card, .quarto-grid-item.card {
+  background-color: $surface;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  overflow: hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.quarto-grid-item.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+// Project list thumbnails
+.quarto-post .thumbnail img, .thumbnail-image {
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+
+// Images inside page content: rounded and softly shadowed
+main .quarto-figure img, main figure img, main p > img {
+  border-radius: $border-radius;
+  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+}
+
+// Embedded dashboards. The background (a shimmer plus "Loading live
+// dashboard...") only shows until the embedded page paints over it, e.g. while
+// a sleeping Shiny app wakes up.
+main iframe {
+  border: 1px solid $border-color !important;
+  border-radius: $border-radius;
+  background-color: $surface;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='40'%3E%3Ctext x='50%25' y='60%25' text-anchor='middle' font-family='Inter,Segoe UI,sans-serif' font-size='15' font-weight='500' fill='%238a8f9c'%3ELoading live dashboard...%3C/text%3E%3C/svg%3E"),
+    linear-gradient(100deg, transparent 30%, rgba($primary, .08) 50%, transparent 70%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 120px, -100% 0;
+  background-size: auto, 50% 100%;
+  animation: embed-shimmer 1.6s ease-in-out 12;
+}
+@keyframes embed-shimmer {
+  from { background-position: center 120px, -100% 0; }
+  to   { background-position: center 120px, 200% 0; }
+}
+
+// Wide embeds for dashboards and maps: nearly the full screen width
+// (used with .column-screen-inset), capped so they don't sprawl on big monitors
+.embed-wide {
+  justify-self: center;
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+// Apps that should fill the window, like opening the dashboard directly
+.embed-fit iframe {
+  height: calc(100vh - 110px) !important;
+  min-height: 620px;
+}
+// Scaled fixed-size apps (sizes set by animations.html)
+.embed-scale {
+  overflow: hidden;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background-color: #fff;
+  iframe {
+    transform-origin: 0 0;
+    border: none !important;
+    border-radius: 0;
+    max-width: none;
+    background: #fff !important;   // this page is see-through; no placeholder text behind it
+    animation: none;
+  }
+}
+// The "On this page" sidebar steps aside while a wide embed is on screen
+#quarto-margin-sidebar, #quarto-toc-toggle { transition: opacity .25s ease; }
+body.wide-embed-in-view #quarto-margin-sidebar,
+body.wide-embed-in-view #quarto-toc-toggle { opacity: 0; pointer-events: none; }
+
+// Section and list icons (Bootstrap Icons, bundled with Quarto)
+main h2 > .bi:first-child, main h3 > .bi:first-child {
+  color: $primary;
+  margin-right: .55rem;
+  font-size: .82em;
+}
+main li > .bi:first-child { color: $primary; margin-right: .3rem; }
+
+// "More projects" at the bottom of each project page
+.related-projects {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $border-color;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.related-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none !important;
+  .card-img-top img { width: 100%; }
+  .card-title { font-size: 1rem; }
+  .card-text {
+    font-size: .85rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+// Horizontal rules: quieter divider
+main hr { border-color: $border-color; opacity: 1; }
+
+// ---------------------------------------------------------------------------
+// Motion (Phase 2)
+// ---------------------------------------------------------------------------
+
+// Page transitions between tabs: fade + slight slide up
+@view-transition { navigation: auto; }
+
+::view-transition-old(root) { animation: vt-out .25s ease both; }
+::view-transition-new(root) { animation: vt-in .25s ease both; }
+@keyframes vt-out { to   { opacity: 0; transform: translateY(-8px); } }
+@keyframes vt-in  { from { opacity: 0; transform: translateY(12px); } }
+
+// Keep the menu bar steady while the page underneath transitions
+#quarto-header { view-transition-name: site-header; }
+
+// Project card title <-> project page heading (name set by animations.html)
+::view-transition-group(project-title) {
+  animation-duration: .35s;
+  animation-timing-function: cubic-bezier(.2, .8, .2, 1);
+}
+::view-transition-old(project-title),
+::view-transition-new(project-title) {
+  height: 100%;
+  width: auto;
+}
+
+// Glass menu bar once the page is scrolled
+.navbar { transition: background-color .25s ease, padding .25s ease, backdrop-filter .25s ease; }
+#quarto-header.is-scrolled .navbar {
+  background-color: rgba($body-bg, .85) !important;
+  backdrop-filter: blur(12px) saturate(1.4);
+  -webkit-backdrop-filter: blur(12px) saturate(1.4);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+// Sliding underline on menu items (desktop menu only)
+@media (min-width: 992px) {
+  .navbar-nav .nav-link:has(.menu-text) { position: relative; }
+  .navbar-nav .nav-link:has(.menu-text)::after {
+    content: "";
+    position: absolute;
+    left: .5rem;
+    right: .5rem;
+    bottom: .2rem;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $primary;
+    transform: scaleX(0);
+    transition: transform .25s ease;
+  }
+  .navbar-nav .nav-link:has(.menu-text):hover::after,
+  .navbar-nav .nav-link.active:has(.menu-text)::after { transform: scaleX(1); }
+}
+
+// Reading progress bar on project pages (created by animations.html)
+#reading-progress {
+  position: fixed;
+  top: var(--header-h, 0px);   // sits just under the menu bar (set by animations.html)
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  box-shadow: 0 0 8px rgba($primary, .5);
+  background-color: $primary;
+  transform: scaleX(0);
+  transform-origin: left center;
+  z-index: 1100;
+  pointer-events: none;
+}
+
+// ---------------------------------------------------------------------------
+// Home page (Phase 3)
+// ---------------------------------------------------------------------------
+
+// Hero
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 4.5rem 0 3.5rem;
+  margin-top: -1.5rem;
+  background:
+    radial-gradient(60rem 30rem at 85% 40%, rgba($primary, .10), transparent 70%),
+    radial-gradient(40rem 20rem at 0% 0%, rgba($primary, .05), transparent 70%);
+  border-bottom: 1px solid $border-color;
+}
+.hero-art {
+  position: absolute;
+  right: -6%;
+  top: 50%;
+  width: min(880px, 80vw);
+  transform: translateY(-50%);
+  opacity: $hero-art-opacity;
+  pointer-events: none;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  animation: hero-drift 36s ease-in-out infinite alternate;
+}
+@keyframes hero-drift {
+  from { transform: translateY(-50%) rotate(0deg) scale(1); }
+  to   { transform: translateY(-53%) rotate(6deg) scale(1.05); }
+}
+.hero-inner { position: relative; }   // placed on the page grid via .column-body
+
+// Keep long-form pieces on the full-width home page readable
+.home .hm-wrap, .home .section-intro, .home .hm-headline, .home .hm-source { max-width: 980px; }
+.hero-eyebrow {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: $primary;
+}
+.hero h1.hero-title {
+  font-size: clamp(2.5rem, 6.5vw, 4.4rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  margin: .6rem 0 1.4rem;
+  border: none;
+  max-width: 14ch;
+}
+.hero-lead p {
+  font-size: 1.15rem;
+  max-width: 44rem;
+  color: $text-muted;
+  strong { color: $body-color; }
+}
+.hero-typed p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 1.25rem 0 0;
+}
+.typer {
+  color: $primary;
+  font-weight: 600;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    margin-left: 3px;
+    vertical-align: -0.15em;
+    background-color: $primary;
+    animation: caret 1s steps(1) infinite;
+  }
+}
+@keyframes caret { 50% { opacity: 0; } }
+.hero-actions p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 1.9rem;
+}
+
+// Impact numbers
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 1rem;
+  margin: 2.75rem 0 1.25rem;
+}
+.stat {
+  background-color: $surface;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  padding: 1.25rem 1.25rem 1.1rem;
+}
+.stat-num {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: $primary;
+  font-variant-numeric: tabular-nums;
+}
+.stat-label {
+  display: block;
+  margin-top: .35rem;
+  font-size: .88rem;
+  line-height: 1.45;
+  color: $text-muted;
+}
+.creds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.cred {
+  font-size: .82rem;
+  padding: .3rem .85rem;
+  border-radius: 999px;
+  border: 1px solid $border-color;
+  background-color: $surface;
+  color: $text-muted;
+}
+
+// Section headings on the home page
+.home section.section-title, .home h2.section-title {
+  margin-top: 4.5rem;
+  border-bottom: none;
+}
+.home .section-title h2 { border-bottom: none; }
+.section-intro p { color: $text-muted; max-width: 44rem; }
+
+// Toolkit vs market heatmap
+.hm-headline { font-size: 1.15rem; margin: 1.25rem 0 .75rem; }
+.hm-headline strong { color: $primary; }
+.hm-wrap { overflow-x: auto; overflow-y: visible; padding-top: 3rem; margin-top: -3rem; }
+.skill-heatmap {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 4px;
+  font-size: .9rem;
+  th {
+    font-weight: 500;
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: $text-muted;
+    text-align: center;
+    padding: .25rem .4rem;
+    white-space: nowrap;
+  }
+  tbody th {
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: .92rem;
+    font-weight: 600;
+    color: $body-color;
+  }
+}
+.hm-cell {
+  position: relative;
+  min-width: 72px;
+  height: 38px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px dashed $border-color;
+  cursor: default;
+  outline: none;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 7px;
+    background-color: $primary;
+    opacity: calc(var(--v) * .85);
+    transition: opacity .5s ease;
+  }
+  span { position: relative; font-weight: 600; }
+  &.hm-strong span { color: $hm-strong-text; }
+  &:hover, &:focus-visible { box-shadow: 0 0 0 2px $primary; }
+  // Tooltip
+  &::after {
+    content: attr(data-tip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    transform: translate(-50%, 4px);
+    width: max-content;
+    max-width: 260px;
+    padding: .45rem .65rem;
+    border-radius: 8px;
+    background-color: $tooltip-bg;
+    color: $tooltip-fg;
+    font-size: .78rem;
+    font-weight: 500;
+    line-height: 1.35;
+    text-align: left;
+    white-space: normal;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    transition: opacity .15s ease, transform .15s ease;
+  }
+  &:hover::after, &:focus::after { opacity: 1; transform: translate(-50%, 0); }
+}
+.hm-status {
+  font-size: .78rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: .2rem .7rem;
+  &[data-status="Strength"]      { background-color: rgba($primary, .14); color: $primary; }
+  &[data-status="Building"]      { background-color: rgba(#f59e0b, .16); color: $amber-text; }
+  &[data-status="In my toolkit"] { background-color: rgba($text-muted, .12); color: $text-muted; }
+  &[data-status="Next to learn"] { border: 1px dashed $border-color; color: $text-muted; }
+}
+.hm-source { font-size: .8rem; color: $text-muted; margin-top: .75rem; }
+.hm-sample { color: #d97706; font-weight: 600; }
+
+// Heatmap rows appear one after another
+.js .hm-wrap tbody tr { opacity: 0; transform: translateX(-10px); transition: opacity .45s ease, transform .45s ease; }
+.js .hm-wrap.in-view tbody tr { opacity: 1; transform: none; }
+
+// Recent work + closing
+.home #recent-work { margin-top: 1rem; }
+.see-all { display: inline-block; margin-top: 1.25rem; font-weight: 600; }
+.closing {
+  margin: 4rem 0 1rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: $border-radius-lg;
+  background-color: rgba($primary, .06);
+  border: 1px solid rgba($primary, .15);
+  p { margin: 0; }
+}
+
+// ---------------------------------------------------------------------------
+// Project cards + Projects page (Phase 4)
+// ---------------------------------------------------------------------------
+
+// Thumbnails: show the whole dashboard, fitted on a soft background
+.quarto-grid-item .card-img-top {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;      // cards are flex columns; don't let the thumbnail get squeezed
+  margin: 0;
+  background-color: $thumb-bg;
+  border-bottom: 1px solid $border-color;
+}
+.quarto-grid-item .card-img-top img {
+  object-fit: contain !important;
+  padding: 10px;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: transform .35s ease;
+}
+.quarto-grid-item:hover .card-img-top img { transform: scale(1.04); }
+
+// "View project →" slides in on hover
+.quarto-grid-item .card-img-top::after {
+  content: "View project →";
+  position: absolute;
+  right: .75rem;
+  bottom: .75rem;
+  padding: .3rem .8rem;
+  border-radius: 999px;
+  background-color: $primary;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .2s ease, transform .2s ease;
+}
+.quarto-grid-item:hover .card-img-top::after { opacity: 1; transform: none; }
+
+.quarto-grid-item .card-body { padding: 1.1rem 1.2rem .6rem; }
+.quarto-grid-item .card-title {
+  font-family: $headings-font-family;
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: $headings-color;
+}
+.quarto-grid-item .card-text { color: $text-muted; font-size: .92rem; }
+.quarto-grid-item .card-footer {
+  background: transparent;
+  border-top: none;
+  padding: 0 1.2rem 1rem;
+  color: $text-muted;
+  font-size: .8rem;
+}
+.quarto-grid-item .listing-categories { margin-top: .5rem; }
+
+// Summary line written by R
+.projects-summary { font-size: 1.15rem; margin-bottom: .25rem; }
+.projects-summary strong { color: $primary; }
+
+// Category chips moved above the grid by animations.html
+#filter-bar {
+  display: flex;
+  gap: .5rem;
+  overflow-x: auto;
+  padding: .25rem 0 .75rem;
+  margin: 1rem 0 .5rem;
+  scrollbar-width: thin;
+}
+#filter-bar .quarto-listing-category-title { display: none; }
+#filter-bar .quarto-listing-category {
+  display: flex;
+  flex-wrap: nowrap;       // phones: one row that scrolls sideways
+  gap: .5rem;
+}
+@media (min-width: 768px) {
+  #filter-bar { overflow-x: visible; }
+  #filter-bar .quarto-listing-category { flex-wrap: wrap; }
+}
+#filter-bar .category {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: .35rem .95rem !important;
+  border-radius: 999px !important;
+  border: 1px solid $border-color !important;
+  background-color: $surface !important;
+  color: $body-color !important;
+  font-size: .88rem;
+  font-weight: 500;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+  &:hover { border-color: $primary !important; color: $primary !important; }
+  &.active, &.active:hover {
+    background-color: $primary !important;
+    border-color: $primary !important;
+    color: $hm-strong-text !important;
+  }
+}
+.projects-page .quarto-listing-filter { max-width: 320px; }
+.quarto-listing-filter .input-group-text,
+.quarto-listing-filter .form-control {
+  background-color: $surface;
+  border-color: $border-color;
+  color: $body-color;
+}
+
+// Categories now live in the chip bar, so give the grid the sidebar's space
+.projects-page #quarto-margin-sidebar { display: none; }
+.projects-page main.content { grid-column: page-start / page-end !important; }
+
+// Cards rise into view one after another
+.js .quarto-grid-item.card-reveal { opacity: 0; transform: translateY(20px); }
+.js .quarto-grid-item.card-reveal.in-view {
+  opacity: 1;
+  transform: none;
+  transition: opacity .5s ease, transform .5s ease, box-shadow .15s ease;
+}
+.js .quarto-grid-item.card-reveal.in-view:hover { transform: translateY(-4px); }
+
+// Smooth reflow when a category filter is applied (the page itself stays put)
+html.filtering::view-transition-old(root),
+html.filtering::view-transition-new(root) { animation: none; }
+html.filtering::view-transition-group(*) {
+  animation-duration: .4s;
+  animation-timing-function: cubic-bezier(.2, .8, .2, 1);
+}
+
+// ---------------------------------------------------------------------------
+// About, Resume, 404 and footer (Phases 6-7)
+// ---------------------------------------------------------------------------
+
+// About header (Quarto "trestles" template): monogram + link buttons
+.about-page .about-entity .about-link {
+  border-radius: 999px !important;
+  border-color: $border-color !important;
+  color: $body-color !important;
+  font-weight: 500;
+  &:hover { border-color: $primary !important; color: $primary !important; }
+}
+.about-page .about-image { box-shadow: none !important; }
+
+// Experience timeline: a line that draws itself, with a dot per role
+.timeline {
+  position: relative;
+  margin: 1.5rem 0 1rem;
+  padding-left: 1.75rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: .4rem;
+    bottom: .4rem;
+    width: 2px;
+    background-color: rgba($primary, .25);
+    transform-origin: top;
+  }
+}
+.js .timeline.reveal::before { transform: scaleY(0); transition: transform 1.2s ease; }
+.js .timeline.reveal.in-view::before { transform: scaleY(1); }
+.tl-item {
+  position: relative;
+  padding-bottom: 1.6rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.75rem + 0px);
+    top: .45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $body-bg;
+    border: 2px solid $primary;
+  }
+  h3 { font-size: 1.1rem; margin: .15rem 0 .35rem; }
+  p { margin-bottom: 0; color: $text-muted; }
+}
+.tl-date {
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+// Toolkit chips
+.toolkit { display: grid; gap: 1.1rem; margin-top: 1rem; }
+.tk-title { display: block; font-weight: 600; font-size: .95rem; margin-bottom: .45rem; }
+.tk-group p { margin: 0; line-height: 2.1; }
+.chip {
+  display: inline-block;
+  padding: .15rem .7rem;
+  margin: 0 .2rem .1rem 0;
+  border-radius: 999px;
+  border: 1px solid $border-color;
+  background-color: $surface;
+  font-size: .85rem;
+  line-height: 1.6;
+}
+
+// Certifications
+.certs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .6rem;
+  margin-top: 1rem;
+  p { display: contents; }
+}
+.cert {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem .9rem;
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  background-color: $surface;
+  font-size: .88rem;
+  &::before {
+    content: "\F4B6";             // bootstrap-icons: patch-check-fill
+    font-family: "bootstrap-icons";
+    color: $primary;
+  }
+}
+
+// Contact cards
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: .75rem;
+  margin: 1rem 0 2rem;
+  p { display: contents; }
+}
+a.contact-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: .75rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  border-radius: $border-radius-lg;
+  border: 1px solid $border-color;
+  background-color: $surface;
+  color: $body-color;
+  text-decoration: none !important;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+  .bi { grid-row: span 2; font-size: 1.4rem; color: $primary; }
+  .cc-label { font-weight: 600; }
+  .cc-value { font-size: .85rem; color: $text-muted; overflow-wrap: anywhere; }
+  &:hover { transform: translateY(-2px); border-color: $primary; box-shadow: 0 8px 20px rgba(0,0,0,.06); }
+}
+
+// Copy email button under the contact cards
+.copy-email-row { margin: -1.25rem 0 2rem; }
+.copy-email {
+  padding: .35rem .95rem;
+  .bi { margin-right: .3rem; }
+  &.copied {
+    background-color: $primary;
+    border-color: $primary;
+    color: $hm-strong-text;
+  }
+}
+
+// Resume page
+.resume-actions p { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0 1.5rem; }
+.resume-actions .bi { margin-right: .35rem; }
+.resume-mobile { display: none; }
+@media (max-width: 767.98px) {
+  .resume-embed { display: none; }
+  .resume-mobile { display: block; color: $text-muted; font-size: .9rem; }
+}
+
+// 404 page
+.not-found #title-block-header { display: none; }
+.nf-box { text-align: center; padding: 4rem 0 3rem; }
+.nf-box p { font-size: 1.15rem; }
+.nf-box p:last-child { display: flex; gap: .6rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+.nf-code {
+  display: block;
+  font-family: $headings-font-family;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: $primary;
+  margin-bottom: 1rem;
+}
+
+// Footer
+.nav-footer {
+  border-top: 1px solid $border-color;
+  background-color: $body-bg;
+  font-size: .85rem;
+  color: $text-muted;
+  .nav-link { color: $text-muted !important; }
+  .nav-link:hover { color: $primary !important; }
+}
+
+// Fade + rise into view (JS adds .in-view; without JS everything shows)
+.js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
+.js .reveal.in-view { opacity: 1; transform: none; }
+
+// Visitors who ask their device for less motion get none of the above
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .js .reveal, .js .hm-wrap tbody tr, .js .quarto-grid-item.card-reveal { opacity: 1 !important; transform: none !important; }
+}
+
+// Shared figure/showcase styles (used on the Mysticase page)
+.text-center-block { text-align: center; }
+.showcase { text-align: center; margin-top: 2rem; }
+.showcase figure { margin-bottom: 2.5rem; }
+.showcase-img {
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  background: #fff;          // screenshots have white backgrounds; keep the frame white in both modes
+  border-radius: $border-radius !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,.10);
+}
+.showcase figcaption, .figure-caption {
+  margin-top: .75rem;
+  font-weight: 500;
+  font-size: .95rem;
+  color: $text-muted;
+}
