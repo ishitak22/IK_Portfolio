@@ -1,0 +1,7 @@
+is_sample: no
+source: data_jobs dataset by Luke Barousse (Apache-2.0)
+source_url: https://huggingface.co/datasets/lukebarousse/data_jobs
+role: Data Analyst
+country: Australia
+n_postings: 1658
+period: Jan 2023 – Dec 2023

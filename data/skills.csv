@@ -1,0 +1,13 @@
+skill,label,in_toolkit,work_roles,work_evidence,project_pattern,extra_projects,certification
+sql,SQL,yes,1,Comprara: profiled 17.5k CRM records with SQL,\bsql\b,,
+excel,Excel,yes,1,Comprara: CRM data cleanup and consolidation,\bexcel\b,,
+python,Python,yes,0,,\bpython\b,Walsall Council forecasting models,Coursera: AI Agents & Agentic AI with Python
+tableau,Tableau,yes,2,Comprara: results tracking; Mysticase: trend & pricing analysis,\btableau\b,Walsall Council dashboard,
+power bi,Power BI,yes,1,Comprara: results tracking,power ?bi,,Microsoft: Harnessing the Power of Data with Power BI
+r,R,yes,2,Comprara: data profiling; Mysticase: R Shiny,"(^|[ ,])r($|[ ,])|rstats|shiny|rmarkdown|ggplot|leaflet|tidytuesday",Walsall Council models,
+databricks,Databricks,yes,0,,databricks,30 Days 30 Industries challenge,Databricks: 4 accreditations incl. AI/BI for Data Analysis
+git,Git,yes,0,,\bgit(hub)?\b,Portfolio and project repos on GitHub,
+sql server,SQL Server,yes,0,,sql server,,
+mysql,MySQL,yes,0,,mysql,,
+powerpoint,PowerPoint,yes,0,,powerpoint,,
+word,Word,yes,0,,,,

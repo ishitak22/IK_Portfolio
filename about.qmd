@@ -15,6 +15,18 @@ I'm always open to learning new techniques, tools and domains and excited to con
 
 ------------------------------------------------------------------------
 
+## My Toolkit
+
+-   **Data Analysis & Visualisation**: R, R Shiny, SQL, Tableau, Power BI, Python, Excel
+-   **Machine Learning & GenAI**: Big data analysis, Generative AI, Predictive Modelling, Data Wrangling, Claude, Cursor
+-   **Database**: MySQL, SQL Server, Supabase
+-   **Programming & Automation**: HTML, CSS, KNIME, Zapier, Keap, Workflow Automation
+-   **Cloud Computing & Version Control**: Databricks, Posit Cloud, Data Warehousing, Vercel, Git, GitHub
+-   **Productivity & Collaboration**: Google Workspace, CRM Management, Process Documentation, Trello, Notion, Microsoft Office, Quarto
+-   **Domain Knowledge & Professional Skills**: Business Analysis, Financial Modelling, Customer Data Analytics, Insights and Reporting, Segmentation Analysis, Supply Chain, Campaign Analysis, Statistical Analysis, Stakeholder Engagement, Data Storytelling, Cross-industry Adaptability
+
+------------------------------------------------------------------------
+
 ## Get in Touch
 
 -   [GitHub](https://github.com/ishitak22)

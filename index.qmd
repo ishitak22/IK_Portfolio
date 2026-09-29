@@ -1,28 +1,77 @@
 ---
-title: "Data Analytics Portfolio"
-format: html
+pagetitle: "Ishita Khanna · Data Analyst"
+description: "Data Analyst in Melbourne turning messy data into decisions, with dashboards and analysis in R, SQL, Tableau and Power BI."
+execute:
+  echo: false
+  warning: false
+  message: false
+format:
+  html:
+    toc: false
+    page-layout: full
+    body-classes: home
+listing:
+  id: recent-work
+  contents: projects
+  type: grid
+  max-items: 3
+  sort: "date desc"
+  fields: [image, title, description]
+  image-height: 180px
 ---
 
-# 👋 Hello, I'm Ishita Khanna
+```{r}
+#| include: false
+source("R/home.R")
+projects <- read_projects()
+project_network_svg(projects, "files/hero-network.svg")
+```
 
-I'm a data analyst with a strong experience in **data visualisation**, **predictive modelling**, and **interactive dashboards** using raw data to drive meaningful decisions across multiple domains.
+::: {.hero .column-screen .page-columns .page-full}
+<img class="hero-art" src="files/hero-network.svg" alt="" aria-hidden="true">
 
-My toolbox includes:
+::: {.hero-inner .column-body}
+[Data Analyst · Insights & Reporting · Melbourne]{.hero-eyebrow}
 
--   **Languages & Analytics**: R, Python, SQL, Excel, KNIME
--   **Visualisation**: ggplot2, Tableau, Power BI, R Shiny, d3.js, Data Storytelling
--   **Machine Learning**: Supervised/Unsupervised learning, Predictive Modeling, Exploratory Data Analysis (EDA), Statistical Analysis
--   **Cloud & Web**: Posit Cloud, RStudio Connect, Shinyapps.io, Quarto, HTML/CSS, Workflow Automation (Zapier), Keap CRM, React
--   **Project Tools**: GitHub, Git, Trello, Notion
+# Messy data in. Decisions out. {.hero-title .no-anchor}
 
-------------------------------------------------------------------------
+::: hero-lead
+I'm Ishita, a Monash Business Analytics graduate who finds the story worth acting on. Most recently I rebuilt a CRM of **17,554 company records**, cutting it to **11,749 (−33%)**, linking **38,171 contacts** to the right company and reducing unclassified records by **over 60%**, so campaigns finally reached the right people.
+:::
 
-## What you will find here
+::: hero-typed
+I analyse data for <span class="typer" data-words='["banking &amp; fraud", "customer &amp; CRM", "healthcare", "retail", "e-commerce", "public health"]'>banking &amp; fraud</span>
+:::
 
-This portfolio currently showcases a growing collection of my **30 days 30 industry challenge**, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.
+::: hero-actions
+[See my work](projects.qmd){.btn .btn-primary .btn-lg} [Download CV](files/Ishita_Khanna_2026.pdf){.btn .btn-outline-primary .btn-lg target="_blank"}
+:::
+:::
+:::
 
-I'll continue to expand it over time with additional projects, including academic work and case studies from various domains.
+```{r}
+#| output: asis
+cat(impact_html())
+```
 
-[Explore Projects →](projects.qmd)
+## How my toolkit matches the market {.section-title}
 
-*Thanks for stopping by!*
+::: section-intro
+Each row is a tool that data analyst employers ask for. Darker cells mean stronger evidence, from job-ad demand to where I've used it. Hover or tap a cell for the details.
+:::
+
+```{r}
+#| output: asis
+cat(skills_heatmap_html(projects))
+```
+
+## Recent work {.section-title}
+
+::: {#recent-work}
+:::
+
+[See all projects →](projects.qmd){.see-all}
+
+::: closing
+This portfolio grows with my **30 Days, 30 Industries** challenge: one industry, one dataset, one dashboard at a time. [Follow along on GitHub →](https://github.com/ishitak22/30-days-industry-analytics)
+:::

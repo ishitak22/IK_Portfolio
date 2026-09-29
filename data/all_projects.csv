@@ -1,0 +1,13 @@
+project,industry,tools,on_portfolio,link
+Banking Fraud Detection Analysis,Banking,"R, Quarto, plotly",yes,projects/Banking_Fraud_Report/
+Healthcare Australia Dashboard,Healthcare,"R, Shiny",yes,projects/Healthcare_Australia_Dashboard/
+Retail Executive Dashboard,Retail,"R, Quarto",yes,projects/Retail_Business_Dashboard/
+RFDS Network Visualisation,Aviation / health services,"R, Shiny, leaflet",yes,projects/RFDS_Network_Visualisation-Using-R/
+RFDS Queensland Flight Network,Aviation / health services,"D3.js, JavaScript",yes,projects/RFDS_Queensland_Network-Using-D3/
+Pokemon Stat Dashboard,Gaming,"R, Shiny",yes,projects/TidyTuesday_01.04.25-POKEMON_STATISTICS/
+NSF Grant Terminations Analysis,Research funding,"R, Shiny, plotly",yes,projects/TidyTuesday_06.05.25-NSF_TERMINATIONS/
+Seismic Activity Dashboard,Geoscience,"R, Shiny",yes,projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/
+Measles Outbreak Insights,Public health,"R, R Markdown",yes,projects/TidyTuesday_24.06.25-MEASLES_OUTBREAK/
+useR! 2025 Keywords Network,Events / text analysis,"R, Shiny, tidytext",yes,projects/TidyTuesday_29.04.25-USER2025/
+Walsall Council: Housing and Homelessness Needs to 2040,Government / social services,"R, Python, Shiny, Tableau",no,https://github.com/ishitak22/Walsall_Council
+Sales Intelligence Copilot (Hackathon 2026),Sales / GenAI,"Claude, prompt engineering",no,

@@ -1,0 +1,26 @@
+# Numbers shown on the home page. Edit here; the page updates on the next render.
+
+# Total projects shown on the home page.
+# Keep a fixed label (e.g. "15+") until data/all_projects.csv lists every project,
+# then change it to "auto" and R will count the rows in that file.
+projects_total: "15+"
+projects_label: "analytics projects across industries"
+
+# Results from work experience (source: 2026 resume)
+impact:
+  - value: 33
+    prefix: "−"
+    suffix: "%"
+    label: "CRM company records after de-duplication (17,554 → 11,749)"
+  - value: 38171
+    label: "contacts linked to the right company"
+  - value: 43
+    prefix: "+"
+    suffix: "%"
+    label: "listing views on my e-commerce brand"
+
+# Small badges under the numbers
+credentials:
+  - "Master of Business Analytics, Monash"
+  - "7 certifications incl. Databricks, NVIDIA Agentic AI & Microsoft Power BI"
+  - "Hackathon 2026: Sales Intelligence Copilot (GenAI)"
