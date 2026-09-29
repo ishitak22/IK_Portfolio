@@ -3,7 +3,7 @@ title: "NSF Grant Terminations Analysis"
 description: "An interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap."
 date: 2025-05-06
 image: image.png
-categories: [tidytuesday, shiny, usmap, plotly, grants, data analysis]
+categories: [TidyTuesday, Science & Research, Spatial, Shiny, R]
 format:
   html:
     page-layout: article

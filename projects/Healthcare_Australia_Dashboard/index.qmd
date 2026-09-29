@@ -3,7 +3,7 @@ title: "Healthcare Australia Dashboard"
 description: "An interactive Shiny dashboard exploring healthcare access, demographic patterns, and health service insights across Australia."
 date: 06-23-2026
 image: image.png
-categories: [healthcare, australia, shiny, dashboard, data visualisation, R]
+categories: [30 Days Challenge, Healthcare, Dashboard, Shiny, R]
 format:
   html:
     page-layout: full

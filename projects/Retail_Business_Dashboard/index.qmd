@@ -2,8 +2,8 @@
 title: "Retail Executive Dashboard"
 description: "An interactive retail analytics dashboard exploring sales performance, category drivers, customer segments, and business recommendations."
 date: 06-19-2026
-image: Retail_dashboard_metrics.png
-categories: [retail, analytics, dashboard, business intelligence, quarto, R]
+image: thumbnail.png
+categories: [30 Days Challenge, Retail, Dashboard, R]
 format:
   html:
     page-layout: article

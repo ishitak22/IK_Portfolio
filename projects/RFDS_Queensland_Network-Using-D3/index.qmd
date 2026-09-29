@@ -2,7 +2,8 @@
 title: "RFDS Queensland Flight Network using D3.js"
 description: "Interactive D3.js visualisation of Queensland RFDS flight activity in July 2022"
 date: 2025-06-12
-categories: [rfds, d3, spatial analysis, javascript, flight data, html]
+image: image.png
+categories: [Healthcare, Spatial, D3.js]
 format:
   html:
     page-layout: article

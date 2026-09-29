@@ -1,15 +1,30 @@
 ---
 title: "Projects"
-listing: 
-  type: default
+execute:
+  echo: false
+  warning: false
+  message: false
+listing:
+  type: grid
   contents: projects
   sort: "date desc"
-  fields: [date, title, description, categories, image]
+  grid-columns: 3
+  image-height: 200px
+  fields: [image, date, title, description, categories]
   categories: true
   filter-ui: true
+  sort-ui: false
 format:
   html:
-    toc: true
+    toc: false
+    page-layout: full
+    body-classes: projects-page
 ---
+
+```{r}
+#| output: asis
+source("R/home.R")
+cat(projects_summary_html(read_projects()))
+```
 
 Here's how I've applied my skills across different data projects.

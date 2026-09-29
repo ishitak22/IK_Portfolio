@@ -3,7 +3,7 @@ title: "userR! 2025 Keywords Network"
 description: "Exploring how topics clustered at useR! 2025 conference using text mining and network analysis"
 date: 2025-04-29
 image: image.png
-categories: [tidytuesday, text analysis, shiny, visualisation, R]
+categories: [TidyTuesday, Text Analysis, Shiny, R]
 format:
   html:
     page-layout: article
