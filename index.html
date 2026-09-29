@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Data Analyst in Melbourne turning messy data into decisions, with dashboards and analysis in R, SQL, Tableau and Power BI.">
 
-<title>Data Analytics Portfolio – Ishita Khanna</title>
+<title>Ishita Khanna · Data Analyst – Ishita Khanna</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,22 +28,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./files/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-eb148a39aa88ac9df163fc8629fc12db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-105bad90271ca80a3f00fdb6b8621acc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-eb148a39aa88ac9df163fc8629fc12db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,12 +77,539 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-work .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-work'] = new List('listing-recent-work', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script>
+(function () {
+  // Loaded in <head> so the page-transition listeners below are registered in time.
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isProjectPage = /\/projects\/[^/]+\//.test(location.pathname);
+
+  // Lets CSS hide "reveal" elements only when this script can show them again
+  document.documentElement.classList.add('js');
+
+  // --- Home page: fade-ins, count-up numbers, typing effect ----------------
+  document.addEventListener('DOMContentLoaded', () => {
+    // Fade + rise into view; heatmap rows are staggered
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach((el) => {
+      el.querySelectorAll('tbody tr').forEach((tr, i) => { tr.style.transitionDelay = (i * 60) + 'ms'; });
+    });
+    const show = (el) => {
+      el.classList.add('in-view');
+      el.querySelectorAll('.stat-num[data-count]').forEach(countUp);
+    };
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      reveals.forEach(show);
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+      }, { threshold: 0.2 });
+      reveals.forEach((el) => io.observe(el));
+    }
+
+    // Project cards rise into view, staggered across each row of three
+    const cards = document.querySelectorAll('.quarto-grid-item');
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      const cardIO = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const card = e.target;
+          card.style.transitionDelay = (Number(card.dataset.revealOrder || 0) % 3) * 90 + 'ms';
+          card.classList.add('in-view');
+          card.addEventListener('transitionend', () => { card.style.transitionDelay = ''; }, { once: true });
+          cardIO.unobserve(card);
+        });
+      }, { threshold: 0.15 });
+      cards.forEach((card, i) => {
+        card.dataset.revealOrder = i;
+        card.classList.add('card-reveal');
+        cardIO.observe(card);
+      });
+    }
+
+    // Projects page: show the category filter as chips above the grid
+    const catList = document.querySelector('.projects-page .quarto-listing-category');
+    const grid = document.querySelector('.projects-page .quarto-listing');
+    if (catList && grid) {
+      const bar = document.createElement('div');
+      bar.id = 'filter-bar';
+      bar.setAttribute('aria-label', 'Filter projects by category');
+      bar.appendChild(catList);
+      grid.parentNode.insertBefore(bar, grid);
+      // Highlight "All" until a category is chosen
+      if (!catList.querySelector('.category.active')) {
+        const all = catList.querySelector('.category');
+        if (all) all.classList.add('active');
+      }
+      // Chip clicks: let Quarto filter inside a View Transition so cards glide
+      bar.addEventListener('click', (e) => {
+        const chip = e.target.closest('.category');
+        if (!chip || e.viaTransition || reduceMotion || !document.startViewTransition) return;
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        withCardTransition(() => {
+          const replay = new MouseEvent('click', { bubbles: true, cancelable: true });
+          replay.viaTransition = true;
+          chip.dispatchEvent(replay);
+        });
+      }, true);
+    }
+
+    // "Copy email address" button: works for visitors without a mail app
+    document.querySelectorAll('.copy-email').forEach((btn) => {
+      const label = btn.querySelector('span');
+      const icon = btn.querySelector('.bi');
+      btn.addEventListener('click', async () => {
+        const email = btn.dataset.email;
+        try {
+          await navigator.clipboard.writeText(email);
+        } catch (e) {                         // older browsers
+          const t = document.createElement('textarea');
+          t.value = email;
+          document.body.appendChild(t);
+          t.select();
+          document.execCommand('copy');
+          t.remove();
+        }
+        label.textContent = 'Copied!';
+        icon.className = 'bi bi-check2';
+        btn.classList.add('copied');
+        clearTimeout(btn._reset);
+        btn._reset = setTimeout(() => {
+          label.textContent = 'Copy email address';
+          icon.className = 'bi bi-clipboard';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+
+    // Screen readers announce embedded dashboards by their title
+    const pageName = (document.querySelector('h1.title') || {}).textContent || document.title;
+    document.querySelectorAll('main iframe:not([title])').forEach((f) => {
+      f.title = 'Interactive dashboard: ' + pageName.trim();
+    });
+
+    // Fixed-size apps (e.g. the D3 map): render at their design width, then
+    // scale down to fit so the whole layout is visible at once
+    document.querySelectorAll('.embed-scale').forEach((box) => {
+      const frame = box.querySelector('iframe');
+      if (!frame) return;
+      const dw = Number(box.dataset.designWidth);
+      const cw = Number(box.dataset.contentWidth || dw);
+      const dh = Number(box.dataset.designHeight);
+      const fit = () => {
+        const s = Math.min(box.clientWidth / cw, 1);
+        frame.style.width = dw + 'px';
+        frame.style.height = dh + 'px';
+        frame.style.transform = 'scale(' + s + ')';
+        box.style.height = Math.round(dh * s) + 'px';
+      };
+      fit();
+      window.addEventListener('resize', fit);
+    });
+
+    // Hide the "On this page" sidebar while a full-width dashboard is on screen
+    const wide = [...document.querySelectorAll('.embed-wide, .column-page')].filter((el) => el.querySelector('iframe'));
+    if (wide.length && 'IntersectionObserver' in window) {
+      const visible = new Set();
+      const wideIO = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
+        document.body.classList.toggle('wide-embed-in-view', visible.size > 0);
+      }, { rootMargin: '-60px 0px 0px 0px' });
+      wide.forEach((el) => wideIO.observe(el));
+    }
+
+    // Numbers count up from 0 to their final value
+    function countUp(el) {
+      const target = Number(el.dataset.count);
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const fmt = (n) => prefix + Math.round(n).toLocaleString('en-AU') + suffix;
+      if (reduceMotion || !target) { el.textContent = fmt(target); return; }
+      const start = performance.now();
+      const dur = 1400;
+      (function tick(now) {
+        const t = Math.min((now - start) / dur, 1);
+        el.textContent = fmt(target * (1 - Math.pow(1 - t, 3)));   // ease-out
+        if (t < 1) requestAnimationFrame(tick);
+      })(start);
+    }
+
+    // Typing effect: type a word, pause, delete, next word
+    document.querySelectorAll('.typer[data-words]').forEach((el) => {
+      if (reduceMotion) return;                 // keep the first word, no motion
+      let words;
+      try { words = JSON.parse(el.dataset.words); } catch (e) { return; }
+      let w = 0, i = words[0].length, deleting = true;
+      el.setAttribute('aria-live', 'off');
+      el.textContent = words[0];
+      function step() {
+        const word = words[w];
+        i += deleting ? -1 : 1;
+        el.textContent = word.slice(0, i);
+        let delay = deleting ? 45 : 85;
+        if (!deleting && i === word.length) { deleting = true; delay = 1800; }
+        else if (deleting && i === 0) { deleting = false; w = (w + 1) % words.length; delay = 350; }
+        setTimeout(step, delay);
+      }
+      setTimeout(step, 1800);   // show the first word fully before deleting it
+    });
+  });
+
+  // --- Glass menu bar once scrolled + reading progress bar (project pages) --
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('quarto-header');
+    let bar = null;
+    if (isProjectPage) {
+      // Keep the "Projects" tab highlighted while reading an individual project
+      const tab = document.querySelector('.navbar-nav .nav-link[href$="projects.html"]');
+      if (tab) tab.classList.add('active');
+      bar = document.createElement('div');
+      bar.id = 'reading-progress';
+      document.body.appendChild(bar);
+    }
+
+    let ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        if (header) header.classList.toggle('is-scrolled', y > 12);
+        if (bar) {
+          if (header) bar.style.setProperty('--header-h', header.getBoundingClientRect().bottom + 'px');
+          const max = document.documentElement.scrollHeight - window.innerHeight;
+          bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
+        }
+        ticking = false;
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    if (header) header.addEventListener('transitionend', onScroll); // menu bar finished shrinking
+    onScroll();
+  });
+
+  // --- Smooth reflow when filtering projects by category -------------------
+  // Wraps Quarto's category filter in a same-page View Transition so cards
+  // glide to their new positions instead of jumping.
+  function withCardTransition(update) {
+    const cards = document.querySelectorAll('.quarto-grid-item');
+    cards.forEach((c, i) => { c.style.viewTransitionName = 'card-' + (c.dataset.index || i); });
+    document.documentElement.classList.add('filtering');
+    const t = document.startViewTransition(update);
+    t.finished.finally(() => {
+      document.documentElement.classList.remove('filtering');
+      cards.forEach((c) => { c.style.viewTransitionName = ''; });
+    });
+  }
+  // Tag chips inside each card call window.quartoListingCategory directly
+  window.addEventListener('load', () => {
+    const original = window.quartoListingCategory;
+    if (reduceMotion || typeof original !== 'function' || !document.startViewTransition) return;
+    window.quartoListingCategory = function (...args) {
+      withCardTransition(() => original.apply(this, args));
+    };
+  });
+
+  // --- Title morph between a project card and its project page -------------
+  // Browsers with cross-page View Transitions fire pageswap/pagereveal;
+  // others simply skip this and load pages normally.
+  if (reduceMotion) return;
+
+  const NAME = 'project-title';
+  const clean = (url) => new URL(url, location.href).pathname.replace(/index\.html$/, '');
+  const isProjectPath = (path) => /\/projects\/[^/]+\/$/.test(path);
+
+  function clearNames() {
+    document.querySelectorAll('[data-vt-name]').forEach((el) => {
+      el.style.viewTransitionName = '';
+      el.removeAttribute('data-vt-name');
+    });
+  }
+  function name(el) {
+    if (!el) return;
+    el.style.viewTransitionName = NAME;
+    el.setAttribute('data-vt-name', '');
+  }
+  // The card title on a listing page that links to `path`
+  function cardTitleFor(path) {
+    const links = document.querySelectorAll('.quarto-listing a[href], .related-projects a[href]');
+    for (const a of links) {
+      if (clean(a.href) === path) {
+        const item = a.closest('.quarto-post, .quarto-grid-item, .card');
+        return item && item.querySelector('.listing-title, .card-title');
+      }
+    }
+    return null;
+  }
+  const pageTitle = () => document.querySelector('#title-block-header h1.title, header h1.title');
+
+  // Leaving this page: tag the element that should morph
+  window.addEventListener('pageswap', (e) => {
+    clearNames();
+    if (!e.viewTransition || !e.activation || !e.activation.entry) return;
+    const to = clean(e.activation.entry.url);
+    if (isProjectPath(to)) name(cardTitleFor(to));        // card -> project page
+    else if (isProjectPage) name(pageTitle());            // project page -> back to a list
+  });
+
+  // Arriving on this page: tag the matching element
+  window.addEventListener('pagereveal', (e) => {
+    clearNames();
+    if (!e.viewTransition || !window.navigation || !navigation.activation || !navigation.activation.from) return;
+    const from = clean(navigation.activation.from.url);
+    if (isProjectPage) name(pageTitle());                    // arrived from a card (list or "More projects")
+    else if (isProjectPath(from)) name(cardTitleFor(from));  // came back to the list
+    e.viewTransition.finished.finally(clearNames);
+  });
+})();
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Ishita Khanna · Data Analyst">
+<meta property="og:description" content="Data Analyst in Melbourne turning messy data into decisions, with dashboards and analysis in R, SQL, Tableau and Power BI.">
+<meta property="og:image" content="https://ishitak22.github.io/IK_Portfolio/files/social-card.png">
+<meta property="og:site_name" content="Ishita Khanna">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="Ishita Khanna · Data Analyst">
+<meta name="twitter:description" content="Data Analyst in Melbourne turning messy data into decisions, with dashboards and analysis in R, SQL, Tableau and Power BI.">
+<meta name="twitter:image" content="https://ishitak22.github.io/IK_Portfolio/files/social-card.png">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed home quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -97,108 +631,528 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./mysticase.html"> 
-<span class="menu-text">Real-World Application</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
-<span class="menu-text">Contact Me</span></a>
+    <a class="nav-link" href="./mysticase.html"> 
+<span class="menu-text">Mysticase</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/ishitak22"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/ishitak22"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/khannaishita/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/khannaishita/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#hello-im-ishita-khanna" id="toc-hello-im-ishita-khanna" class="nav-link active" data-scroll-target="#hello-im-ishita-khanna">👋 Hello, I’m Ishita Khanna</a>
-  <ul class="collapse">
-  <li><a href="#what-you-will-find-here" id="toc-what-you-will-find-here" class="nav-link" data-scroll-target="#what-you-will-find-here">What you will find here</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Data Analytics Portfolio</h1>
+
+
+
+
+<div class="hero column-screen page-columns page-full">
+<p><img class="hero-art" src="files/hero-network.svg" alt="" aria-hidden="true"></p>
+<div class="hero-inner column-body">
+<p><span class="hero-eyebrow">Data Analyst · Insights &amp; Reporting · Melbourne</span></p>
+<section id="messy-data-in.-decisions-out." class="level1 hero-title no-anchor">
+<h1 class="hero-title no-anchor">Messy data in. Decisions out.</h1>
+<div class="hero-lead">
+<p>I’m Ishita, a Monash Business Analytics graduate who finds the story worth acting on. Most recently I rebuilt a CRM of <strong>17,554 company records</strong>, cutting it to <strong>11,749 (−33%)</strong>, linking <strong>38,171 contacts</strong> to the right company and reducing unclassified records by <strong>over 60%</strong>, so campaigns finally reached the right people.</p>
+</div>
+<div class="hero-typed">
+<p>I analyse data for <span class="typer" data-words="[&quot;banking &amp; fraud&quot;, &quot;customer &amp; CRM&quot;, &quot;healthcare&quot;, &quot;retail&quot;, &quot;e-commerce&quot;, &quot;public health&quot;]">banking &amp; fraud</span></p>
+</div>
+<div class="hero-actions">
+<p><a href="./projects.html" class="btn btn-primary btn-lg">See my work</a> <a href="files/Ishita_Khanna_2026.pdf" class="btn btn-outline-primary btn-lg" target="_blank">Download CV</a></p>
+</div>
+</section>
+</div>
+</div>
+<div class="stats reveal">
+<div class="stat">
+<span class="stat-num" data-count="33" data-prefix="−" data-suffix="%">−33%</span><span class="stat-label">CRM company records after de-duplication (17,554 → 11,749)</span>
+</div>
+<div class="stat">
+<span class="stat-num" data-count="38171" data-prefix="" data-suffix="">38,171</span><span class="stat-label">contacts linked to the right company</span>
+</div>
+<div class="stat">
+<span class="stat-num" data-count="43" data-prefix="+" data-suffix="%">+43%</span><span class="stat-label">listing views on my e-commerce brand</span>
+</div>
+<div class="stat">
+<span class="stat-num" data-count="15" data-prefix="" data-suffix="+">15+</span><span class="stat-label">analytics projects across industries</span>
+</div>
+</div>
+<div class="creds reveal">
+<span class="cred">Master of Business Analytics, Monash</span><span class="cred">7 certifications incl.&nbsp;Databricks, NVIDIA Agentic AI &amp; Microsoft Power BI</span><span class="cred">Hackathon 2026: Sales Intelligence Copilot (GenAI)</span>
+</div>
+<section id="how-my-toolkit-matches-the-market" class="level2 section-title">
+<h2 class="section-title anchored" data-anchor-id="how-my-toolkit-matches-the-market">How my toolkit matches the market</h2>
+<div class="section-intro">
+<p>Each row is a tool that data analyst employers ask for. Darker cells mean stronger evidence, from job-ad demand to where I’ve used it. Hover or tap a cell for the details.</p>
+</div>
+<p class="hm-headline">
+I already use <strong>8 of the 12</strong> tools Data Analyst employers ask for most.
+</p>
+<div class="hm-wrap reveal">
+<table class="skill-heatmap">
+<thead>
+<tr>
+<th>
+Tool
+</th>
+<th>
+Employer demand
+</th>
+<th>
+Used at work
+</th>
+<th>
+In projects
+</th>
+<th>
+Certified
+</th>
+<th>
+Status
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+SQL
+</th>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Asked for in 46% of Data Analyst postings">
+<span>46%</span>
+</td>
+<td class="hm-cell" style="--v:0.50" tabindex="0" data-tip="Comprara: profiled 17.5k CRM records with SQL">
+<span>1</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Strength">
+Strength
+</td>
+</tr>
+<tr>
+<th scope="row">
+Python
+</th>
+<td class="hm-cell hm-strong" style="--v:0.56" tabindex="0" data-tip="Asked for in 26% of Data Analyst postings">
+<span>26%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.20" tabindex="0" data-tip="Walsall Council forecasting models">
+<span>1</span>
+</td>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Coursera: AI Agents &amp; Agentic AI with Python">
+<span>✓</span>
+</td>
+<td class="hm-status" data-status="Building">
+Building
+</td>
+</tr>
+<tr>
+<th scope="row">
+Power BI
+</th>
+<td class="hm-cell" style="--v:0.51" tabindex="0" data-tip="Asked for in 24% of Data Analyst postings">
+<span>24%</span>
+</td>
+<td class="hm-cell" style="--v:0.50" tabindex="0" data-tip="Comprara: results tracking">
+<span>1</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Microsoft: Harnessing the Power of Data with Power BI">
+<span>✓</span>
+</td>
+<td class="hm-status" data-status="Strength">
+Strength
+</td>
+</tr>
+<tr>
+<th scope="row">
+Excel
+</th>
+<td class="hm-cell" style="--v:0.50" tabindex="0" data-tip="Asked for in 23% of Data Analyst postings">
+<span>23%</span>
+</td>
+<td class="hm-cell" style="--v:0.50" tabindex="0" data-tip="Comprara: CRM data cleanup and consolidation">
+<span>1</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Strength">
+Strength
+</td>
+</tr>
+<tr>
+<th scope="row">
+Tableau
+</th>
+<td class="hm-cell" style="--v:0.43" tabindex="0" data-tip="Asked for in 20% of Data Analyst postings">
+<span>20%</span>
+</td>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Comprara: results tracking; Mysticase: trend &amp; pricing analysis">
+<span>2</span>
+</td>
+<td class="hm-cell" style="--v:0.20" tabindex="0" data-tip="Walsall Council dashboard">
+<span>1</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Strength">
+Strength
+</td>
+</tr>
+<tr>
+<th scope="row">
+R
+</th>
+<td class="hm-cell" style="--v:0.35" tabindex="0" data-tip="Asked for in 16% of Data Analyst postings">
+<span>16%</span>
+</td>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Comprara: data profiling; Mysticase: R Shiny">
+<span>2</span>
+</td>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Banking Fraud Detection Analysis · Healthcare Australia Dashboard · Retail Executive Dashboard · RFDS Network Visualisation · Pokemon Stat Dashboard · NSF Grant Terminations Analysis · Seismic Activity Dashboard · Measles Outbreak Insights · useR! 2025 Keywords Network · Walsall Council models">
+<span>10</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Strength">
+Strength
+</td>
+</tr>
+<tr>
+<th scope="row">
+Azure
+</th>
+<td class="hm-cell" style="--v:0.18" tabindex="0" data-tip="Asked for in 9% of Data Analyst postings">
+<span>9%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Next to learn">
+Next to learn
+</td>
+</tr>
+<tr>
+<th scope="row">
+AWS
+</th>
+<td class="hm-cell" style="--v:0.15" tabindex="0" data-tip="Asked for in 7% of Data Analyst postings">
+<span>7%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Next to learn">
+Next to learn
+</td>
+</tr>
+<tr>
+<th scope="row">
+SAS
+</th>
+<td class="hm-cell" style="--v:0.13" tabindex="0" data-tip="Asked for in 6% of Data Analyst postings">
+<span>6%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Next to learn">
+Next to learn
+</td>
+</tr>
+<tr>
+<th scope="row">
+SQL Server
+</th>
+<td class="hm-cell" style="--v:0.13" tabindex="0" data-tip="Asked for in 6% of Data Analyst postings">
+<span>6%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="In my toolkit">
+In my toolkit
+</td>
+</tr>
+<tr>
+<th scope="row">
+Snowflake
+</th>
+<td class="hm-cell" style="--v:0.11" tabindex="0" data-tip="Asked for in 5% of Data Analyst postings">
+<span>5%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Next to learn">
+Next to learn
+</td>
+</tr>
+<tr>
+<th scope="row">
+Word
+</th>
+<td class="hm-cell" style="--v:0.10" tabindex="0" data-tip="Asked for in 5% of Data Analyst postings">
+<span>5%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="In my toolkit">
+In my toolkit
+</td>
+</tr>
+<tr>
+<th scope="row">
+Databricks
+</th>
+<td class="hm-cell" style="--v:0.06" tabindex="0" data-tip="Asked for in 3% of Data Analyst postings">
+<span>3%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.20" tabindex="0" data-tip="30 Days 30 Industries challenge">
+<span>1</span>
+</td>
+<td class="hm-cell hm-strong" style="--v:1.00" tabindex="0" data-tip="Databricks: 4 accreditations incl. AI/BI for Data Analysis">
+<span>✓</span>
+</td>
+<td class="hm-status" data-status="Building">
+Building
+</td>
+</tr>
+<tr>
+<th scope="row">
+PowerPoint
+</th>
+<td class="hm-cell" style="--v:0.06" tabindex="0" data-tip="Asked for in 3% of Data Analyst postings">
+<span>3%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="In my toolkit">
+In my toolkit
+</td>
+</tr>
+<tr>
+<th scope="row">
+Git
+</th>
+<td class="hm-cell" style="--v:0.03" tabindex="0" data-tip="Asked for in 1% of Data Analyst postings">
+<span>1%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.20" tabindex="0" data-tip="Portfolio and project repos on GitHub">
+<span>1</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="Building">
+Building
+</td>
+</tr>
+<tr>
+<th scope="row">
+MySQL
+</th>
+<td class="hm-cell" style="--v:0.02" tabindex="0" data-tip="Asked for in 1% of Data Analyst postings">
+<span>1%</span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="Not yet used in a paid role">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No projects yet">
+<span></span>
+</td>
+<td class="hm-cell" style="--v:0.00" tabindex="0" data-tip="No certification">
+<span></span>
+</td>
+<td class="hm-status" data-status="In my toolkit">
+In my toolkit
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="hm-source">
+Employer demand: share of Data Analyst job postings in Australia that mention each tool (1,658 postings, Jan 2023 – Dec 2023). Source: <a href="https://huggingface.co/datasets/lukebarousse/data_jobs">data_jobs dataset by Luke Barousse (Apache-2.0)</a>. Evidence from my work history and portfolio, computed in R.
+</p>
+</section>
+<section id="recent-work" class="level2 section-title">
+<h2 class="section-title anchored" data-anchor-id="recent-work">Recent work</h2>
+<div id="listing-recent-work" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="MzAlMjBEYXlzJTIwQ2hhbGxlbmdlJTJDRmluYW5jZSUyQ0Rhc2hib2FyZCUyQ01hY2hpbmUlMjBMZWFybmluZyUyQ1I=" data-listing-date-sort="1782396000000" data-listing-file-modified-sort="1790683190678" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="159">
+<a href="./projects/Banking_Fraud_Report/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/Banking_Fraud_Report/image.png" class="thumbnail-image card-img" style="height: 180px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Banking Fraud Detection Analysis
+</h5>
+<div class="card-text listing-description delink">
+<p>Exploring fraud patterns, transaction behaviour, and risk indicators through an interactive banking fraud dashboard.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="MzAlMjBEYXlzJTIwQ2hhbGxlbmdlJTJDSGVhbHRoY2FyZSUyQ0Rhc2hib2FyZCUyQ1NoaW55JTJDUg==" data-listing-date-sort="1782136800000" data-listing-file-modified-sort="1790683190760" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="211">
+<a href="./projects/Healthcare_Australia_Dashboard/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/Healthcare_Australia_Dashboard/image.png" class="thumbnail-image card-img" style="height: 180px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Healthcare Australia Dashboard
+</h5>
+<div class="card-text listing-description delink">
+<p>An interactive Shiny dashboard exploring healthcare access, demographic patterns, and health service insights across Australia.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="MzAlMjBEYXlzJTIwQ2hhbGxlbmdlJTJDUmV0YWlsJTJDRGFzaGJvYXJkJTJDUg==" data-listing-date-sort="1781791200000" data-listing-file-modified-sort="1790683191046" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="333">
+<a href="./projects/Retail_Business_Dashboard/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/Retail_Business_Dashboard/thumbnail.png" class="thumbnail-image card-img" style="height: 180px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Retail Executive Dashboard
+</h5>
+<div class="card-text listing-description delink">
+<p>An interactive retail analytics dashboard exploring sales performance, category drivers, customer segments, and business recommendations.</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p><a href="./projects.html" class="see-all">See all projects →</a></p>
+<div class="closing">
+<p>This portfolio grows with my <strong>30 Days, 30 Industries</strong> challenge: one industry, one dataset, one dashboard at a time. <a href="https://github.com/ishitak22/30-days-industry-analytics">Follow along on GitHub →</a></p>
 </div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="hello-im-ishita-khanna" class="level1">
-<h1>👋 Hello, I’m Ishita Khanna</h1>
-<p>I’m a data analyst with a strong experience in <strong>data visualisation</strong>, <strong>predictive modelling</strong>, and <strong>interactive dashboards</strong> using raw data to drive meaningful decisions across multiple domains.</p>
-<p>My toolbox includes:</p>
-<ul>
-<li><strong>Languages &amp; Analytics</strong>: R, Python, SQL, Excel, KNIME</li>
-<li><strong>Visualisation</strong>: ggplot2, Tableau, Power BI, R Shiny, d3.js, Data Storytelling</li>
-<li><strong>Machine Learning</strong>: Supervised/Unsupervised learning, Predictive Modeling, Exploratory Data Analysis (EDA), Statistical Analysis</li>
-<li><strong>Cloud &amp; Web</strong>: Posit Cloud, RStudio Connect, Shinyapps.io, Quarto, HTML/CSS, Workflow Automation (Zapier), Keap CRM, React</li>
-<li><strong>Project Tools</strong>: GitHub, Git, Trello, Notion</li>
-</ul>
-<hr>
-<section id="what-you-will-find-here" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-will-find-here">What you will find here</h2>
-<p>This portfolio currently showcases a growing collection of my <strong>30 days 30 industry challenge</strong>, where I display my exploratory analysis, data visualisation and dashboarding experience using real world datasets.</p>
-<p>I’ll continue to expand it over time with additional projects, including academic work and case studies from various domains.</p>
-<p><a href="./projects.html">Explore Projects →</a></p>
-<p><em>Thanks for stopping by!</em></p>
-
-
-</section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -598,6 +1552,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Ishita Khanna · Built with R &amp; Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ishitakhanna2208@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/khannaishita/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ishitak22">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 

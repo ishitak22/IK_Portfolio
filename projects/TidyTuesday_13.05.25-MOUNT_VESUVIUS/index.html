@@ -29,22 +29,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../files/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-eb148a39aa88ac9df163fc8629fc12db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-105bad90271ca80a3f00fdb6b8621acc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-eb148a39aa88ac9df163fc8629fc12db.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,12 +76,481 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+(function () {
+  // Loaded in <head> so the page-transition listeners below are registered in time.
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isProjectPage = /\/projects\/[^/]+\//.test(location.pathname);
+
+  // Lets CSS hide "reveal" elements only when this script can show them again
+  document.documentElement.classList.add('js');
+
+  // --- Home page: fade-ins, count-up numbers, typing effect ----------------
+  document.addEventListener('DOMContentLoaded', () => {
+    // Fade + rise into view; heatmap rows are staggered
+    const reveals = document.querySelectorAll('.reveal');
+    reveals.forEach((el) => {
+      el.querySelectorAll('tbody tr').forEach((tr, i) => { tr.style.transitionDelay = (i * 60) + 'ms'; });
+    });
+    const show = (el) => {
+      el.classList.add('in-view');
+      el.querySelectorAll('.stat-num[data-count]').forEach(countUp);
+    };
+    if (reduceMotion || !('IntersectionObserver' in window)) {
+      reveals.forEach(show);
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+      }, { threshold: 0.2 });
+      reveals.forEach((el) => io.observe(el));
+    }
+
+    // Project cards rise into view, staggered across each row of three
+    const cards = document.querySelectorAll('.quarto-grid-item');
+    if (!reduceMotion && 'IntersectionObserver' in window) {
+      const cardIO = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const card = e.target;
+          card.style.transitionDelay = (Number(card.dataset.revealOrder || 0) % 3) * 90 + 'ms';
+          card.classList.add('in-view');
+          card.addEventListener('transitionend', () => { card.style.transitionDelay = ''; }, { once: true });
+          cardIO.unobserve(card);
+        });
+      }, { threshold: 0.15 });
+      cards.forEach((card, i) => {
+        card.dataset.revealOrder = i;
+        card.classList.add('card-reveal');
+        cardIO.observe(card);
+      });
+    }
+
+    // Projects page: show the category filter as chips above the grid
+    const catList = document.querySelector('.projects-page .quarto-listing-category');
+    const grid = document.querySelector('.projects-page .quarto-listing');
+    if (catList && grid) {
+      const bar = document.createElement('div');
+      bar.id = 'filter-bar';
+      bar.setAttribute('aria-label', 'Filter projects by category');
+      bar.appendChild(catList);
+      grid.parentNode.insertBefore(bar, grid);
+      // Highlight "All" until a category is chosen
+      if (!catList.querySelector('.category.active')) {
+        const all = catList.querySelector('.category');
+        if (all) all.classList.add('active');
+      }
+      // Chip clicks: let Quarto filter inside a View Transition so cards glide
+      bar.addEventListener('click', (e) => {
+        const chip = e.target.closest('.category');
+        if (!chip || e.viaTransition || reduceMotion || !document.startViewTransition) return;
+        e.stopImmediatePropagation();
+        e.preventDefault();
+        withCardTransition(() => {
+          const replay = new MouseEvent('click', { bubbles: true, cancelable: true });
+          replay.viaTransition = true;
+          chip.dispatchEvent(replay);
+        });
+      }, true);
+    }
+
+    // "Copy email address" button: works for visitors without a mail app
+    document.querySelectorAll('.copy-email').forEach((btn) => {
+      const label = btn.querySelector('span');
+      const icon = btn.querySelector('.bi');
+      btn.addEventListener('click', async () => {
+        const email = btn.dataset.email;
+        try {
+          await navigator.clipboard.writeText(email);
+        } catch (e) {                         // older browsers
+          const t = document.createElement('textarea');
+          t.value = email;
+          document.body.appendChild(t);
+          t.select();
+          document.execCommand('copy');
+          t.remove();
+        }
+        label.textContent = 'Copied!';
+        icon.className = 'bi bi-check2';
+        btn.classList.add('copied');
+        clearTimeout(btn._reset);
+        btn._reset = setTimeout(() => {
+          label.textContent = 'Copy email address';
+          icon.className = 'bi bi-clipboard';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+
+    // Screen readers announce embedded dashboards by their title
+    const pageName = (document.querySelector('h1.title') || {}).textContent || document.title;
+    document.querySelectorAll('main iframe:not([title])').forEach((f) => {
+      f.title = 'Interactive dashboard: ' + pageName.trim();
+    });
+
+    // Fixed-size apps (e.g. the D3 map): render at their design width, then
+    // scale down to fit so the whole layout is visible at once
+    document.querySelectorAll('.embed-scale').forEach((box) => {
+      const frame = box.querySelector('iframe');
+      if (!frame) return;
+      const dw = Number(box.dataset.designWidth);
+      const cw = Number(box.dataset.contentWidth || dw);
+      const dh = Number(box.dataset.designHeight);
+      const fit = () => {
+        const s = Math.min(box.clientWidth / cw, 1);
+        frame.style.width = dw + 'px';
+        frame.style.height = dh + 'px';
+        frame.style.transform = 'scale(' + s + ')';
+        box.style.height = Math.round(dh * s) + 'px';
+      };
+      fit();
+      window.addEventListener('resize', fit);
+    });
+
+    // Hide the "On this page" sidebar while a full-width dashboard is on screen
+    const wide = [...document.querySelectorAll('.embed-wide, .column-page')].filter((el) => el.querySelector('iframe'));
+    if (wide.length && 'IntersectionObserver' in window) {
+      const visible = new Set();
+      const wideIO = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
+        document.body.classList.toggle('wide-embed-in-view', visible.size > 0);
+      }, { rootMargin: '-60px 0px 0px 0px' });
+      wide.forEach((el) => wideIO.observe(el));
+    }
+
+    // Numbers count up from 0 to their final value
+    function countUp(el) {
+      const target = Number(el.dataset.count);
+      const prefix = el.dataset.prefix || '';
+      const suffix = el.dataset.suffix || '';
+      const fmt = (n) => prefix + Math.round(n).toLocaleString('en-AU') + suffix;
+      if (reduceMotion || !target) { el.textContent = fmt(target); return; }
+      const start = performance.now();
+      const dur = 1400;
+      (function tick(now) {
+        const t = Math.min((now - start) / dur, 1);
+        el.textContent = fmt(target * (1 - Math.pow(1 - t, 3)));   // ease-out
+        if (t < 1) requestAnimationFrame(tick);
+      })(start);
+    }
+
+    // Typing effect: type a word, pause, delete, next word
+    document.querySelectorAll('.typer[data-words]').forEach((el) => {
+      if (reduceMotion) return;                 // keep the first word, no motion
+      let words;
+      try { words = JSON.parse(el.dataset.words); } catch (e) { return; }
+      let w = 0, i = words[0].length, deleting = true;
+      el.setAttribute('aria-live', 'off');
+      el.textContent = words[0];
+      function step() {
+        const word = words[w];
+        i += deleting ? -1 : 1;
+        el.textContent = word.slice(0, i);
+        let delay = deleting ? 45 : 85;
+        if (!deleting && i === word.length) { deleting = true; delay = 1800; }
+        else if (deleting && i === 0) { deleting = false; w = (w + 1) % words.length; delay = 350; }
+        setTimeout(step, delay);
+      }
+      setTimeout(step, 1800);   // show the first word fully before deleting it
+    });
+  });
+
+  // --- Glass menu bar once scrolled + reading progress bar (project pages) --
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('quarto-header');
+    let bar = null;
+    if (isProjectPage) {
+      // Keep the "Projects" tab highlighted while reading an individual project
+      const tab = document.querySelector('.navbar-nav .nav-link[href$="projects.html"]');
+      if (tab) tab.classList.add('active');
+      bar = document.createElement('div');
+      bar.id = 'reading-progress';
+      document.body.appendChild(bar);
+    }
+
+    let ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        if (header) header.classList.toggle('is-scrolled', y > 12);
+        if (bar) {
+          if (header) bar.style.setProperty('--header-h', header.getBoundingClientRect().bottom + 'px');
+          const max = document.documentElement.scrollHeight - window.innerHeight;
+          bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
+        }
+        ticking = false;
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    if (header) header.addEventListener('transitionend', onScroll); // menu bar finished shrinking
+    onScroll();
+  });
+
+  // --- Smooth reflow when filtering projects by category -------------------
+  // Wraps Quarto's category filter in a same-page View Transition so cards
+  // glide to their new positions instead of jumping.
+  function withCardTransition(update) {
+    const cards = document.querySelectorAll('.quarto-grid-item');
+    cards.forEach((c, i) => { c.style.viewTransitionName = 'card-' + (c.dataset.index || i); });
+    document.documentElement.classList.add('filtering');
+    const t = document.startViewTransition(update);
+    t.finished.finally(() => {
+      document.documentElement.classList.remove('filtering');
+      cards.forEach((c) => { c.style.viewTransitionName = ''; });
+    });
+  }
+  // Tag chips inside each card call window.quartoListingCategory directly
+  window.addEventListener('load', () => {
+    const original = window.quartoListingCategory;
+    if (reduceMotion || typeof original !== 'function' || !document.startViewTransition) return;
+    window.quartoListingCategory = function (...args) {
+      withCardTransition(() => original.apply(this, args));
+    };
+  });
+
+  // --- Title morph between a project card and its project page -------------
+  // Browsers with cross-page View Transitions fire pageswap/pagereveal;
+  // others simply skip this and load pages normally.
+  if (reduceMotion) return;
+
+  const NAME = 'project-title';
+  const clean = (url) => new URL(url, location.href).pathname.replace(/index\.html$/, '');
+  const isProjectPath = (path) => /\/projects\/[^/]+\/$/.test(path);
+
+  function clearNames() {
+    document.querySelectorAll('[data-vt-name]').forEach((el) => {
+      el.style.viewTransitionName = '';
+      el.removeAttribute('data-vt-name');
+    });
+  }
+  function name(el) {
+    if (!el) return;
+    el.style.viewTransitionName = NAME;
+    el.setAttribute('data-vt-name', '');
+  }
+  // The card title on a listing page that links to `path`
+  function cardTitleFor(path) {
+    const links = document.querySelectorAll('.quarto-listing a[href], .related-projects a[href]');
+    for (const a of links) {
+      if (clean(a.href) === path) {
+        const item = a.closest('.quarto-post, .quarto-grid-item, .card');
+        return item && item.querySelector('.listing-title, .card-title');
+      }
+    }
+    return null;
+  }
+  const pageTitle = () => document.querySelector('#title-block-header h1.title, header h1.title');
+
+  // Leaving this page: tag the element that should morph
+  window.addEventListener('pageswap', (e) => {
+    clearNames();
+    if (!e.viewTransition || !e.activation || !e.activation.entry) return;
+    const to = clean(e.activation.entry.url);
+    if (isProjectPath(to)) name(cardTitleFor(to));        // card -> project page
+    else if (isProjectPage) name(pageTitle());            // project page -> back to a list
+  });
+
+  // Arriving on this page: tag the matching element
+  window.addEventListener('pagereveal', (e) => {
+    clearNames();
+    if (!e.viewTransition || !window.navigation || !navigation.activation || !navigation.activation.from) return;
+    const from = clean(navigation.activation.from.url);
+    if (isProjectPage) name(pageTitle());                    // arrived from a card (list or "More projects")
+    else if (isProjectPath(from)) name(cardTitleFor(from));  // came back to the list
+    e.viewTransition.finished.finally(clearNames);
+  });
+})();
+</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Seismic Activity Dashboard – Ishita Khanna">
+<meta property="og:description" content="An interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data">
+<meta property="og:image" content="https://ishitak22.github.io/IK_Portfolio/projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/image.png">
+<meta property="og:site_name" content="Ishita Khanna">
+<meta property="og:image:height" content="394">
+<meta property="og:image:width" content="905">
+<meta name="twitter:title" content="Seismic Activity Dashboard – Ishita Khanna">
+<meta name="twitter:description" content="An interactive Shiny dashboard analyzing earthquake depth, frequency, and magnitude near Mount Vesuvius using TidyTuesday 2025-05-13 data">
+<meta name="twitter:image" content="https://ishitak22.github.io/IK_Portfolio/projects/TidyTuesday_13.05.25-MOUNT_VESUVIUS/image.png">
+<meta name="twitter:image-height" content="394">
+<meta name="twitter:image-width" content="905">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -99,40 +572,37 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../mysticase.html"> 
-<span class="menu-text">Real-World Application</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../resume.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html"> 
-<span class="menu-text">Contact Me</span></a>
+    <a class="nav-link" href="../../mysticase.html"> 
+<span class="menu-text">Mysticase</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/ishitak22"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/ishitak22"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/khannaishita/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://www.linkedin.com/in/khannaishita/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -146,28 +616,26 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#mount-vesuvius-seismic-analysis" id="toc-mount-vesuvius-seismic-analysis" class="nav-link active" data-scroll-target="#mount-vesuvius-seismic-analysis">Mount Vesuvius Seismic Analysis</a></li>
-  <li><a href="#dashboard-features" id="toc-dashboard-features" class="nav-link" data-scroll-target="#dashboard-features">Dashboard Features</a></li>
-  <li><a href="#interactive-dashboard" id="toc-interactive-dashboard" class="nav-link" data-scroll-target="#interactive-dashboard">🌋 Interactive Dashboard</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">📁 Resources</a></li>
+  <li><a href="#dashboard-features" id="toc-dashboard-features" class="nav-link active" data-scroll-target="#dashboard-features"><i class="bi bi-grid-1x2"></i>Dashboard Features</a></li>
+  <li><a href="#interactive-dashboard" id="toc-interactive-dashboard" class="nav-link" data-scroll-target="#interactive-dashboard"><i class="bi bi-bar-chart-line"></i>Interactive Dashboard</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><i class="bi bi-link-45deg"></i>Resources</a></li>
+  <li><a href="#what-i-noticed" id="toc-what-i-noticed" class="nav-link" data-scroll-target="#what-i-noticed"><i class="bi bi-lightbulb"></i>What I noticed</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Seismic Activity Dashboard</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">tidytuesday</div>
-    <div class="quarto-category">shiny</div>
-    <div class="quarto-category">dashboard</div>
-    <div class="quarto-category">MountVesuvius</div>
-    <div class="quarto-category">eda</div>
-    <div class="quarto-category">volcano</div>
-    <div class="quarto-category">seismic</div>
-    <div class="quarto-category">rstats</div>
+    <div class="quarto-category">TidyTuesday</div>
+    <div class="quarto-category">Science &amp; Research</div>
+    <div class="quarto-category">Dashboard</div>
+    <div class="quarto-category">Shiny</div>
+    <div class="quarto-category">R</div>
   </div>
   </div>
 
@@ -196,19 +664,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="mount-vesuvius-seismic-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="mount-vesuvius-seismic-analysis">Mount Vesuvius Seismic Analysis</h2>
 <p>This interactive dashboard explores trends in <strong>seismic activity near Mount Vesuvius</strong> using data from the <strong>2025-05-13 TidyTuesday</strong> dataset.</p>
 <p>The dataset records volcanic tremors from 2011 to 2025 and is used here to answer:</p>
 <ul>
-<li>📈 Has seismic activity changed in frequency or strength over time?</li>
-<li>🌋 Are events occurring deeper underground?</li>
-<li>🔥 How do depth and magnitude correlate?</li>
+<li><i class="bi bi-graph-up-arrow"></i> Has seismic activity changed in frequency or strength over time?</li>
+<li><i class="bi bi-arrow-down-circle"></i> Are events occurring deeper underground?</li>
+<li><i class="bi bi-activity"></i> How do depth and magnitude correlate?</li>
 </ul>
 <hr>
-</section>
 <section id="dashboard-features" class="level2">
-<h2 class="anchored" data-anchor-id="dashboard-features">Dashboard Features</h2>
+<h2 class="anchored" data-anchor-id="dashboard-features"><i class="bi bi-grid-1x2"></i>Dashboard Features</h2>
 <p>The app allows dynamic filtering by:</p>
 <ul>
 <li><strong>Year Range</strong></li>
@@ -216,36 +681,100 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>It includes the following charts:</p>
 <ul>
-<li>📊 <em>Seismic Event Timeline</em> — Count vs Average Magnitude over time<br>
-</li>
-<li>🎯 <em>Depth Scatterplot</em> — How deep earthquakes occur by year<br>
-</li>
-<li>🟨 <em>Heatmap by Depth Band</em> — Activity concentration across depth zones</li>
+<li><i class="bi bi-bar-chart"></i> <em>Seismic Event Timeline</em> — Count vs Average Magnitude over time</li>
+<li><i class="bi bi-bullseye"></i> <em>Depth Scatterplot</em> — How deep earthquakes occur by year</li>
+<li><i class="bi bi-grid-3x3"></i> <em>Heatmap by Depth Band</em> — Activity concentration across depth zones</li>
 </ul>
 <hr>
 </section>
-<section id="interactive-dashboard" class="level2">
-<h2 class="anchored" data-anchor-id="interactive-dashboard">🌋 Interactive Dashboard</h2>
+<section id="interactive-dashboard" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="interactive-dashboard"><i class="bi bi-bar-chart-line"></i>Interactive Dashboard</h2>
 <p>Use the dropdown and slider to explore seismic activity:</p>
+<div class="column-page embed-fit">
 <iframe src="https://ishitakhanna.shinyapps.io/Mount_Vesuvius/" width="100%" height="700px" style="border:none;">
 </iframe>
+</div>
 <hr>
 </section>
 <section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">📁 Resources</h2>
+<h2 class="anchored" data-anchor-id="resources"><i class="bi bi-link-45deg"></i>Resources</h2>
 <ul>
 <li><a href="https://github.com/ishitak22/tidytuesday-projects/tree/main/tidytuesday_2025-05-13">GitHub Repository</a></li>
 <li><a href="https://github.com/rfordatascience/tidytuesday/tree/main/data/2025/2025-05-13">TidyTuesday Dataset</a></li>
-<li><h2 id="linkedin-post" class="anchored"><a href="https://www.linkedin.com/posts/khannaishita_tidytuesday-tidytuesday-datavisualisation-activity-7343087984876933120-iuue?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAADDaLd8BB_aQ7Ddb1JYFtgrM0vX8n2xXUBM">🔗 LinkedIn Post</a></h2></li>
+<li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/posts/khannaishita_tidytuesday-tidytuesday-datavisualisation-activity-7343087984876933120-iuue">LinkedIn Post</a></li>
 </ul>
+<hr>
 <p><em>Built using R packages: <code>shiny</code>, <code>dplyr</code>, <code>ggplot2</code>, <code>viridis</code>, <code>readr</code>.</em></p>
+<hr>
+</section>
+<section id="what-i-noticed" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-noticed"><i class="bi bi-lightbulb"></i>What I noticed</h2>
+<p>Has activity changed over time? Yes, and quite a lot. 2013 and 2014 were the quiet years. Things picked up from 2015, peaked between 2018 and 2020, eased off slightly for a few years, and then 2024 was the busiest year of all.</p>
+<p>Are events getting deeper? Not really. Nearly everything happens in the top kilometre, and below 3 km the events are few and far between. The deeper ones are rare but recent though: the only events in the 9 to 10 km band were in 2024.</p>
+<section class="related-projects">
+<h2 class="anchored">
+<i class="bi bi-collection"></i>More projects
+</h2>
+<div class="related-grid">
+<a class="card quarto-grid-item related-card" href="../TidyTuesday_01.04.25-POKEMON_STATISTICS/index.html">
+<div class="card-img-top">
+<img loading="lazy" src="../TidyTuesday_01.04.25-POKEMON_STATISTICS/image.png" alt="" class="card-img" style="height: 170px;">
+</div>
+<div class="card-body">
+<h5 class="card-title listing-title anchored">
+Pokemon Stat Dashboard
+</h5>
+<p class="card-text">
+An interactive Shiny dashboard exploring stat distribution and outliers across Pokemon generations using the 2025-04-01 TidyTuesday dataset.
+</p>
+</div>
+</a><a class="card quarto-grid-item related-card" href="../TidyTuesday_06.05.25-NSF_TERMINATIONS/index.html">
+<div class="card-img-top">
+<img loading="lazy" src="../TidyTuesday_06.05.25-NSF_TERMINATIONS/image.png" alt="" class="card-img" style="height: 170px;">
+</div>
+<div class="card-body">
+<h5 class="card-title listing-title anchored">
+NSF Grant Terminations Analysis
+</h5>
+<p class="card-text">
+An interactive exploration of prematurely terminated NSF grants using Gantt charts and geographic heatmap.
+</p>
+</div>
+</a><a class="card quarto-grid-item related-card" href="../TidyTuesday_29.04.25-USER2025/index.html">
+<div class="card-img-top">
+<img loading="lazy" src="../TidyTuesday_29.04.25-USER2025/image.png" alt="" class="card-img" style="height: 170px;">
+</div>
+<div class="card-body">
+<h5 class="card-title listing-title anchored">
+useR! 2025 Keywords Network
+</h5>
+<p class="card-text">
+Exploring how topics clustered at useR! 2025 conference using text mining and network analysis
+</p>
+</div>
+</a>
+</div>
+</section>
 
 
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -645,6 +1174,38 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 Ishita Khanna · Built with R &amp; Quarto</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:ishitakhanna2208@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/khannaishita/">
+      <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ishitak22">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
