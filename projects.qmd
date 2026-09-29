@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+image: files/social-card.png
 execute:
   echo: false
   warning: false

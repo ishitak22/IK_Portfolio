@@ -3,6 +3,13 @@ project:
 
 website:
   title: "Ishita Khanna"
+  description: "Data Analyst in Melbourne turning messy data into decisions, with dashboards and analysis in R, SQL, Tableau and Power BI."
+  site-url: https://ishitak22.github.io/IK_Portfolio/
+  favicon: files/favicon.png
+  image: files/social-card.png
+  open-graph: true
+  twitter-card: true
+  back-to-top-navigation: true
   page-navigation: true
   navbar:
     pinned: true
@@ -20,9 +27,22 @@ website:
     right:
       - icon: github
         href: https://github.com/ishitak22
+        aria-label: GitHub
       - icon: linkedin
         href: https://www.linkedin.com/in/khannaishita/
-      
+        aria-label: LinkedIn
+  page-footer:
+    left: "© 2026 Ishita Khanna · Built with R & Quarto"
+    right:
+      - icon: envelope
+        href: mailto:ishitakhanna2208@gmail.com
+        aria-label: Email
+      - icon: linkedin
+        href: https://www.linkedin.com/in/khannaishita/
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/ishitak22
+        aria-label: GitHub
 
 format:
   html:
@@ -34,4 +54,3 @@ format:
     toc: true
 
 editor: visual
-

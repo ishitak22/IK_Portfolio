@@ -1,6 +1,7 @@
 ---
 title: "Resume"
 subtitle: "Last updated September 2026"
+image: files/social-card.png
 format:
   html:
     page-layout: article

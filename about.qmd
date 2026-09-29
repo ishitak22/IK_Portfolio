@@ -1,6 +1,7 @@
 ---
 title: "About me"
 subtitle: "Data Analyst · Insights & Reporting · Melbourne, VIC"
+image: files/social-card.png
 aliases:
   - contact.html
 toc: false

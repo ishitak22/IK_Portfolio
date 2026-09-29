@@ -1,0 +1,13 @@
+---
+title: "Page not found"
+toc: false
+body-classes: not-found
+---
+
+::: {.nf-box}
+[404]{.nf-code}
+
+Looks like this page has wandered off, a bit like an outlier in a boxplot.
+
+[Go to the home page](index.qmd){.btn .btn-primary} [See my projects](projects.qmd){.btn .btn-outline-primary}
+:::

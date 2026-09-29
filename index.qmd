@@ -1,5 +1,6 @@
 ---
 pagetitle: "Ishita Khanna · Data Analyst"
+image: files/social-card.png
 description: "Data Analyst in Melbourne turning messy data into decisions, with dashboards and analysis in R, SQL, Tableau and Power BI."
 execute:
   echo: false
